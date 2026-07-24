@@ -63,3 +63,12 @@ IaC や本番変更の作業場ではない（ハンズオン用メモは可）�
 - WSL でのリポジトリ: `/mnt/c/Users/kamag/Documents/AWS`
 - ターミナルは `.vscode/settings.json` により WSL がデフォルト
 - hooks は Windows ホスト側で `cmd /c node` により実行される
+
+## Cursor Cloud specific instructions
+
+- このリポジトリは**アプリ/サーバではなく学習データ + 自動化スクリプト**。`package.json` / `requirements.txt` / lockfile は無い。実行コードは `.cursor/hooks/` の Node/Python のみで、いずれも**標準ライブラリのみ**（追加 install 不要。`node` と `python3` はプリインストール済み）。
+- クラウド VM は **Linux**。ローカルは Windows ホストで `cmd /c node` 起動だが、クラウドでは `node .cursor/hooks/xxx.js` / `python3 .cursor/hooks/xxx.py` を直接実行する。
+- 「lint/test」相当は `bash .cursor/hooks/validate-hooks.sh`（`session-start.js` が有効な JSON を出すか検証）。ビルド工程は無い。
+- session コンテキスト自動化の確認: `node .cursor/hooks/session-start.js </dev/null`（`.private/` があればその中身も注入する。無くても動く）。
+- **Anki 系スクリプト**（`anki-add.py` / `anki-manage.py` / `anki-dedupe.py` / `clf-anki-*.py`）は Anki Desktop + AnkiConnect（`localhost:8765`）が前提。**クラウド VM には Anki が無いため接続エラーになるのが正常**。TSV の生成・パースはオフラインで動く（例: `anki-add.py` の `parse_tsv` を import して `study/anki/**/*.tsv` を読める）。
+- `finish-push.sh` / `auth-web.sh` / `manual-auth.sh` / `install-gh.sh` はユーザーのローカル WSL 用（`finish-push.sh` は Windows 絶対パス直書き）。クラウドでは使わない。git 操作は通常の `git` コマンドで行う。
