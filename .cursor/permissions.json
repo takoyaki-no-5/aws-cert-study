@@ -1,0 +1,28 @@
+{
+  "terminalAllowlist": [
+    "wsl",
+    "git",
+    "gh",
+    "node",
+    "npm",
+    "npx",
+    "bash",
+    "sh",
+    "python",
+    "python3",
+    "pip",
+    "ls",
+    "cat",
+    "head",
+    "tail",
+    "rg",
+    "mkdir",
+    "cp",
+    "mv",
+    "sed",
+    "awk",
+    "curl",
+    "docker",
+    "aws"
+  ]
+}

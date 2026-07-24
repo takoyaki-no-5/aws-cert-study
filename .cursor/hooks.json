@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "command": "cmd /c node .cursor/hooks/session-start.js",
+        "timeout": 10
+      }
+    ]
+  }
+}

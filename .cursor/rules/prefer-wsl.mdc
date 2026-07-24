@@ -1,0 +1,30 @@
+---
+description: このワークスペースのシェル作業は WSL (Ubuntu-24.04) を優先する
+alwaysApply: true
+---
+
+# WSL 優先
+
+シェル作業はほぼすべて WSL で行う（Windows PowerShell/CMD ではなく）。
+
+## コマンドの実行方法
+
+推奨:
+
+```bash
+wsl -d Ubuntu-24.04 --cd /mnt/c/Users/kamag/Documents/AWS -e bash -lc 'コマンド'
+```
+
+- ディストリビューション: `Ubuntu-24.04`（デフォルト）
+- Linux ユーザーのホーム: `/home/kama`
+- WSL から見たこのリポジトリ: `/mnt/c/Users/kamag/Documents/AWS`
+- クォートに注意: PowerShell が `$VARS` を先に展開しないよう、PowerShell からはシングルクォートの `-lc` スクリプトを使う（または `$` をエスケープ）
+
+## Linux ツールを優先
+
+- `git` / `node` / `python3` / `docker` / パッケージマネージャ、（導入済みなら）`aws` / Terraform / CDK は WSL 内のものを使う
+- Windows ネイティブのシェルは Windows 専用の作業のみ（Cursor hooks ランチャーの都合、Explorer パスなど）
+
+## hooks の注意
+
+`.cursor/hooks/` のプロジェクトフックは Windows ホスト側で `cmd /c node` により実行される（Cursor のランチャー仕様）。それは問題ない。エージェントの作業とユーザーのターミナルは WSL 優先のまま。

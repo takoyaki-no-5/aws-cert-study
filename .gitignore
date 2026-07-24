@@ -1,0 +1,17 @@
+# Personal / sensitive context (repo is public)
+.private/
+
+# Local / secret ignores for an AWS workspace
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.key
+credentials.json
+secrets.json
+secrets.yaml
+secrets.yml
+.aws/
+**/aws_credentials
