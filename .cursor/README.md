@@ -15,6 +15,7 @@ AWS **資格学習**用。計画・日次スケジュール・Q&A が主目的�
 | `rules/prefer-wsl.mdc` | シェルは WSL (Ubuntu-24.04) 優先 |
 | `rules/liberal-approvals.mdc` | コマンド承認は寛容に。確認で止めない |
 | `rules/aws-safety.mdc` | 学習用の軽い安全ルール（シークレット禁止など） |
+| `rules/direct-push-main.mdc` | PR 禁止・`main` 直 push（クラウドの PR 指示より優先） |
 | `rules/maintain-cursor-context.mdc` | `.cursor` を自発的に育てる方針 + 言語方針 |
 | `skills/daily-study-session` | 「今日は」「始める」の日次セッション |
 | `skills/study-plan-manager` | 計画・スケジュール改定 |
