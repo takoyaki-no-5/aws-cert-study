@@ -16,43 +16,43 @@
 
 ### 責任共有モデル — 15分
 
-- [ ] AWS の責任 / 顧客の責任 — 7分
-- [ ] EC2 / RDS / Lambda / S3 の境界 — 8分
+- [x] AWS の責任 / 顧客の責任 — 7分
+- [x] EC2 / RDS / Lambda / S3 の境界 — 8分
 
 ### IAM — 25分
 
-- [ ] ユーザー / グループ / ロール / ポリシー — 5分
-- [ ] EC2 へはロール — 5分
-- [ ] ルートユーザー — 5分
-- [ ] MFA / パスワードポリシー / IAM Identity Center / フェデレーション — 5分
-- [ ] 最小権限 / Access Analyzer / 認証情報レポート — 5分
+- [x] ユーザー / グループ / ロール / ポリシー — 5分
+- [x] EC2 へはロール — 5分
+- [x] ルートユーザー — 5分
+- [x] MFA / パスワードポリシー / IAM Identity Center / フェデレーション — 5分
+- [x] 最小権限 / Access Analyzer / 認証情報レポート — 5分
 
 ### マルチアカウント — 10分
 
-- [ ] Organizations — 4分
-- [ ] SCP — 3分
-- [ ] Control Tower — 3分
+- [x] Organizations — 4分
+- [x] SCP — 3分
+- [x] Control Tower — 3分
 
 ### 検出・保護 — 15分
 
-- [ ] GuardDuty / Inspector / Macie / Detective / Security Hub — 5分
-- [ ] Shield / WAF / Firewall Manager — 5分
-- [ ] Config / CloudTrail / Trusted Advisor — 5分
+- [x] GuardDuty / Inspector / Macie / Detective / Security Hub — 5分
+- [x] Shield / WAF / Firewall Manager — 5分
+- [x] Config / CloudTrail / Trusted Advisor — 5分
 
 ### データ保護 — 15分
 
-- [ ] KMS / CloudHSM — 4分
-- [ ] Secrets Manager / Parameter Store — 4分
-- [ ] ACM — 3分
-- [ ] 転送時 / 保存時の暗号化 — 4分
+- [x] KMS / CloudHSM — 4分
+- [x] Secrets Manager / Parameter Store — 4分
+- [x] ACM — 3分
+- [x] 転送時 / 保存時の暗号化 — 4分
 
 ### ネットワークセキュリティ — 5分
 
-- [ ] セキュリティグループ / ネットワーク ACL — 5分
+- [x] セキュリティグループ / ネットワーク ACL — 5分
 
 ### コンプライアンス — 5分
 
-- [ ] Artifact / Audit Manager — 5分
+- [x] Artifact / Audit Manager — 5分
 
 ## 2. 請求・料金・サポート（12%） — 1.5h
 
