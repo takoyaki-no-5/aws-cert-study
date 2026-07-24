@@ -58,11 +58,17 @@ IaC や本番変更の作業場ではない（ハンズオン用メモは可）�
 - **Anki** — TSV を `study/anki/` に生成してインポート（スキル: `anki-tsv`）
 - **本** — 主教材。章単位でスケジュールし、要点を notes / Anki へ
 
-## ローカル環境
+## 作業環境（複数ある）
 
-- WSL でのリポジトリ: `/mnt/c/Users/kamag/Documents/AWS`
-- ターミナルは `.vscode/settings.json` により WSL がデフォルト
-- hooks は Windows ホスト側で `cmd /c node` により実行される
+このワークスペースは複数の環境から開かれる。どこで動いているかは `session-start.js` フックが毎回自動判別し、コンテキスト先頭の `- 現在の環境:` に出す。
+
+| 環境 | 実体 | 判別の手がかり |
+|------|------|----------------|
+| Windows ワークスペース（WSL 併用） | ユーザーのローカル PC。リポジトリ `/mnt/c/Users/kamag/Documents/AWS`、WSL `Ubuntu-24.04`（ユーザー `kama`）。hooks は Windows ホストで `cmd /c node` 起動 | `process.platform === 'win32'`、または WSL 内なら `WSL_DISTRO_NAME` / `/proc/version` に microsoft |
+| Cursor Cloud（モバイル）ワークスペース | クラウド上の Linux VM（`/workspace`・`HOSTNAME=cursor`・`CURSOR_AGENT=1`） | cwd `/workspace` / `CURSOR_AGENT=1` / `HOSTNAME=cursor` |
+
+- 明示ラベルを付けたいマシンでは **`.private/environment.md` の1行目**に環境名を書く（フックが最優先で採用する）。`.private/` は gitignore 済みなので**マシンごとに手動で置く**（git/PR では同期されない）。無くても上表の自動判別で動く。
+- ターミナルは `.vscode/settings.json` により WSL がデフォルト（Windows 側）。
 
 ## Cursor Cloud specific instructions
 
@@ -72,3 +78,4 @@ IaC や本番変更の作業場ではない（ハンズオン用メモは可）�
 - session コンテキスト自動化の確認: `node .cursor/hooks/session-start.js </dev/null`（`.private/` があればその中身も注入する。無くても動く）。
 - **Anki 系スクリプト**（`anki-add.py` / `anki-manage.py` / `anki-dedupe.py` / `clf-anki-*.py`）は Anki Desktop + AnkiConnect（`localhost:8765`）が前提。**クラウド VM には Anki が無いため接続エラーになるのが正常**。TSV の生成・パースはオフラインで動く（例: `anki-add.py` の `parse_tsv` を import して `study/anki/**/*.tsv` を読める）。
 - `finish-push.sh` / `auth-web.sh` / `manual-auth.sh` / `install-gh.sh` はユーザーのローカル WSL 用（`finish-push.sh` は Windows 絶対パス直書き）。クラウドでは使わない。git 操作は通常の `git` コマンドで行う。
+- **`.private/` はクラウドでは基本残らない**（gitignore 済みで git/PR で運ばれず、新セッションはスナップショットから起動する別 VM）。環境の自己判別はフックの自動判定（上表）に依存し、`.private/environment.md` はあくまで任意の上書きラベル。
