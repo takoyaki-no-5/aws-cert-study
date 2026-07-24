@@ -1,42 +1,62 @@
 ---
 name: anki-tsv
 description: >-
-  AWS資格学習用に Anki インポート可能な TSV カードファイルを生成する。Use when the user
-  asks for Anki, カード, TSV, デッキ, flashcards, or wants to turn notes/mistakes
-  into spaced-repetition cards.
+  AWS資格学習用に Anki カードを生成・投入する（AnkiConnect 優先、だめなら TSV）。
+  Use when the user asks for Anki, カード, TSV, デッキ, flashcards, or wants to turn
+  notes/mistakes into spaced-repetition cards.
 ---
 
-# Anki TSV カード生成
+# Anki カード生成・投入
 
-## 出力先
+## 優先順位
 
-- `study/anki/` 配下に書く
-- ファイル名: `YYYY-MM-DD_<トピックのスラッグ>.tsv`（ユーザーが望めば既存トピックファイルに追記）
-- インポート手順が変わったときだけ、同名の `.md` に短いメモを残す
+1. **AnkiConnect で直接追加**（Anki Desktop が起動中でアドオン導入済みのとき）
+2. **TSV 生成** → ユーザーが Anki で Import（フォールバック）
 
-## TSV フォーマット（Anki 用）
+## AnkiConnect（コマンドから追加）
 
-- エンコーディング: UTF-8
-- 区切り: タブ
-- ヘッダ行なし（Anki のテキストインポート標準）
-- 1行のフィールド: `表面` `<TAB>` `裏面` `<TAB>` `タグ`（3列目は任意）
-- フィールド内の改行: HTML の `<br>` を使う（Anki はフィールド内 HTML 可）
-- エスケープ: フィールドをクォートで囲まない。フィールド内にタブを入れない
+前提:
+
+- Anki Desktop を起動
+- アドオン **AnkiConnect**（コード `2055492159`）をインストールして再起動
+
+投入コマンド（WSL 内）:
+
+```bash
+python3 .cursor/hooks/anki-add.py --deck 'AWS::CLF' study/anki/clf_YYYY-MM-DD_topic.tsv
+# または1枚
+python3 .cursor/hooks/anki-add.py --deck 'AWS::CLF' --front 'Q' --back 'A' --tags 'clf billing'
+```
+
+接続確認:
+
+```bash
+curl -s localhost:8765 -d '{"action":"version","version":6}'
+```
+
+デッキ名の目安: `AWS::CLF` / `AWS::AIF` / `AWS::SAA` など。
+
+## TSV（フォールバック）
+
+### 出力先
+
+- `study/anki/` 配下（資格フォルダには置かない）
+- ファイル名: `<資格略称>_YYYY-MM-DD_<トピックのスラッグ>.tsv`
+
+### フォーマット
+
+- UTF-8 / タブ区切り / ヘッダなし
+- `表面` `<TAB>` `裏面` `<TAB>` `タグ`（3列目任意）
+- フィールド内改行は `<br>`。フィールド内にタブを入れない
 
 ### カードの作り方
 
-- 表面: 1枚1論点の問いかけ（日本語でよい。試験が英語表記を使う用語は英語を併記）
-- 裏面: 短い答え + 1行の理由。エッセイ化しない
-- 基本は Q/A 形式。ユーザーが Anki の cloze を求めたときだけ `{{c1::...}}` を表面に使う（裏面は空かヒント）
-- タグ: スペース区切り（例: `saa vpc networking source:book`）
+- 表面: 1枚1論点（日本語OK。試験用語は英語併記）
+- 裏面: 短い答え + 1行の理由
+- タグ例: `clf billing source:cursor`
 
-### 良い例・悪い例
+### 生成後
 
-- 良い:「S3 標準 IA が向くアクセスパターンは？」→「月1回未満の低頻度。取り出し課金あり」
-- 悪い: 章まるごとの要約を1枚に詰める
-
-## 生成後にやること
-
-- ファイルパスとインポート手順を伝える: File → Import → その TSV → 区切りはタブ → `<br>` を使ったら HTML を許可
-- 有用ならデッキ名を提案（例: `AWS::SAA`）
-- 今日の `study/log/` にカード生成を記録（枚数 + トピック）
+- AnkiConnect が使えれば `anki-add.py` で投入
+- 使えなければ File → Import → その TSV（区切り Tab、HTML 許可）
+- 今日のログに枚数とトピックを記録

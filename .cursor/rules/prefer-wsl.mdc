@@ -7,24 +7,34 @@ alwaysApply: true
 
 シェル作業はほぼすべて WSL で行う（Windows PowerShell/CMD ではなく）。
 
+## 理想
+
+エージェントのシェル自体が WSL になること。`.vscode/settings.json` で次を設定済み:
+
+- `terminal.integrated.defaultProfile.windows` → Ubuntu-24.04
+- `terminal.integrated.automationProfile.windows` → 同じ WSL（cwd はリポジトリ）
+
+効かないときは Cursor Settings → Agents → **Legacy Terminal Tool** を ON にして Cursor を再起動。
+
 ## コマンドの実行方法
 
-推奨:
+1. **すでに WSL / Linux シェルの中にいる**（`uname` が Linux、プロンプトが bash）→ そのままコマンドを実行。`wsl -d ...` で包まない。
+2. **外側が PowerShell / CMD のときだけ**、次で包む:
 
 ```bash
 wsl -d Ubuntu-24.04 --cd /mnt/c/Users/kamag/Documents/AWS -e bash -lc 'コマンド'
 ```
 
-- ディストリビューション: `Ubuntu-24.04`（デフォルト）
+- ディストリビューション: `Ubuntu-24.04`
 - Linux ユーザーのホーム: `/home/kama`
-- WSL から見たこのリポジトリ: `/mnt/c/Users/kamag/Documents/AWS`
-- クォートに注意: PowerShell が `$VARS` を先に展開しないよう、PowerShell からはシングルクォートの `-lc` スクリプトを使う（または `$` をエスケープ）
+- リポジトリ: `/mnt/c/Users/kamag/Documents/AWS`
+- PowerShell が `$VARS` を先に展開しないよう、外側からはシングルクォートの `-lc` を使う
 
 ## Linux ツールを優先
 
-- `git` / `node` / `python3` / `docker` / パッケージマネージャ、（導入済みなら）`aws` / Terraform / CDK は WSL 内のものを使う
-- Windows ネイティブのシェルは Windows 専用の作業のみ（Cursor hooks ランチャーの都合、Explorer パスなど）
+- `git` / `node` / `python3` / `docker`、（導入済みなら）`aws` などは WSL 内のものを使う
+- Windows ネイティブのシェルは Windows 専用のみ（hooks の `cmd /c node` ランチャーなど）
 
 ## hooks の注意
 
-`.cursor/hooks/` のプロジェクトフックは Windows ホスト側で `cmd /c node` により実行される（Cursor のランチャー仕様）。それは問題ない。エージェントの作業とユーザーのターミナルは WSL 優先のまま。
+`.cursor/hooks/` は Windows ホスト側で `cmd /c node` により実行される（Cursor 仕様）。エージェント作業とユーザー端末は WSL 優先のまま。

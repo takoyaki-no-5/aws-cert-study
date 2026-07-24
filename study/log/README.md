@@ -1,8 +1,6 @@
-# 学習ログ
+# ログ
 
-日次ファイル: `YYYY-MM-DD.md`
-
-テンプレ:
+`YYYY-MM-DD.md`
 
 ```markdown
 # YYYY-MM-DD
