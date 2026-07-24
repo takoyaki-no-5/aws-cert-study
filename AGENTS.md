@@ -79,3 +79,4 @@ IaC や本番変更の作業場ではない（ハンズオン用メモは可）�
 - **Anki 系スクリプト**（`anki-add.py` / `anki-manage.py` / `anki-dedupe.py` / `clf-anki-*.py`）は Anki Desktop + AnkiConnect（`localhost:8765`）が前提。**クラウド VM には Anki が無いため接続エラーになるのが正常**。TSV の生成・パースはオフラインで動く（例: `anki-add.py` の `parse_tsv` を import して `study/anki/**/*.tsv` を読める）。
 - `finish-push.sh` / `auth-web.sh` / `manual-auth.sh` / `install-gh.sh` はユーザーのローカル WSL 用（`finish-push.sh` は Windows 絶対パス直書き）。クラウドでは使わない。git 操作は通常の `git` コマンドで行う。
 - **`.private/` はクラウドでは基本残らない**（gitignore 済みで git/PR で運ばれず、新セッションはスナップショットから起動する別 VM）。環境の自己判別はフックの自動判定（上表）に依存し、`.private/environment.md` はあくまで任意の上書きラベル。
+- **PR を使わず `main` に直接 push する（ユーザー方針）**。新セッションが `cursor/...` ブランチ起点で始まっても、まず `git checkout main` してから commit → `git push origin main`（ローカルの `finish-push.sh` と同じ運用）。PR は作らない。
