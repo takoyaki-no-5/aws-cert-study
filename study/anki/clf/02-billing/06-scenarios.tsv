@@ -1,0 +1,20 @@
+「いつ止まるかわからないバッチ」一番安いコンピュートは？	スポット（中断耐性がある前提）	clf billing scenario
+「安定した24/365本番、1年は使う」割引の第一候補は？	Savings Plans または RI	clf billing scenario
+「リージョンをまたぐ構成変更が多く柔軟さが欲しい割引」どっち？	Savings Plans（RIより柔軟）	clf billing scenario
+「来月の請求が跳ねたらメールしたい」何？	Budgets	clf billing scenario
+「部門別にコストを分けたい」何が必要？	コスト配分タグ（＋激活）	clf billing scenario
+「導入前に月額を概算したい」何？	Pricing Calculator	clf billing scenario
+「最も詳細な利用内訳CSVが欲しい」何？	CUR（Cost and Usage Report）	clf billing scenario
+「画面で先月比のグラフを見たい」何？	Cost Explorer	clf billing scenario
+「大きすぎるEC2を勧めてほしい」何？	Compute Optimizer	clf billing scenario
+「本番障害で電話サポートが要る」最低プランは？	Business	clf billing scenario
+「TAMが欲しい」どの帯？	Enterprise（または同等の上位）	clf billing scenario
+「無料のTrusted Advisorは全部使える？」	いいえ。Basicはコアチェック限定。全項目はBusiness以上	clf billing scenario
+「アカウントを増やしても請求書は1枚にしたい」何？	Organizations 一括請求	clf billing scenario
+「インターネットからS3へ入れる転送」課金イメージは？	多くの場合、入向きは無料寄り。出向き・AZ間は注意	clf billing scenario
+「BYOLで物理ソケットが必要」何？	Dedicated Hosts	clf billing scenario
+「サードパーティのAMIを課金付きで買いたい」どこ？	Marketplace	clf billing scenario
+「短期間だけAWSに詳しい人を雇いたい」何？	IQ	clf billing scenario
+Developer と Business の最大の差は？	本番向け24/365と応答目標・Trusted Advisor全項目はBusiness側	clf billing scenario
+「12か月無料枠が切れたあと」どうなる？	対象外は通常課金。常時無料枠だけ残るものもある	clf billing scenario
+「請求の問い合わせだけ」どのプランでもできる？	Basicでもアカウント/請求のサポートは受けられる	clf billing scenario

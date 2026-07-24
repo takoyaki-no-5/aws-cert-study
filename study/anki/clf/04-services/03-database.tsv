@@ -1,0 +1,6 @@
+RDS は？	マネージドリレーショナルDB（MySQL/PG等）	clf services db
+Aurora は？	AWS独自の高可用・高性能互換RDSエンジン	clf services db
+DynamoDB は？	サーバレスNoSQLキーバリュー/ドキュメント。超低レイテンシ	clf services db
+ElastiCache は？	マネージドRedis/Memcachedキャッシュ	clf services db
+Redshift は？	データウェアハウス（分析用列指向）	clf services db
+Neptune / DocumentDB / QLDB は？	Neptune=グラフ / DocumentDB=Mongo互換 / QLDB=台帳	clf services db

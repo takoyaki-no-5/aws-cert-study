@@ -1,6 +1,9 @@
 # Personal / sensitive context (repo is public)
 .private/
 
+# Local downloads / scratch
+.tmp/
+
 # Local / secret ignores for an AWS workspace
 .env
 .env.*

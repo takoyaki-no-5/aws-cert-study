@@ -1,0 +1,22 @@
+SQS標準とFIFOの差（CLF）は？	FIFO=順序と正確に一度の処理に強い / 標準=高スループット	clf services hy
+SQSで消費者は何をする？	キューからメッセージを取得（プル）	clf services hy
+SNSの購読者の例は？	メール、SQS、Lambda、HTTP	clf services hy
+ファンアウト構成とは？	SNS→複数SQSなどへ同時配信	clf services hy
+EventBridgeのルールとは？	イベントパターンにマッチしたらターゲットへ送る	clf services hy
+Step Functionsが向くのは？	複数ステップの業務フロー可視化・リトライ	clf services hy
+Athenaの課金イメージは？	スキャンしたデータ量など	clf services hy
+Glue Data Catalogの役割は？	テーブル定義のメタデータ置き場	clf services hy
+Firehoseが楽な理由は？	配信先へのバッファリングや変換を任せやすい	clf services hy
+QuickSightのユーザーは誰？	ビジネスユーザー・分析者向けBI	clf services hy
+EMRが使うエンジンの例は？	Spark / Hadoop 等	clf services hy
+OpenSearchの典型用途は？	ログ検索・全文検索	clf services hy
+SageMakerの範囲は？	学習データ準備〜学習〜デプロイ	clf services hy
+Rekognitionでできる例は？	物体検出・顔分析・不適切コンテンツ検知	clf services hy
+Textractでできる例は？	請求書やフォームから項目抽出	clf services hy
+Pollyの入力と出力は？	テキスト→音声	clf services hy
+Transcribeの入力と出力は？	音声→テキスト	clf services hy
+Translateは？	テキストの言語変換	clf services hy
+Comprehendは？	テキストの洞察（感情・キーフレーズ等）	clf services hy
+Lexは？	音声/テキストの会話インターフェース構築	clf services hy
+Kendraは？	社内文書のエンタープライズ検索	clf services hy
+「どのMLサービスか迷ったら」CLFの戦術は？	入出力のメディア（画像/音声/テキスト）で当てる	clf services hy

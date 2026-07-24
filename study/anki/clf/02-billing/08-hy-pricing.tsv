@@ -1,0 +1,20 @@
+オンデマンドが向くワークロードは？	短命・予測不能・コミットしたくない	clf billing hy
+RIの支払いオプション例は？	全額前払い / 一部 / 前払いなし（割引率が変わる）	clf billing hy
+Compute Savings Plansの柔軟性は？	インスタンスファミリーやリージョン等をまたいで適用しやすい	clf billing hy
+EC2 Instance Savings Plansは？	特定ファミリー等に寄せる代わりにより高い割引になりやすい	clf billing hy
+スポットが向かないもの？	ステートフルで中断不可の本番DBなど	clf billing hy
+スポットの中断は何が起きる？	AWS都合で回収されうる。アプリ側で耐える	clf billing hy
+Dedicated Hostが必要な典型理由は？	既存ソケット/コア課金ライセンス、規制で物理専有	clf billing hy
+無料枠「常時無料」の例のイメージは？	一定量までずっと無料のサービス枠	clf billing hy
+無料枠「12か月」のイメージは？	新規アカウントから1年だけ付く枠	clf billing hy
+無料枠「トライアル」のイメージは？	短期だけ試せる枠	clf billing hy
+同じAZ内の私有IP通信の課金イメージは？	無料または相対的に安い（問題の前提に注意）	clf billing hy
+インターネットへ出るデータ転送は？	一般に課金対象になりやすい	clf billing hy
+CloudFrontを使うと転送コストで得することがある理由は？	エッジ経由の方が安くなるケースがある	clf billing hy
+AZをまたぐデータ転送は？	課金されやすい（設計で意識）	clf billing hy
+S3からインターネットへの取り出しは？	転送料が発生しうる	clf billing hy
+RIを使い切れないリスクは？	コミット分が無駄になりうる	clf billing hy
+Savings Plansのコミット単位のイメージは？	時間あたりの利用額（$/hour）を約束	clf billing hy
+「とりあえず試す」最初の課金モデルは？	オンデマンド	clf billing hy
+バッチで落としてもよい分散処理向きは？	スポット	clf billing hy
+1年確実に同じサイズを使うなら？	RIまたはSavings Plansを検討	clf billing hy

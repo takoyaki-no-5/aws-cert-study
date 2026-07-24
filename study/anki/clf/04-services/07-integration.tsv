@@ -1,0 +1,4 @@
+SQS は？	キュー（非同期・疎結合）。プル型	clf services integration
+SNS は？	パブサブ通知。プッシュ型（メール/HTTP/SQS等）	clf services integration
+EventBridge は？	イベントバス。SaaS/AWSイベントをルールでルーティング	clf services integration
+Step Functions は？	複数AWSサービスを状態機械でオーケストレーション	clf services integration

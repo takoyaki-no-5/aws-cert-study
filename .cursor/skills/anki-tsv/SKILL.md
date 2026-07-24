@@ -23,9 +23,14 @@ description: >-
 投入コマンド（WSL 内）:
 
 ```bash
-python3 .cursor/hooks/anki-add.py --deck 'AWS::CLF' study/anki/clf_YYYY-MM-DD_topic.tsv
-# または1枚
-python3 .cursor/hooks/anki-add.py --deck 'AWS::CLF' --front 'Q' --back 'A' --tags 'clf billing'
+python3 .cursor/hooks/anki-add.py --deck 'AWS::CLF' study/anki/clf/.../topic.tsv
+```
+
+閲覧・削除:
+
+```bash
+python3 .cursor/hooks/anki-manage.py list 'deck:AWS::CLF*' --limit 20
+python3 .cursor/hooks/anki-manage.py delete --query '接続テスト' --yes
 ```
 
 接続確認:
@@ -35,13 +40,16 @@ curl -s localhost:8765 -d '{"action":"version","version":6}'
 ```
 
 デッキ名の目安: `AWS::CLF` / `AWS::AIF` / `AWS::SAA` など。
+ノートタイプは日本語版 Anki なら自動で `基本`（表面/裏面）を使う。
 
 ## TSV（フォールバック）
 
 ### 出力先
 
-- `study/anki/` 配下（資格フォルダには置かない）
-- ファイル名: `<資格略称>_YYYY-MM-DD_<トピックのスラッグ>.tsv`
+- `study/anki/<資格>/` 配下を**工程ごとの階層**で管理（例: `study/anki/clf/01-security/02-iam.tsv`）
+- 資格フォルダ直下にフラット置きしない
+- ファイル名: `<番号>-<トピックのスラッグ>.tsv`
+- CLF 一括再生成: `python3 .cursor/hooks/clf-anki-generate.py`
 
 ### フォーマット
 
@@ -53,7 +61,8 @@ curl -s localhost:8765 -d '{"action":"version","version":6}'
 
 - 表面: 1枚1論点（日本語OK。試験用語は英語併記）
 - 裏面: 短い答え + 1行の理由
-- タグ例: `clf billing source:cursor`
+- **量の目安**: その資格を「全部できたら約90点」と言える密度。低頻度は入れない。対比・シナリオを厚くする
+- タグ例: `clf billing hy source:cursor`
 
 ### 生成後
 

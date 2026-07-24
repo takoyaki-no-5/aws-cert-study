@@ -1,0 +1,30 @@
+「イベントでコードを短時間実行、サーバ管理したくない」何？	Lambda	clf services scenario
+「コンテナはあるがサーバは管理したくない」何？	Fargate（ECS/EKSの起動タイプ）	clf services scenario
+「KubernetesをAWSで」何？	EKS	clf services scenario
+「HTTPのパスで振り分け」LBはどれ？	ALB	clf services scenario
+「超高速・TCPで極低遅延LB」どれ？	NLB	clf services scenario
+「オブジェクトを安く長期保管、すぐ読まなくてよい」S3は？	Glacier / Glacier Deep Archive 系	clf services scenario
+「複数EC2で同じファイルをNFS共有」何？	EFS	clf services scenario
+「1台のEC2にディスク」何？	EBS	clf services scenario
+「キーバリューでミリ秒、サーバレスDB」何？	DynamoDB	clf services scenario
+「MySQL互換でマネージド、接合クエリ」何？	RDS（またはAurora）	clf services scenario
+「ペタバイト分析DWH」何？	Redshift	clf services scenario
+「S3のCSVにSQL」何？	Athena	clf services scenario
+「ログをほぼ自動でS3へストリーム」何？	Kinesis Data Firehose	clf services scenario
+「リアルタイムに自分で消費者を書くストリーム」何？	Kinesis Data Streams	clf services scenario
+「非同期で疎結合、引き取る側がペース制御」何？	SQS	clf services scenario
+「1つのイベントをメールとLambdaに同時通知」何？	SNS	clf services scenario
+「S3イベントやCronで複数サービス連携」何？	EventBridge	clf services scenario
+「オンプレDBをAWSへ継続レプリケ」何？	DMS	clf services scenario
+「100TBを回線が細くて送れない」何？	Snow ファミリー	clf services scenario
+「顔写真の人物判定」何？	Rekognition	clf services scenario
+「音声を字幕に」何？	Transcribe	clf services scenario
+「チャットボットの対話」何？	Lex	clf services scenario
+「IaCをYAMLで」何？	CloudFormation	clf services scenario
+「ビルド→テスト→デプロイを自動連結」何？	CodePipeline	clf services scenario
+「CPUアラームで通知」何？	CloudWatch Alarm（+SNS等）	clf services scenario
+「誰がStopInstancesしたか」何？	CloudTrail	clf services scenario
+「プライベートサブネットからパッチ適用したいがSSH鍵は嫌」何？	Systems Manager Session Manager 等	clf services scenario
+「DNSフェイルオーバ」何？	Route 53	clf services scenario
+「オンプレとAWSを専用線」何？	Direct Connect	clf services scenario
+「VPCを多数ハブ接続」何？	Transit Gateway	clf services scenario

@@ -1,0 +1,6 @@
+CloudWatch は？	メトリクス・ログ・アラーム・ダッシュボード	clf services mgmt
+CloudTrail と Config の違いは？（再確認）	Trail=操作ログ / Config=構成履歴と準拠	clf services mgmt
+Systems Manager は？	運用ハブ（パッチ・セッションマネージャ・パラメータ等）	clf services mgmt
+Health Dashboard は？	AWS側の障害・メンテが自アカウントに与える影響を表示	clf services mgmt
+Service Catalog は？	承認済み製品をユーザーにセルフサービス提供	clf services mgmt
+X-Ray は？	分散トレーシング（リクエストの遅れ箇所を可視化）	clf services mgmt

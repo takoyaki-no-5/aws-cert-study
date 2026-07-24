@@ -1,0 +1,20 @@
+「サーバを買わずに使った分だけ払う」どのメリット？	固定費→変動費（CapEx→OpEx）	clf concepts scenario
+「ブラックフライデーで自動増減」何の性質？	弾力性	clf concepts scenario
+「障害が起きてもサービス継続」設計の柱は？	信頼性（耐障害性の話にもつながる）	clf concepts scenario
+「電力効率や環境負荷も設計に入れる」柱は？	サステナビリティ	clf concepts scenario
+「暗号化と検知を徹底」柱は？	セキュリティ	clf concepts scenario
+「ムダなオーバープロビジョニングをやめる」柱は？	コスト最適化	clf concepts scenario
+「レイテンシを下げるため世界に分散」柱は？	パフォーマンス効率	clf concepts scenario
+「デプロイ手順をコード化して改善し続ける」柱は？	運用上の優秀性	clf concepts scenario
+「VMをほぼそのままAWSへ」7Rはどれ？	Rehost（リフト&シフト）	clf concepts scenario
+「少し改修してマネージドを使う」7Rは？	Replatform	clf concepts scenario
+「アプリを作り直してサーバレス化」7Rは？	Refactor / Re-architect	clf concepts scenario
+「SaaSに乗り換える」7Rは？	Repurchase	clf concepts scenario
+「まだ移さない」7Rは？	Retain	clf concepts scenario
+「捨てる」7Rは？	Retire	clf concepts scenario
+「東京の障害に備え大阪にも」何？	マルチリージョン	clf concepts scenario
+「同じリージョンでDC障害に耐える」最低限は？	マルチAZ	clf concepts scenario
+「静的サイトを世界中で速く」何？	CloudFront（エッジ）	clf concepts scenario
+「自社DCでAWSのAPIを使いたい」何？	Outposts	clf concepts scenario
+「5G基地局のすぐ近くで超低遅延」何？	Wavelength	clf concepts scenario
+「EC2はどのクラウドモデル？」	IaaS	clf concepts scenario

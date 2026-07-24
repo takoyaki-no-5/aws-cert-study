@@ -1,0 +1,8 @@
+オンデマンド料金は？	使った分だけ。コミットなし。変動ワークロード向き	clf billing pricing
+RI（予約インスタンス）は？	1/3年のキャパシティ予約で割引。特定インスタンス系にコミット	clf billing pricing
+Savings Plans は？	1/3年の利用額コミットで割引。RIより柔軟（コンピュート横断可）	clf billing pricing
+スポットインスタンスは？	余った容量を大幅割引。中断されうる。耐障害なバッチ向き	clf billing pricing
+Dedicated Hosts は？	物理サーバまるごと専有。ライセンス・規制向け	clf billing pricing
+Dedicated Instances は？	他テナントとハード共有しないインスタンス。Hostほど物理固定ではない	clf billing pricing
+無料枠の3種類は？	常時無料 / 12か月無料 / 短期トライアル	clf billing pricing
+データ転送の基本ルールは？	多くの場合「入り」は無料寄り、「AZ/リージョンを出ていく」と課金	clf billing pricing

@@ -1,0 +1,6 @@
+責任共有モデルで AWS の責任は？	クラウド「の」セキュリティ（HW・AZ・ハイパーバイザ・マネージドサービスの基盤）	clf security shared
+責任共有モデルで顧客の責任は？	クラウド「内」のセキュリティ（データ・IAM・OSパッチ・NW設定・暗号化）	clf security shared
+EC2 の責任境界は？	AWS=物理〜ハイパーバイザ / 顧客=ゲストOS・パッチ・SG・データ	clf security shared
+RDS の責任境界は？	AWS=OS〜DBエンジンのパッチ / 顧客=データ・ユーザー管理・暗号化設定	clf security shared
+Lambda の責任境界は？	AWS=実行環境全体 / 顧客=コード・権限・依存関係	clf security shared
+S3 の責任境界は？	AWS=基盤・耐久性 / 顧客=バケットポリシー・公開設定・暗号化・バージョニング	clf security shared

@@ -1,0 +1,15 @@
+Basicで使えるサポート範囲の中心は？	アカウントと請求、＋Trusted Advisorの限定チェック等	clf billing hy
+Developerの想定利用者は？	実験・開発中（本番クリティカル向けではない）	clf billing hy
+Businessで初めて得られる代表的なものと言えば？	24/365の技術サポート、Trusted Advisor全項目、短い応答目標	clf billing hy
+Enterpriseの象徴的な付加は？	TAM（テクニカルアカウントマネージャ）等の専任支援	clf billing hy
+インフラ障害で電話したい → 最低どのプラン？	Business	clf billing hy
+アーキテクチャの深いレビューを継続的に受けたい帯は？	Enterprise寄り	clf billing hy
+Trusted Advisorが一部しか見えないプランは？	Basic（と条件により限定）	clf billing hy
+サポートプランはアカウント単位で選ぶ理解でよいか（CLF）？	はい（Organizationsでも扱いは問題文に従う）	clf billing hy
+「請求額の問い合わせ」だけならBasicで足りる？	足りる（アカウント/請求サポート）	clf billing hy
+DeveloperとBusinessの決定的差を一言で？	本番向けの緊急度・チャネル・Trusted Advisor範囲	clf billing hy
+Enterprise On-Rampの位置づけ（CLF）は？	Enterpriseへの入門的な上位プラン帯（詳細は選択肢の文言に合わせる）	clf billing hy
+サポートケースの緊急度が選べるプラン帯は？	Business以上で本格的	clf billing hy
+「週末の夜に本番が落ちた」Basicで電話できる？	できない想定。Business以上	clf billing hy
+Well-Architectedレビュー支援が手厚い帯は？	上位（Enterprise）	clf billing hy
+料金はおおむねどう決まる？（CLFイメージ）	月額の利用率に応じた割合＋下限など（暗記はプラン差優先）	clf billing hy

@@ -14,6 +14,7 @@
   },
   // Markdown は標準プレビュー（vscode.markdown.preview.editor）を既定にする。
   // Cursor 独自の WYSIWYG（workbench.editor.markdown）や Markdown for Humans に奪われないようにする。
+  // - [ ] の見た目は拡張 bierner.markdown-checkbox がプレビューに追加する（推奨: extensions.json）
   "workbench.editorAssociations": {
     "*.md": "vscode.markdown.preview.editor",
     "*.markdown": "vscode.markdown.preview.editor"

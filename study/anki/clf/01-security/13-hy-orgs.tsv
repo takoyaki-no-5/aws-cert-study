@@ -1,0 +1,6 @@
+Organizationsの管理アカウントの役割は？	組織の作成・一括請求の支払い側など	clf security hy
+OU（Organizational Unit）は何？	アカウントをグループ化する入れ物。SCPを付けられる	clf security hy
+SCPでAllowしてもIAMでDenyなら？	結局使えない。SCPは上限、IAMは実際の許可	clf security hy
+SCPだけでログインユーザーに権限を与えられる？	いいえ。SCPは制限。許可はIAM等が必要	clf security hy
+Control Towerのランディングゾーンとは？	推奨される初期マルチアカウント構成の土台	clf security hy
+勘定を環境ごと（開発/本番）に分ける利点は？	爆破半径の縮小・請求と権限の分離	clf security hy

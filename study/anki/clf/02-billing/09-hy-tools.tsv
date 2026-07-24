@@ -1,0 +1,15 @@
+Cost Explorerでできることの中心は？	可視化・フィルタ・予測の確認	clf billing hy
+Budgetsの通知先の例は？	メールやSNS	clf billing hy
+Budgetsで監視できるものの例は？	実コスト・使用量・RI/SPの利用率など	clf billing hy
+CURの保存先の典型は？	S3バケット	clf billing hy
+Pricing Calculatorはアカウント作成後専用？	いいえ。見積もりは事前にも使える	clf billing hy
+コスト配分タグを使う手順の要点は？	タグ付け→請求設定で活性化→レポートに出す	clf billing hy
+Compute Optimizerの対象イメージは？	EC2やAuto Scaling、Lambda等の権利サイズ	clf billing hy
+一括請求で割引が効きやすくなる理由は？	使用量が合算されボリュームディスカウントの段に届きやすい	clf billing hy
+一括請求でもアカウントの分離は保てる？	はい。請求はまとめてもリソース/権限はアカウント単位	clf billing hy
+請求アラートを「まだ小さいうちから」仕込むなら？	Budgets	clf billing hy
+「サービス別の内訳を毎月深掘り」向きは？	Cost Explorer（詳細ならCUR）	clf billing hy
+Marketplaceの請求のイメージは？	AWSの請求にサードパーティ分が載ることがある	clf billing hy
+Professional Servicesとは？	AWS公式の有償コンサル支援	clf billing hy
+re:Postとサポートケースの違いは？	re:Post=コミュニティ / サポート=契約プランに基づく公式支援	clf billing hy
+無料枠を超えそうな監視に使うのは？	BudgetsやCost Explorer	clf billing hy

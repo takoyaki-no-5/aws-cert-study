@@ -1,0 +1,5 @@
+DMS は？	DB移行（均一/異種）。継続レプリケーション可	clf services migrate
+Snow ファミリーは？	物理デバイスで大容量データを配送移行（Snowball等）	clf services migrate
+DataSync は？	オンラインでNAS等↔AWS間の高速データ転送	clf services migrate
+Transfer Family は？	SFTP/FTPS/FTPでS3/EFSへアクセスさせる	clf services migrate
+MGN（Application Migration Service）は？	リホスト（リフト&シフト）移行を自動化	clf services migrate

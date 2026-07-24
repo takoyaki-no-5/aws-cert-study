@@ -1,0 +1,7 @@
+S3 標準の特徴は？	高耐久オブジェクトストレージ。頻繁アクセス向き	clf services storage
+S3 標準IA / Glacier の使い分けは？	IA=低頻度アクセス / Glacier系=長期アーカイブ（取り出しに時間・料金）	clf services storage
+S3 の耐久性の意味は？	オブジェクトが失われにくい設計（通称11ナイン）。可用性とは別	clf services storage
+バージョニングとライフサイクルは？	バージョニング=旧版保持 / ライフサイクル=日数でクラス移行・削除を自動化	clf services storage
+EBS / EFS / FSx の違いは？	EBS=AZ内ブロック（1インスタンス） / EFS=NFS共有 / FSx=マネージドファイル（Windows等）	clf services storage
+Storage Gateway は？	オンプレからクラウドストレージを使うハイブリッド接続	clf services storage
+AWS Backup は？	複数サービスのバックアップを中央管理	clf services storage

@@ -1,0 +1,24 @@
+クラウドメリット: 規模の経済とは？	AWSの巨大量購入で単価が下がる恩恵を受ける	clf concepts hy
+クラウドメリット: キャパシティ予想が不要とは？	ピークに合わせて買いすぎなくてよい	clf concepts hy
+クラウドメリット: 速度と俊敏性とは？	数分でリソースを調達し実験できる	clf concepts hy
+クラウドメリット: データセンター運用から解放とは？	電源・冷却・ラック作業から離れられる	clf concepts hy
+クラウドメリット: 数分で世界展開とは？	リージョンを選んですぐ海外にも置ける	clf concepts hy
+弾力性 vs スケーラビリティを一言で？	弾力=自動伸縮 / スケール=拡大できる能力	clf concepts hy
+水平スケールと垂直スケールは？	水平=台数 / 垂直=1台のスペック	clf concepts hy
+高可用性の指標でよく出る考え方は？	稼働率（例: 99.x%）を上げる設計	clf concepts hy
+IaaSの例は？	EC2 / VPC	clf concepts hy
+PaaSの例は？	Elastic Beanstalk 等	clf concepts hy
+SaaSの例は？	完成したWebアプリサービス全般（AWS外も含め概念）	clf concepts hy
+ハイブリッドの例は？	オンプレDB＋AWS分析、Outposts等	clf concepts hy
+7R Relocateとは？	例えばVMwareをクラウドへ移すような再配置	clf concepts hy
+CAFを使うタイミングは？	組織としてクラウド導入の準備・変革を進めるとき	clf concepts hy
+Migration Hubの価値は？	複数移行ツールの進捗を一箇所で追う	clf concepts hy
+Migration Evaluatorの価値は？	コスト試算で移行の正当化材料を作る	clf concepts hy
+リージョン選択の理由例は？	レイテンシ・法令・サービス有無・コスト	clf concepts hy
+AZが分かれている意味は？	電源や障害の影響を分離	clf concepts hy
+エッジロケーションが多い理由は？	ユーザー近くで配信し遅延と負荷を減らす	clf concepts hy
+CloudFrontのキャッシュの利点は？	オリジン負荷低減＋低遅延	clf concepts hy
+Global Acceleratorが効くケースは？	TCP/UDPアプリの入口を最適化（非キャッシュ中心）	clf concepts hy
+Outpostsの一言は？	AWSを自社DCに延長	clf concepts hy
+Local Zonesの一言は？	大都市近くの低遅延ゾーン	clf concepts hy
+Wavelengthの一言は？	通信キャリア網のすぐそば	clf concepts hy

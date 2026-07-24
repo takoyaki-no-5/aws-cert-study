@@ -1,5 +1,7 @@
 {
-  "recommendations": [],
+  "recommendations": [
+    "bierner.markdown-checkbox"
+  ],
   "unwantedRecommendations": [
     "concretio.markdown-for-humans"
   ]

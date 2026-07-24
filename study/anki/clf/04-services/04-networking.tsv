@@ -1,0 +1,6 @@
+VPC の基本部品は？	サブネット・ルートテーブル・IGW・NAT・SG/NACL	clf services net
+IGW と NAT の違いは？	IGW=パブリック双方向インターネット / NAT=プライベートから外向きのみ	clf services net
+VPN と Direct Connect の違いは？	VPN=インターネット上の暗号トンネル / DX=専用線相当の安定接続	clf services net
+ピアリングと Transit Gateway の違いは？	ピアリング=1対1 / TGW=ハブで多数VPC接続	clf services net
+Route 53 は？	DNS・ヘルスチェック・ドメイン登録	clf services net
+API Gateway は？	APIの受付・認可・スロットリング等を担うフロントドア	clf services net

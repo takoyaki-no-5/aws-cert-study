@@ -1,0 +1,5 @@
+クラウドの主なメリット（代表）は？	固定費→変動費、規模の経済、キャパシティ予想不要、速度と俊敏性、データセンター運用から解放、数分で世界展開	clf concepts value
+CapEx と OpEx の違いは？	CapEx=先行設備投資 / OpEx=運用費（従量）。クラウドはOpEx寄り	clf concepts value
+弾力性（Elasticity）とは？	需要に合わせて自動で伸縮すること	clf concepts value
+スケーラビリティとは？	負荷増大に対応して規模を拡大できること（垂直/水平）	clf concepts value
+高可用性と耐障害性の違いは？	高可用性=稼働率を高く保つ / 耐障害性=障害時も動き続ける設計	clf concepts value

@@ -1,0 +1,7 @@
+EC2 は？	仮想サーバ（IaaS）。OSまで顧客管理	clf services compute
+Lambda は？	サーバレス関数。イベント駆動・実行時間課金	clf services compute
+ECS / EKS / Fargate の関係は？	ECS=AWSコンテナオーケスト / EKS=マネージドKubernetes / Fargate=サーバレス容器実行	clf services compute
+Elastic Beanstalk は？	アプリを上げると環境を自動構築するPaaS的サービス	clf services compute
+Lightsail は？	簡易VPS。予測可能な低価格パッケージ	clf services compute
+Auto Scaling の目的は？	需要に合わせてEC2等の数を自動増減	clf services compute
+ALB / NLB / GLB の違いは？	ALB=L7 HTTP / NLB=L4 超高性能 / GLB=L3/L4 Gateway（アプライアンス等）	clf services compute

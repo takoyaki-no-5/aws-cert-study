@@ -1,0 +1,4 @@
+Well-Architected の6本柱は？	運用上の優秀性・セキュリティ・信頼性・パフォーマンス効率・コスト最適化・サステナビリティ	clf concepts wa
+「障害から自動復旧」はどの柱？	信頼性	clf concepts wa
+「最小権限・暗号化」はどの柱？	セキュリティ	clf concepts wa
+「実験を高速に回す運用プロセス」はどの柱？	運用上の優秀性	clf concepts wa

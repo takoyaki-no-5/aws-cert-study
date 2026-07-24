@@ -1,0 +1,15 @@
+WA: 「ランブック・自動化・小さな変更」→柱は？	運用上の優秀性	clf concepts hy
+WA: 「検知・IAM・データ保護」→柱は？	セキュリティ	clf concepts hy
+WA: 「バックアップ・マルチAZ・故障の分離」→柱は？	信頼性	clf concepts hy
+WA: 「適切なリソースタイプ・キャッシュ・CDN」→柱は？	パフォーマンス効率	clf concepts hy
+WA: 「使った分だけ・不要リソース削除」→柱は？	コスト最適化	clf concepts hy
+WA: 「利用率向上・環境影響」→柱は？	サステナビリティ	clf concepts hy
+柱はいくつ？（現行CLF）	6	clf concepts hy
+信頼性でよく出る設計は？	単一障害点をなくす・マルチAZ	clf concepts hy
+セキュリティでよく出る設計は？	最小権限・暗号化・監視	clf concepts hy
+コスト最適化でやりがちな失敗は？	常時最大構成のつけっぱなし	clf concepts hy
+パフォーマンス効率でやりがちな失敗は？	監視せず勘でインスタンスタイプを上げる	clf concepts hy
+運用優秀性で重視することの一例は？	障害対応の手順化と改善の反復	clf concepts hy
+サステナビリティとコストが同時に良くなる例は？	過大なアイドル資源を減らす	clf concepts hy
+「すべてを信頼せず検証する」はどの柱の思想？	セキュリティ	clf concepts hy
+「故障は起きる前提」はどの柱？	信頼性	clf concepts hy

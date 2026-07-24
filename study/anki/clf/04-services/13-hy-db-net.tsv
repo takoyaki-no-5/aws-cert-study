@@ -1,0 +1,20 @@
+「結合クエリが必要・リレーショナル」何？	RDS/Aurora	clf services hy
+「超高トラフィックのキーバリュー」何？	DynamoDB	clf services hy
+「セッションを高速キャッシュ」何？	ElastiCache	clf services hy
+「BI用に列指向で集計」何？	Redshift	clf services hy
+AuroraがRDSより選ばれる理由（CLF）は？	性能・可用性・ストレージ自動拡張などAWS最適化	clf services hy
+DynamoDBの運用で楽な点は？	サーバレスでスケール管理が軽い	clf services hy
+「マルチAZ DB」が欲しいとき（RDS）は？	スタンバイを別AZに置く構成を選ぶ	clf services hy
+読み込み負荷を分散するRDSの仕組みは？	リードレプリカ	clf services hy
+パブリックサブネットの典型用途は？	ALBやNAT、踏み台など	clf services hy
+プライベートサブネットの典型用途は？	アプリサーバ・DB	clf services hy
+ルートテーブルの役割は？	どこ向けの通信をどこへ送るか	clf services hy
+IGWがないとできないことは？	サブネットから直接インターネット双方向（構成依存）	clf services hy
+NAT Gatewayの目的は？	プライベートから外への更新通信を許す	clf services hy
+VPCピアリングの制限のイメージは？	推移的ルーティングができない等（ハブが要るならTGW）	clf services hy
+Direct Connectの利点は？	安定帯域・低揺らぎ・閉域寄り接続	clf services hy
+Site-to-Site VPNの利点は？	すぐ作れる暗号化トンネル	clf services hy
+Route 53のルーティング例は？	単純・フェイルオーバ・レイテンシ・地理など	clf services hy
+API Gatewayの後ろに置く定番は？	Lambda や HTTPサービス	clf services hy
+「DNSでプライマリ死んだらセカンダリ」何？	Route 53フェイルオーバ	clf services hy
+「世界のユーザーを近いリージョンへ」DNSは？	レイテンシベース等	clf services hy

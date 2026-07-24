@@ -1,0 +1,5 @@
+Athena は？	S3データにSQLでクエリ（サーバレス）	clf services analytics
+Glue は？	ETL・データカタログ	clf services analytics
+Kinesis Data Streams と Firehose の違いは？	Streams=リアルタイム処理用ストリーム / Firehose=S3等へほぼ準備なしで配信	clf services analytics
+QuickSight は？	BIダッシュボード	clf services analytics
+EMR / OpenSearch は？	EMR=ビッグデータ（Spark等） / OpenSearch=検索・ログ分析	clf services analytics

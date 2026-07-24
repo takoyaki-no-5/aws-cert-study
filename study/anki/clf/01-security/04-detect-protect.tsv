@@ -1,0 +1,10 @@
+GuardDuty は？	脅威検知（異常なAPI・マルウェア等）。マネージドIDS的	clf security detect
+Inspector は？	EC2/コンテナイメージ等の脆弱性スキャン	clf security detect
+Macie は？	S3内の機密データ（PII等）をMLで発見	clf security detect
+Detective は？	セキュリティ調査のための関係可視化・根本分析支援	clf security detect
+Security Hub は？	複数セキュリティサービスの検出結果を集約・準拠チェック	clf security detect
+Shield と WAF の違いは？	Shield=DDoS防護（Standard無料/Advanced有料） / WAF=L7ルール（SQLインジェ等）	clf security protect
+Firewall Manager は？	Organizations全体にWAF/Shield等のルールを中央配布	clf security protect
+Config は？	リソース構成の記録・変更追跡・準拠ルール評価	clf security detect
+CloudTrail は？	アカウントのAPI呼び出しログ（誰が何をしたか）	clf security detect
+Trusted Advisor は？	コスト・性能・セキュリティ・耐障害性・サービスの制限のベストプラクティス検査	clf security detect

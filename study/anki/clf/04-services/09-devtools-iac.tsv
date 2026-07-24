@@ -1,0 +1,4 @@
+CloudFormation と CDK の違いは？	CFN=JSON/YAMLテンプレ / CDK=慣れた言語でCFNを生成	clf services devops
+CodePipeline の役割は？	CI/CDのパイプラインオーケストレーション	clf services devops
+CodeCommit / CodeBuild / CodeDeploy は？	Commit=Gitリポ / Build=ビルド / Deploy=デプロイ自動化	clf services devops
+CLI / SDK / CloudShell は？	CLI=コマンド / SDK=コードからAPI / CloudShell=ブラウザの用意されたシェル	clf services devops

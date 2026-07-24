@@ -1,0 +1,18 @@
+IAMポリシーで明示的DenyとAllowがぶつかると？	Denyが勝つ	clf security hy
+アイデンティティベースポリシーとリソースベースの違いは？	前者=誰に何を / 後者=このリソースへ誰が（S3バケットポリシー等）	clf security hy
+アクセスキーをコードに書くのはなぜダメ？	漏洩リスク。ロールや一時認証を使う	clf security hy
+長期認証情報より推奨されるのは？	IAMロールによる一時認証情報	clf security hy
+ルートユーザーでやる操作の例は？	アカウント解約、一部の税務/サポート設定、ルートの変更など限定的	clf security hy
+ルートにMFAを付けないリスクは？	アカウント乗っ取りで全破壊されうる	clf security hy
+パスワードポリシーで設定できるものの例は？	長さ・複雑さ・有効期限・再利用禁止など	clf security hy
+IAMグループにポリシーを付ける利点は？	ユーザー個別ではなく集合で権限管理できる	clf security hy
+クロスアカウントアクセスの基本手段は？	相手アカウントのロールをAssumeRole	clf security hy
+アプリケーションがAWS外から呼ぶときもキー直書きは避ける？	はい。可能な限りロール/フェデレーション/Secrets	clf security hy
+最小権限の意味は？	必要最小限のアクション・リソースだけ許可	clf security hy
+権限が広すぎると何が起きやすい？	漏洩時の被害拡大・誤操作	clf security hy
+IAM Identity Centerが向くケースは？	多数アカウント/多数ユーザーへのSSO	clf security hy
+社内Active Directory連携のキーワードは？	フェデレーション / Identity Center / IdP	clf security hy
+アクセスキーのローテーションとは？	古いキーを無効化し新しいキーへ定期的に替える	clf security hy
+「権限はあるが実際に使われたか」を見る材料の一例は？	CloudTrail / Access Advisor（最終アクセス）系	clf security hy
+EC2からDynamoDBへ権限を渡す正しい形は？	EC2ロールにDynamoDB許可ポリシー	clf security hy
+コンソールログイン用とAPI用の認証の違いは？	コンソール=ユーザー名+パス(+MFA) / API=キーまたは一時クレデンシャル	clf security hy

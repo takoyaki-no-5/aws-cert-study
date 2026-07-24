@@ -1,0 +1,6 @@
+SageMaker は？	MLの構築・学習・デプロイ基盤	clf services ml
+Rekognition は？	画像・動画の物体/顔分析	clf services ml
+Textract は？	文書からテキスト・表を抽出（OCR超）	clf services ml
+Polly / Transcribe / Translate は？	Polly=音声合成 / Transcribe=音声→文字 / Translate=翻訳	clf services ml
+Lex / Comprehend は？	Lex=チャットボット / Comprehend=テキストの感情・エンティティ分析	clf services ml
+Kendra / Personalize / Forecast は？	Kendra=企業検索 / Personalize=レコメンド / Forecast=時系列予測	clf services ml

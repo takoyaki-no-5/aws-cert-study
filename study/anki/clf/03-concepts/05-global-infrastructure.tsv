@@ -1,0 +1,6 @@
+リージョンとは？	地理的に独立したAWSの領域。複数AZを含む	clf concepts global
+AZ（Availability Zone）とは？	リージョン内の独立したデータセンター群。障害分離単位	clf concepts global
+エッジロケーションは？	CloudFront等を置くPOP。ユーザー近くでキャッシュ	clf concepts global
+マルチAZ と マルチリージョンの違いは？	AZ=同一リージョン内の高可用 / リージョン=広域DR・低遅延の地理分散	clf concepts global
+CloudFront と Global Accelerator の違いは？	CloudFront=コンテンツキャッシュCDN / GA=エニーキャストで最適経路（非キャッシュ用途も）	clf concepts global
+Outposts / Local Zones / Wavelength の違いは？	Outposts=オンプレにAWSラック / Local Zones=大都市近傍AZ / Wavelength=通信キャリア拠点に超低遅延	clf concepts global

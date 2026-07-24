@@ -1,0 +1,3 @@
+AWS Organizations の主な用途は？	複数アカウントの統合管理・一括請求・SCP	clf security orgs
+SCP（Service Control Policy）は何をする？	OU/アカウントに使えるサービスの上限を強制（IAMより強いガードレール）	clf security orgs
+Control Tower は何用？	マルチアカウント環境のランディングゾーンを自動セットアップ・ガバナンス	clf security orgs

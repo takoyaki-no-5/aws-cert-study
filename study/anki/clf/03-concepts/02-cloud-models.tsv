@@ -1,0 +1,2 @@
+パブリック / ハイブリッド / オンプレミスは？	パブリック=AWS等共有 / オンプレ=自前 / ハイブリッド=併用	clf concepts model
+IaaS / PaaS / SaaS の違いは？	IaaS=基盤貸し（EC2） / PaaS=実行基盤（Beanstalk等） / SaaS=完成アプリ	clf concepts model

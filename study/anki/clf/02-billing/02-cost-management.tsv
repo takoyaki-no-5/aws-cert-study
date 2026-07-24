@@ -1,0 +1,6 @@
+Cost Explorer は？	過去・予測のコスト可視化・分析UI	clf billing tools
+Budgets は？	予算閾値でアラート（コスト/使用量）	clf billing tools
+CUR（Cost and Usage Report）は？	最も詳細な利用明細をS3へ出力	clf billing tools
+Pricing Calculator は？	導入前の見積もりツール	clf billing tools
+コスト配分タグは？	リソースにタグ付けして部門・PJ別にコスト按分	clf billing tools
+Compute Optimizer は？	過剰/不足なコンピュート構成の推奨を出す	clf billing tools

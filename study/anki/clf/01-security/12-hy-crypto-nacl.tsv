@@ -1,0 +1,15 @@
+KMSの顧客管理キーとAWS管理キーの違い（CLF）は？	顧客管理=ポリシーやローテをより制御 / AWS管理=サービス任せで簡単	clf security hy
+CloudHSMが選ばれる理由の典型は？	専用HSM・厳しいコンプライアンスで鍵を自分で握りたい	clf security hy
+Secrets Managerの売りの一つは？	秘密の自動ローテーション連携	clf security hy
+Parameter Storeの向きは？	設定値・階層パラメータ（秘密もSecureString可）	clf security hy
+ACM証明書の典型的な利用先は？	ALB・CloudFrontなどのAWS終端	clf security hy
+転送時暗号化の代表手段は？	TLS/HTTPS	clf security hy
+保存時暗号化の代表手段は？	SSE（S3/EBS等）やKMS	clf security hy
+SGのデフォルト送信は？（典型理解）	多くの場合、作成時は外向き許可が付く設計が多い（問題文の前提に注意）	clf security hy
+SGは拒否ルールを書ける？	書けない（許可のみ）。拒否はNACL	clf security hy
+NACLはステートフル？	いいえ。ステートレス（往復を明示）	clf security hy
+SGはステートフル？	はい。戻り通信は自動許可	clf security hy
+評価の単位: SGは？ NACLは？	SG=ENI/インスタンス側 / NACL=サブネット	clf security hy
+Artifactで手に入るものの例は？	SOC・ISOなどの監査レポートPDF	clf security hy
+Audit Managerの価値は？	監査用エビデンス収集の自動化	clf security hy
+暗号化していてもIAM権限が甘いと？	権限があれば読める。暗号化は鍵と権限管理とセット	clf security hy

@@ -1,0 +1,25 @@
+「OSを自由に選びたい」何？	EC2	clf services hy
+「リクエストのたびに起動、ゼロまで縮む」何？	Lambda	clf services hy
+「Dockerはある。オーケストはAWS寄せ」何？	ECS	clf services hy
+「既存のK8sスキルを活かす」何？	EKS	clf services hy
+「コンテナのサーバ管理をしたくない」何？	Fargate	clf services hy
+「コードをzipで上げるとURLが欲しい」Paas的？	Elastic Beanstalk	clf services hy
+「個人ブログを安く簡単に」何？	Lightsail（または静的ならS3+CloudFront）	clf services hy
+「昼だけEC2を増やす」何？	Auto Scaling	clf services hy
+「ホストヘッダで振り分け」LBは？	ALB	clf services hy
+「極低遅延で数百万接続」LBは？	NLB	clf services hy
+S3 Standard向きは？	頻繁にアクセスするデータ	clf services hy
+S3 Standard-IA向きは？	アクセスは少ないがすぐ取りたい	clf services hy
+S3 Glacier Instant Retrieval向きは？	アーカイブだがミリ秒で取り出したい	clf services hy
+S3 Glacier Flexible / Deep Archive向きは？	取り出しが遅くてよい超長期保管	clf services hy
+S3 One Zone-IAの注意は？	単一AZ。AZ障害で失われうる	clf services hy
+S3のバージョニングの効果は？	誤削除・上書きから復旧しやすい	clf services hy
+ライフサイクルポリシーの例は？	30日後にIA、90日後にGlacier	clf services hy
+EBSスナップショットの保存先イメージは？	S3に保管（リージョン内）	clf services hy
+インスタンスストアの特徴は？	一時的。停止で消えることが多い	clf services hy
+「Windowsファイル共有をマネージドで」何？	FSx for Windows 等	clf services hy
+「オンプレアプリがファイル共有のままS3を使いたい」入口は？	Storage Gateway	clf services hy
+「RDSもEBSもまとめてバックアップ方針」何？	AWS Backup	clf services hy
+S3のオブジェクトとは？	データ本体＋キー＋メタデータ	clf services hy
+バケット名の制約イメージは？	グローバルで一意など	clf services hy
+「静的サイトをS3で」足りないものになりがちなのは？	独自ドメインHTTPSならCloudFront+ACM等	clf services hy

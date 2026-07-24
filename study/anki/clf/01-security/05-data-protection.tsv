@@ -1,0 +1,4 @@
+KMS と CloudHSM の違いは？	KMS=マネージド鍵管理 / CloudHSM=専用HSM（顧客が完全制御・準拠要件向け）	clf security crypto
+Secrets Manager と Parameter Store の違いは？	Secrets=秘密の自動ローテ向け有料寄り / Parameter=設定値中心（SecureString可）	clf security crypto
+ACM は？	TLS証明書の発行・管理（主にAWSサービス向け無料パブリック証明書）	clf security crypto
+転送時と保存時の暗号化の意味は？	転送時=通信中（TLS） / 保存時=ディスク上（SSE等）	clf security crypto

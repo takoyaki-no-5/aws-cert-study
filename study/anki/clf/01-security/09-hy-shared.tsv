@@ -1,0 +1,12 @@
+責任共有で「物理DC・ラック・電源」は誰？	AWS	clf security hy
+責任共有で「ハイパーバイザ」は誰？	AWS	clf security hy
+責任共有で「ゲストOSのパッチ」は誰？（EC2）	顧客	clf security hy
+責任共有で「セキュリティグループ設定」は誰？	顧客	clf security hy
+責任共有で「S3バケットを公開にするか」は誰？	顧客	clf security hy
+責任共有で「RDSの自動バックアップ基盤」は誰寄り？	AWS（マネージド）。データの中身と権限は顧客	clf security hy
+責任共有で「Lambdaのランタイムパッチ」は誰？	AWS。コードとIAMは顧客	clf security hy
+責任共有で「データの分類・暗号化の選択」は誰？	顧客	clf security hy
+責任共有で「IAMユーザー作成」は誰？	顧客	clf security hy
+「クラウドのセキュリティ」と「クラウド内のセキュリティ」どっちが顧客？	クラウド内＝顧客 / クラウドの＝AWS	clf security hy
+抽象度が上がるほど（IaaS→SaaS）顧客の責任は？	減る（AWSがより多く担う）	clf security hy
+EC2とLambdaで顧客がパッチする範囲の差は？	EC2はOSまで顧客。Lambdaはコード層のみ	clf security hy

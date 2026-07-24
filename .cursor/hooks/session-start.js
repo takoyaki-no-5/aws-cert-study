@@ -18,8 +18,8 @@ const lines = [
   '- ユーザーとは日本語で話す。状態は study/profile.md, study/plan.md, study/schedule.md, study/log/ に保存。',
   '- シェルは WSL Ubuntu-24.04 を優先（リポジトリ: /mnt/c/Users/kamag/Documents/AWS, ユーザー: kama）。',
   '- コマンドは寛容に承認。ただし本物のシークレットはコミットしない。',
-  '- 学習ツール: Cursor + Anki（study/anki/ に TSV 生成）+ 本（study/books.md で管理）。',
-  '- 「今日」「始める」と言われたら: スケジュールとプロフィールを読み、具体的なブロック（本の章 + Anki）を提案し、最初の1つを開始する。',
+  '- 学習ツール: Anki（主教材）+ Cursor（解説・カード生成）+ 本（模試）。カードは study/anki/<資格>/ 階層TSV → AnkiConnect。',
+  '- 「今日」「始める」と言われたら: スケジュールを読み、Ankiデッキを先に指定して開始。順序は Anki周回 → 不明解説 → 追加カード → 模試。',
   '- リポジトリは公開: 個人情報は .private/（gitignore 済）のみ。コミット対象ファイルに個人情報を書かない。',
   '- 長く使える約束事が見えたら .cursor を更新する。',
 ];

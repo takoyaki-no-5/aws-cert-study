@@ -1,0 +1,25 @@
+DMSの均一移行とは？	同じエンジン同士（例: Oracle→Oracle）	clf services hy
+DMSの異種移行とは？	エンジンが違う（例: Oracle→Aurora PostgreSQL）	clf services hy
+Snowballのイメージは？	ペタ未満〜大容量を物理搬送	clf services hy
+DataSyncが効くのは？	オンラインで大量ファイルを繰り返し同期	clf services hy
+Transfer Familyが効くのは？	既存SFTPクライアントを変えずにS3へ	clf services hy
+MGNの移行スタイルは？	リホスト（ほぼそのまま移す）	clf services hy
+CloudFormationのスタックとは？	テンプレから作ったリソースのまとまり	clf services hy
+CDKの利点は？	TypeScript等でインフラを書きCFNに変換	clf services hy
+CodeCommitは何の代替？	マネージドGitリポジトリ	clf services hy
+CodeBuildは何をする？	コンパイル・テストを実行	clf services hy
+CodeDeployは何をする？	EC2/Lambda等へのデプロイ自動化	clf services hy
+CodePipelineのステージ例は？	Source→Build→Deploy	clf services hy
+CloudShellの利点は？	ブラウザですぐCLI、認証済み	clf services hy
+CloudWatch Logsは？	アプリ/OSログの集約	clf services hy
+CloudWatch Metricsは？	CPU等の数値時系列	clf services hy
+アラームの定番アクションは？	SNS通知、Auto Scaling操作など	clf services hy
+Systems Manager Parameter StoreとSecretsの使い分け再確認は？	設定=Parameter寄り / 秘密ローテ=Secrets寄り	clf services hy
+Session Managerの利点は？	SSHポートを開けずにシェル	clf services hy
+Health Dashboardでわかることの例は？	AWS側障害が自分のリソースに関係するか	clf services hy
+X-Rayが欲しくなる症状は？	マイクロサービス間で遅い箇所がわからない	clf services hy
+Service Catalogの利用者メリットは？	承認済み構成だけをポータルから起動	clf services hy
+「誰がいつセキュリティグループを変えた」一次情報は？	CloudTrail	clf services hy
+「今のSG設定が先週と違う」一次情報は？	Config	clf services hy
+コンソールとCLIの使い分けは？	コンソール=視覚操作 / CLI=自動化・再現	clf services hy
+SDKを使う理由は？	アプリコードからAWS APIを呼ぶ	clf services hy
