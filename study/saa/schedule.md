@@ -1,6 +1,6 @@
 # スケジュール
 
-詳細: `days/`（当日生成） / 題材: `roadmap.md`（立ち上げ時に作成）
+詳細: `days/`（当日生成） / 題材: `roadmap.md`
 
 ## 基本情報
 
@@ -18,7 +18,7 @@
 
 - メイン: 未定（7/26 決定 → `books.md`）
 - 模試: 未定
-- Anki: `study/anki/saa_*.tsv`
+- Anki: `study/anki/saa/`
 
 ## フェーズ
 

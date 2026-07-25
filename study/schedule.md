@@ -1,16 +1,24 @@
 # スケジュール
 
-全体: `plan.md` / 詳細: 各 `study/<資格>/schedule.md` / 会場: `.private/profile.md`
+全体: `plan.md` / 地図: `README.md` / 詳細: 各 `study/<資格>/` / 会場: `.private/profile.md`
 
 ## 今
 
 | 状態 | 試験 | 受験 | 詳細 |
 |------|------|------|------|
-| 済 | CLF | 7/25(土) 合格（仮） | `clf/schedule.md` |
-| 次 | SAA | 8/8(土) 10:00 | `saa/`（7/26 立ち上げ） |
-| その次 | SCS | 8/22(土) 10:00 | アーキ軸（SAA→SCS→SAP→ANS） |
+| 済 | CLF | 7/25(土) 合格（仮） | [`clf/`](clf/) |
+| 次 | SAA | 8/8(土) 10:00 | [`saa/`](saa/)（7/26 立ち上げ） |
+| その次 | SCS | 8/22(土) 10:00 | [`scs/`](scs/) |
 
-順: CLF → SAA → SCS → SAP → ANS → DVA → SOA → DOP → DEA → AIF → MLA → AIP
+## 全資格フォルダ
+
+| 軸 | 順 | フォルダ |
+|----|----|----------|
+| アーキ | CLF → SAA → SCS → SAP → ANS | [`clf/`](clf/) [`saa/`](saa/) [`scs/`](scs/) [`sap/`](sap/) [`ans/`](ans/) |
+| DevOps | DVA → SOA → DOP | [`dva/`](dva/) [`soa/`](soa/) [`dop/`](dop/) |
+| データ→AI | DEA → AIF → MLA → AIP | [`dea/`](dea/) [`aif/`](aif/) [`mla/`](mla/) [`aip/`](aip/) |
+
+各フォルダ: `roadmap.md`（題材） / `schedule.md`（運用） / `days/`（当日）
 
 ## 常時ルール
 

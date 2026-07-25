@@ -21,7 +21,7 @@
 
 ## Anki
 
-- `study/anki/<略称>_YYYY-MM-DD_<トピック>.tsv`
+- `study/anki/<略称>/<工程>/<番号>-<トピック>.tsv`
 
 ## 終了時
 

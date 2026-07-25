@@ -17,7 +17,7 @@
 
 - Cursor 一問一答
 - 対策本の模試60問
-- Anki: `study/anki/clf_*.tsv`
+- Anki: `study/anki/clf/`
 
 ## フェーズ
 

@@ -17,7 +17,7 @@
 
 - メイン:
 - 模試:
-- Anki: `study/anki/<略称>_*.tsv`
+- Anki: `study/anki/<略称>/`
 
 ## フェーズ
 

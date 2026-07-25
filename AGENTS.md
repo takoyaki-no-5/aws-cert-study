@@ -29,28 +29,29 @@ IaC や本番変更の作業場ではない（ハンズオン用メモは可）�
 
 | パス | 用途 |
 |------|------|
+| `study/README.md` | 階層の地図 |
 | `study/profile.md` | 目標資格・期限・学習時間・前提スキル |
 | `study/tools.md` | 使用ツール（Cursor / Anki / 本） |
 | `study/books.md` | 教材の本一覧と読書進捗 |
 | `study/plan.md` | 全体計画（受験日・工数・標準工数テンプレ） |
-| `study/schedule.md` | 薄いハブ（今どの試験か + 資格フォルダへのリンク + 常時ルール） |
+| `study/schedule.md` | 薄いハブ（今どの試験か + 全資格リンク + 常時ルール） |
 | `study/<資格>/` | 資格ごとのフォルダ（下記「資格フォルダ規約」参照） |
 | `study/log/` | 日次ログ（`YYYY-MM-DD.md`・資格横断） |
-| `study/notes/` | 資格横断のメモ（資格固有のメモは資格フォルダへ） |
-| `study/questions/` | 資格横断の弱点メモ（資格固有は資格フォルダへ） |
-| `study/anki/` | Anki インポート用 TSV（`<資格>_YYYY-MM-DD_<トピック>.tsv`） |
+| `study/notes/` | 資格横断のメモ（資格固有は `study/<資格>/notes.md`） |
+| `study/questions/` | 資格横断の弱点（資格固有は `study/<資格>/questions.md`） |
+| `study/anki/<資格>/` | Anki TSV（工程フォルダ階層。見本: `anki/clf/`） |
 | `.private/` | 個人情報（gitignore 済・公開しない。セッション開始時に自動でコンテキスト化） |
 
 ## 資格フォルダ規約（`study/<資格>/`）
 
-- フォルダ名は小文字の略称: `clf`, `aif`, `saa`, `dva`, `soa`, `dea`, `mla`, `scs`, `dop`, `sap`, `ans`, `aip`
-- 立ち上げ日曜（受験2週間前、Pro は3〜4週間前）に **`study/_templates/` をコピーして**作成。3層構造:
-  - `roadmap.md` — **題材のみ**（ドメイン配点 → トピック → 短いチェック）。運用情報・長い説明は書かない（文体: `study-file-style.mdc`）
+- フォルダ名は小文字の略称: `clf`, `saa`, `scs`, `sap`, `ans`, `dva`, `soa`, `dop`, `dea`, `aif`, `mla`, `aip`
+- 全12資格とも同じ3層（見本: `study/clf/`）:
+  - `roadmap.md` — **題材のみ**（順番と工数 → ドメイン → トピック → 短いチェック）。運用・長い説明は書かない（文体: `study-file-style.mdc`）
   - `schedule.md` — **運用**: 基本情報・教材・フェーズ・平日の型・日次・撤退基準・当日・振り返り（短文）
   - `days/YYYY-MM-DD.md` — ゴール・タイムテーブル・題材チェック・Anki・終了時（短文。当日生成）
-  - 必要に応じて `notes.md` / `questions.md`（資格固有のメモ・間違い）
-- 完成見本: `study/clf/`（例外進行）と `study/aif/`（標準2週）
-- Anki TSV は資格フォルダではなく `study/anki/<資格>_YYYY-MM-DD_<トピック>.tsv` に集約（インポートの都合）
+  - 必要に応じて `notes.md` / `questions.md`（資格固有）
+- 立ち上げ日曜（受験2週間前、Pro は3〜4週間前）に日次を確定し、`days/` を埋める。新規追加時は `_templates/` をコピー
+- Anki: `study/anki/<資格>/<工程>/<番号>-<トピック>.tsv`（フラット置きしない）
 
 ## 学習ツール
 

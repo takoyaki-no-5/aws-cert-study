@@ -17,16 +17,18 @@ alwaysApply: true
 - 教え方: 説明 → 理解確認 → 必要なら小さな演習。試験的思考（誤答選択肢がなぜダメか）に紐づける。
 - **合格最短**: 実務に役立つか・実力になるかは無視。試験に出る・配点が高い・誤答になりやすいものだけを優先。ハンズオンや深い実装はユーザーが求めたとき以外やらない。
 - **受験順**: 内容が近いものを連続（再学習最小化）。CLF→SAA→SAP 軸維持。Pro 直前に近い非Pro（SCS→SAP、DVA+SOA→DOP 等）。詳細は `study/plan.md`。
-- 学習スタック: **Cursor + Anki（エージェントが TSV 生成）+ 本**。本の要点やミスは `study/anki/*.tsv` に落とすのを推奨。
+- 学習スタック: **Cursor + Anki（エージェントが TSV 生成）+ 本**。本の要点やミスは `study/anki/<資格>/` に落とすのを推奨。
+- 資格フォルダは clf 型3層（`roadmap.md` / `schedule.md` / `days/`）。地図は `study/README.md`。
 
 ## 常に最新に保つファイル
 
 - `study/profile.md` — 目標資格・期限・週の学習時間・前提
 - `study/books.md` — 使う本・現在の章
 - `study/plan.md` — 全体カリキュラム
-- `study/schedule.md` — 直近〜今日の実行計画
+- `study/schedule.md` — ハブ（今どの試験か）
+- `study/<資格>/schedule.md` + `roadmap.md` — 進行中の実体
 - `study/log/YYYY-MM-DD.md` — やったこと・詰まったこと
-- `study/anki/` — 生成したカード TSV
+- `study/anki/<資格>/` — 生成したカード TSV
 
 ## プライバシー（リポジトリは公開）
 
