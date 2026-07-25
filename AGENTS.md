@@ -33,7 +33,7 @@ IaC や本番変更の作業場ではない（ハンズオン用メモは可）�
 | `study/profile.md` | 目標資格・期限・学習時間・前提スキル |
 | `study/tools.md` | 使用ツール（Cursor / Anki / 本） |
 | `study/books.md` | 教材の本一覧と読書進捗 |
-| `study/plan.md` | 全体計画（受験日・工数・標準工数テンプレ） |
+| `study/plan.md` | 全体計画（受験日・必要工数・週負荷。受験日固定） |
 | `study/schedule.md` | 薄いハブ（今どの試験か + 全資格リンク + 常時ルール） |
 | `study/<資格>/` | 資格ごとのフォルダ（下記「資格フォルダ規約」参照） |
 | `study/log/` | 日次ログ（`YYYY-MM-DD.md`・資格横断） |
