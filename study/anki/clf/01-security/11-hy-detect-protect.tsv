@@ -10,11 +10,9 @@ Firewall Managerの前提になりやすいものは？	Organizationsでの中�
 CloudTrailは何を残す？	誰が・いつ・どのAPIを呼んだか	clf security hy
 Configは何を残す？	リソースがどんな構成だったか・準拠していたか	clf security hy
 CloudTrailとConfigを一言で区別すると？	Trail=操作 / Config=状態	clf security hy
-Trusted Advisorのカテゴリ例は？	コスト・性能・セキュリティ・耐障害性・サービス制限	clf security hy
 Trusted Advisor全チェックが見られるプラン帯は？	Business以上（Basicは限定）	clf security hy
 Detectiveが向く作業は？	インシデントの調査・関係性の深掘り	clf security hy
 「暗号化されていないEBSがないか」継続チェック向きは？	Configルール	clf security hy
 「ルートにMFAがない」を指摘しがちなのは？	Trusted Advisor（セキュリティ）	clf security hy
-「公開バケット」を見つけたい第一候補は？	Access Analyzer / Trusted Advisor / MacieやSecurity Hub連携も	clf security hy
 WAFで防ぎやすい攻撃の例は？	SQLインジェクション・XSSなどL7	clf security hy
 DDoSの大量通信量攻撃にまず効くのは？	Shield（+必要ならAdvanced）	clf security hy

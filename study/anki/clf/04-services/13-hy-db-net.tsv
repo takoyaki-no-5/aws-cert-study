@@ -1,5 +1,4 @@
 「結合クエリが必要・リレーショナル」何？	RDS/Aurora	clf services hy
-「超高トラフィックのキーバリュー」何？	DynamoDB	clf services hy
 「セッションを高速キャッシュ」何？	ElastiCache	clf services hy
 「BI用に列指向で集計」何？	Redshift	clf services hy
 AuroraがRDSより選ばれる理由（CLF）は？	性能・可用性・ストレージ自動拡張などAWS最適化	clf services hy

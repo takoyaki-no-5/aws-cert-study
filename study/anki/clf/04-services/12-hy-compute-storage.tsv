@@ -2,8 +2,6 @@
 「リクエストのたびに起動、ゼロまで縮む」何？	Lambda	clf services hy
 「Dockerはある。オーケストはAWS寄せ」何？	ECS	clf services hy
 「既存のK8sスキルを活かす」何？	EKS	clf services hy
-「コンテナのサーバ管理をしたくない」何？	Fargate	clf services hy
-「コードをzipで上げるとURLが欲しい」Paas的？	Elastic Beanstalk	clf services hy
 「個人ブログを安く簡単に」何？	Lightsail（または静的ならS3+CloudFront）	clf services hy
 「昼だけEC2を増やす」何？	Auto Scaling	clf services hy
 「ホストヘッダで振り分け」LBは？	ALB	clf services hy

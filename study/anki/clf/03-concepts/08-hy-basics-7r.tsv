@@ -13,7 +13,6 @@ SaaSの例は？	完成したWebアプリサービス全般（AWS外も含め概
 7R Relocateとは？	例えばVMwareをクラウドへ移すような再配置	clf concepts hy
 CAFを使うタイミングは？	組織としてクラウド導入の準備・変革を進めるとき	clf concepts hy
 Migration Hubの価値は？	複数移行ツールの進捗を一箇所で追う	clf concepts hy
-Migration Evaluatorの価値は？	コスト試算で移行の正当化材料を作る	clf concepts hy
 リージョン選択の理由例は？	レイテンシ・法令・サービス有無・コスト	clf concepts hy
 AZが分かれている意味は？	電源や障害の影響を分離	clf concepts hy
 エッジロケーションが多い理由は？	ユーザー近くで配信し遅延と負荷を減らす	clf concepts hy

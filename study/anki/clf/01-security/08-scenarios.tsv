@@ -9,12 +9,10 @@
 「DDoSが来た」標準で付く防護は？	Shield Standard（無料・自動）	clf security scenario
 「SQLインジェクションをHTTPで防ぎたい」何？	WAF	clf security scenario
 「TLS証明書をALBに付けたい」何？	ACM	clf security scenario
-「秘密鍵を自動ローテさせたい」Secrets Manager と Parameter Store どちら？	Secrets Manager	clf security scenario
 「オンプレの監査人がAWSのSOCレポートが欲しい」どこ？	Artifact	clf security scenario
 「サブネット全体で特定ポートを明示拒否したい」SGとNACLどちら？	NACL（拒否ルールが書ける）	clf security scenario
 「同じアカウント内で権限を一時的に借りる」何？	IAMロールの引き受け（AssumeRole）	clf security scenario
 ルートユーザーに必須の対策は？	MFA。日常作業では使わない	clf security scenario
 「外部に公開されているS3がないか」何で点検？	IAM Access Analyzer（またはTrusted Advisor/Security Hub）	clf security scenario
-「マルチアカウントの初期セットアップを標準化」何？	Control Tower	clf security scenario
 「保存データも通信も暗号化したい」キーワードは？	保存時（SSE等）と転送時（TLS）の両方	clf security scenario
 「セキュリティ検出結果を1画面に集めたい」何？	Security Hub	clf security scenario

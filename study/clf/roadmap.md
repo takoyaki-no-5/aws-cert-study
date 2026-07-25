@@ -58,59 +58,59 @@
 
 ### 料金モデル — 35分
 
-- [ ] オンデマンド / RI / Savings Plans / スポット — 12分
-- [ ] Dedicated Hosts / Dedicated Instances — 7分
-- [ ] 無料枠の3種類 — 8分
-- [ ] データ転送料金 — 8分
+- [x] オンデマンド / RI / Savings Plans / スポット — 12分
+- [x] Dedicated Hosts / Dedicated Instances — 7分
+- [x] 無料枠の3種類 — 8分
+- [x] データ転送料金 — 8分
 
 ### コスト管理 — 25分
 
-- [ ] Cost Explorer / Budgets / CUR / Pricing Calculator — 12分
-- [ ] コスト配分タグ — 8分
-- [ ] Compute Optimizer — 5分
+- [x] Cost Explorer / Budgets / CUR / Pricing Calculator — 12分
+- [x] コスト配分タグ — 8分
+- [x] Compute Optimizer — 5分
 
 ### 一括請求 — 10分
 
-- [ ] Organizations 一括請求・ボリューム割引 — 10分
+- [x] Organizations 一括請求・ボリューム割引 — 10分
 
 ### サポートプラン — 15分
 
-- [ ] Basic / Developer / Business / Enterprise（On-Ramp） — 15分
+- [x] Basic / Developer / Business / Enterprise（On-Ramp） — 15分
 
 ### その他 — 5分
 
-- [ ] Marketplace / Professional Services / IQ / re:Post — 5分
+- [x] Marketplace / Professional Services / IQ / re:Post — 5分
 
 ## 3. クラウドの概念（24%） — 1.0h
 
 ### クラウドの価値提案 — 15分
 
-- [ ] クラウドの6つのメリット — 5分
-- [ ] CapEx / OpEx・従量課金 — 5分
-- [ ] 弾力性 / スケーラビリティ / 高可用性 / 耐障害性 — 5分
+- [x] クラウドの6つのメリット — 5分
+- [x] CapEx / OpEx・従量課金 — 5分
+- [x] 弾力性 / スケーラビリティ / 高可用性 / 耐障害性 — 5分
 
 ### クラウドの形態 — 8分
 
-- [ ] パブリック / ハイブリッド / オンプレミス — 4分
-- [ ] IaaS / PaaS / SaaS — 4分
+- [x] パブリック / ハイブリッド / オンプレミス — 4分
+- [x] IaaS / PaaS / SaaS — 4分
 
 ### Well-Architected — 10分
 
-- [ ] 6本柱 — 5分
-- [ ] キーワードから柱を当てる — 5分
+- [x] 6本柱 — 5分
+- [x] キーワードから柱を当てる — 5分
 
 ### 移行と導入 — 12分
 
-- [ ] CAF 6パースペクティブ — 4分
-- [ ] 移行戦略 7R — 4分
-- [ ] Migration Evaluator / Migration Hub — 4分
+- [x] CAF 6パースペクティブ — 4分
+- [x] 移行戦略 7R — 4分
+- [x] Migration Evaluator / Migration Hub — 4分
 
 ### グローバルインフラ — 15分
 
-- [ ] リージョン / AZ / エッジロケーション — 5分
-- [ ] マルチ AZ / マルチリージョン — 4分
-- [ ] CloudFront / Global Accelerator — 3分
-- [ ] Outposts / Local Zones / Wavelength — 3分
+- [x] リージョン / AZ / エッジロケーション — 5分
+- [x] マルチ AZ / マルチリージョン — 4分
+- [x] CloudFront / Global Accelerator — 3分
+- [x] Outposts / Local Zones / Wavelength — 3分
 
 ## 4. クラウドテクノロジーとサービス（34%） — 1.5h
 

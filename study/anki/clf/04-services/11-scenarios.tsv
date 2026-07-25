@@ -25,6 +25,5 @@
 「CPUアラームで通知」何？	CloudWatch Alarm（+SNS等）	clf services scenario
 「誰がStopInstancesしたか」何？	CloudTrail	clf services scenario
 「プライベートサブネットからパッチ適用したいがSSH鍵は嫌」何？	Systems Manager Session Manager 等	clf services scenario
-「DNSフェイルオーバ」何？	Route 53	clf services scenario
 「オンプレとAWSを専用線」何？	Direct Connect	clf services scenario
 「VPCを多数ハブ接続」何？	Transit Gateway	clf services scenario

@@ -1,0 +1,65 @@
+Q01（概念）オンプレのサーバー購入をやめ、使った分だけ支払う。これはクラウドのどの利点？<br>A. 規模の経済<br>B. 固定費（CapEx）を変動費（OpEx）に変える<br>C. キャパシティの推測が不要<br>D. 数分でグローバル展開	B<br>従量課金＝設備投資を運用費に変える。Cは需要予測の話、Aは単価が下がる話	clf mock-a concepts
+Q02（概念）AWSが大量調達することで利用者1人あたりの単価が下がる。どの利点？<br>A. 俊敏性<br>B. 規模の経済<br>C. 弾力性<br>D. 高可用性	B<br>「スケールによるコストメリット」＝規模の経済	clf mock-a concepts
+Q03（概念）需要に応じてリソースが自動で増減する性質は？<br>A. 耐久性<br>B. 弾力性（Elasticity）<br>C. 耐障害性<br>D. 俊敏性	B<br>増減できる＝弾力性。どこまで増やせるかはスケーラビリティ	clf mock-a concepts
+Q04（概念）高可用性と耐障害性の違いとして正しいのは？<br>A. 同じ意味<br>B. 高可用性=ダウンタイムを最小化、耐障害性=障害中も停止せず動作<br>C. 高可用性=暗号化、耐障害性=バックアップ<br>D. 高可用性=単一AZ、耐障害性=単一リージョン	B<br>耐障害性は冗長構成で無停止、高可用性は短時間で復旧も含む	clf mock-a concepts
+Q05（概念）EC2 はどのサービスモデル？<br>A. IaaS<br>B. PaaS<br>C. SaaS<br>D. DaaS	A<br>OSを自分で管理＝IaaS。Beanstalk/RDSはPaaS、WorkMail/ChimeはSaaS	clf mock-a concepts
+Q06（概念・2つ選択）SaaS に当たるものを2つ<br>A. EC2<br>B. Amazon WorkMail<br>C. Elastic Beanstalk<br>D. Amazon Chime<br>E. EBS	B, D<br>完成アプリを使うだけ＝SaaS。EC2/EBSはIaaS、BeanstalkはPaaS	clf mock-a concepts
+Q07（概念）Well-Architected フレームワークの柱でないものは？<br>A. 運用上の優秀性<br>B. 持続可能性<br>C. 拡張性<br>D. パフォーマンス効率	C<br>6柱＝運用上の優秀性/セキュリティ/信頼性/パフォーマンス効率/コスト最適化/持続可能性	clf mock-a concepts
+Q08（概念）「疎結合にし、障害から自動復旧できるようにする」はどの柱？<br>A. 信頼性<br>B. セキュリティ<br>C. コスト最適化<br>D. 運用上の優秀性	A<br>復旧・冗長・スケーリングは信頼性	clf mock-a concepts
+Q09（概念）「IaCで変更を自動化し、小さく頻繁にリリースする」はどの柱？<br>A. 運用上の優秀性<br>B. 信頼性<br>C. パフォーマンス効率<br>D. 持続可能性	A<br>運用の改善・自動化・監視は運用上の優秀性	clf mock-a concepts
+Q10（概念）「使っていないリソースを停止し、適切なサイズを選ぶ」はどの柱？<br>A. コスト最適化<br>B. 運用上の優秀性<br>C. 信頼性<br>D. セキュリティ	A	clf mock-a concepts
+Q11（概念）オンプレのVMをコード変更なしでEC2へ移す。7Rのどれ？<br>A. Replatform<br>B. Rehost<br>C. Refactor<br>D. Repurchase	B<br>リフト&シフト＝Rehost。基盤ごと移すのはRelocate	clf mock-a concepts
+Q12（概念）自社開発CRMを廃止し市販SaaSに切り替える。7Rのどれ？<br>A. Repurchase<br>B. Replatform<br>C. Retain<br>D. Retire	A<br>買い替え＝Repurchase。Retireは廃止、Retainは残す	clf mock-a concepts
+Q13（概念）自前MySQLをRDSに移し、アプリはほぼそのまま。7Rのどれ？<br>A. Rehost<br>B. Replatform<br>C. Refactor<br>D. Relocate	B<br>基盤だけマネージド化。作り直しはRefactor	clf mock-a concepts
+Q14（概念・2つ選択）AWS CAF のパースペクティブを2つ<br>A. ガバナンス<br>B. コンプライアンス<br>C. プラットフォーム<br>D. ネットワーク<br>E. 財務	A, C<br>6つ＝ビジネス/人員/ガバナンス/プラットフォーム/セキュリティ/オペレーション	clf mock-a concepts
+Q15（概念）アプリを複数AZに配置する主な目的は？<br>A. コスト削減<br>B. 単一データセンター障害への耐性<br>C. レイテンシーをゼロにする<br>D. 法規制の回避	B	clf mock-a concepts
+Q16（概念）静的コンテンツと動画を世界の利用者へ低遅延で配信したい。何を使う？<br>A. CloudFront<br>B. Global Accelerator<br>C. Direct Connect<br>D. Outposts	A<br>CloudFront=CDNでキャッシュ。Global Acceleratorは静的IPでTCP/UDPを高速化しキャッシュしない	clf mock-a concepts
+Q17（セキュリティ）責任共有モデルでAWSの責任はどれ？<br>A. ゲストOSのパッチ<br>B. データの暗号化設定<br>C. データセンターの物理セキュリティ<br>D. IAMの権限設計	C<br>AWS=クラウド「の」セキュリティ、顧客=クラウド「内」のセキュリティ	clf mock-a security
+Q18（セキュリティ・2つ選択）EC2利用時に顧客の責任となるものを2つ<br>A. ハイパーバイザーのパッチ<br>B. セキュリティグループの設定<br>C. ゲストOSのパッチ適用<br>D. 物理サーバーの廃棄<br>E. AZの電源管理	B, C<br>A/D/EはAWS側	clf mock-a security
+Q19（セキュリティ）S3利用時に顧客の責任はどれ？<br>A. 99.999999999%の耐久性の実現<br>B. バケットポリシーと暗号化の設定<br>C. ディスクの物理破棄<br>D. リージョン間のネットワーク基盤	B	clf mock-a security
+Q20（セキュリティ）EC2上のアプリからS3を読む。最も安全な方法は？<br>A. アクセスキーをコードに書く<br>B. IAMロールをEC2にアタッチ<br>C. ルートの認証情報を使う<br>D. バケットを公開する	B<br>一時認証情報が自動更新される。長期キーの埋め込みは禁止	clf mock-a security
+Q21（セキュリティ）ルートユーザーだけができることは？<br>A. EC2の起動<br>B. IAMユーザーの作成<br>C. アカウントの解約とサポートプランの変更<br>D. S3バケットの作成	C<br>他に請求情報へのアクセス許可設定、ルート認証情報の変更	clf mock-a security
+Q22（セキュリティ・2つ選択）新しいアカウントで最初にやるべきことを2つ<br>A. ルートにMFAを設定<br>B. ルートのアクセスキーを作成<br>C. 日常作業用のIAMユーザー/ロールを作成<br>D. 全員にAdministratorAccessを付与<br>E. CloudTrailを無効化	A, C<br>ルートのアクセスキーは作らない	clf mock-a security
+Q23（セキュリティ）オンプレADの既存IDでAWSにログインさせたい。何を使う？<br>A. 全員分のIAMユーザーを作る<br>B. IAM Identity Center でフェデレーション<br>C. ルートを共有<br>D. アクセスキーを配布	B<br>SSO/フェデレーションでID管理を一元化	clf mock-a security
+Q24（セキュリティ）組織内の全アカウントで特定リージョンの利用を禁止したい。何？<br>A. IAMポリシー<br>B. SCP（サービスコントロールポリシー）<br>C. セキュリティグループ<br>D. NACL	B<br>SCPは権限の上限を定めるガードレール。単体では権限を付与しない	clf mock-a security
+Q25（セキュリティ）マルチアカウント環境をベストプラクティスに沿って自動構築したい。何？<br>A. Control Tower<br>B. CloudFormation単体<br>C. Config<br>D. Systems Manager	A<br>ランディングゾーンを自動構築	clf mock-a security
+Q26（セキュリティ）S3内に個人情報やクレカ番号がないか自動で発見したい。何？<br>A. Macie<br>B. GuardDuty<br>C. Inspector<br>D. Detective	A<br>Macie=S3の機密データ検出	clf mock-a security
+Q27（セキュリティ）不審なAPI呼び出しや通信を継続的に検知したい。何？<br>A. GuardDuty<br>B. Inspector<br>C. Config<br>D. Artifact	A<br>GuardDuty=脅威検知（CloudTrail/VPCフローログ/DNSログを解析）	clf mock-a security
+Q28（セキュリティ）EC2やコンテナの既知の脆弱性（CVE）をスキャンしたい。何？<br>A. Inspector<br>B. Macie<br>C. Shield<br>D. Trusted Advisor	A	clf mock-a security
+Q29（セキュリティ）CloudTrail と Config の違いは？<br>A. どちらも同じ<br>B. CloudTrail=誰がいつ何のAPIを呼んだか、Config=リソース設定の状態・変更履歴・準拠チェック<br>C. CloudTrail=料金分析、Config=脅威検知<br>D. CloudTrail=構成管理、Config=操作ログ	B	clf mock-a security
+Q30（セキュリティ・2つ選択）SQLインジェクションとDDoSの両方に備える。適切なものを2つ<br>A. WAF<br>B. Shield<br>C. Macie<br>D. KMS<br>E. Artifact	A, B<br>WAF=L7の攻撃、Shield=DDoS	clf mock-a security
+Q31（セキュリティ）Shield Standard について正しいのは？<br>A. 追加費用なしで全ユーザーに自動適用<br>B. Business以上のサポート契約が必要<br>C. 申込制で月額が高額<br>D. WAFの機能を含む	A<br>Advancedは有償でDDoS対応チームと料金保護が付く	clf mock-a security
+Q32（セキュリティ）KMS と CloudHSM の違いは？<br>A. KMS=マネージドな鍵管理、CloudHSM=専用HSMを自分で単独管理<br>B. 同じ<br>C. KMSは有償、CloudHSMは無料<br>D. KMSはオンプレ専用	A<br>「鍵を完全に自分だけで管理」「専用ハードウェア」ならCloudHSM	clf mock-a security
+Q33（セキュリティ）DBのパスワードを安全に保管し自動ローテーションしたい。何？<br>A. Secrets Manager<br>B. Parameter Store<br>C. S3<br>D. KMS	A<br>Parameter Storeは安価だが自動ローテーションなし	clf mock-a security
+Q34（セキュリティ）セキュリティグループとネットワークACLの違いは？<br>A. SG=ステートフルで許可のみ、NACL=ステートレスで許可と拒否を書ける<br>B. 逆<br>C. どちらもステートレス<br>D. SGはサブネット単位で適用される	A<br>「明示的に拒否したい」ならNACL	clf mock-a security
+Q35（セキュリティ）監査人からSOC2レポートを求められた。どこで入手する？<br>A. Artifact<br>B. Audit Manager<br>C. Config<br>D. Trusted Advisor	A<br>Artifact=AWSの監査報告書をダウンロード。Audit Managerは自社の証跡収集を自動化	clf mock-a security
+Q36（請求）夜間バッチで中断されても再実行できる。最も安いのは？<br>A. オンデマンド<br>B. スポット<br>C. リザーブドインスタンス<br>D. Dedicated Hosts	B<br>最大90%off。中断許容がキーワード	clf mock-a billing
+Q37（請求）3年間EC2を使うが、途中でFargateやLambdaに移す可能性がある。どれ？<br>A. Compute Savings Plans<br>B. スタンダードRI<br>C. スポット<br>D. オンデマンド	A<br>EC2/Fargate/Lambda横断で効く。リージョンやファミリーも自由	clf mock-a billing
+Q38（請求）RDSを3年間定常稼働させる。割引を得る手段は？<br>A. Compute Savings Plans<br>B. RDSリザーブドインスタンス<br>C. スポット<br>D. Dedicated Hosts	B<br>Savings PlansはRDSに使えない	clf mock-a billing
+Q39（請求）本番停止時に1時間以内の応答と24時間365日の電話サポートが必要。最低限のプランは？<br>A. Developer<br>B. Business<br>C. Enterprise<br>D. Basic	B<br>Developerはメールのみ・営業時間内	clf mock-a billing
+Q40（請求・2つ選択）Enterprise サポートの特徴を2つ<br>A. 専任のTAMが付く<br>B. 最短15分の応答（ビジネスクリティカル停止時）<br>C. 応答は1時間<br>D. サポートはメールのみ<br>E. Trusted Advisorが使えない	A, B<br>1時間はBusiness、30分はEnterprise On-Ramp	clf mock-a billing
+Q41（請求）過去半年のコスト推移をサービス別に可視化したい。何？<br>A. Cost Explorer<br>B. Budgets<br>C. Pricing Calculator<br>D. Compute Optimizer	A<br>Budgetsは閾値通知、Pricing Calculatorは事前見積もり	clf mock-a billing
+Q42（請求）まだ構築していない構成の月額見積もりを出したい。何？<br>A. Pricing Calculator<br>B. Cost Explorer<br>C. Budgets<br>D. CUR	A	clf mock-a billing
+Q43（請求・2つ選択）Organizations の一括請求のメリットを2つ<br>A. 支払いを1つにまとめられる<br>B. 使用量が合算されボリューム割引が効く<br>C. アカウント間でIAMユーザーを共有できる<br>D. すべてのサービスが無料になる<br>E. リージョン間通信が無料になる	A, B<br>RI/Savings Plansを組織で共有できるのも利点	clf mock-a billing
+Q44（サービス）サーバー管理なしでイベント駆動のコードを実行したい。何？<br>A. Lambda<br>B. EC2<br>C. Lightsail<br>D. Batch	A	clf mock-a services
+Q45（サービス）コンテナをサーバー管理なしで動かしたい。何？<br>A. Fargate<br>B. EC2<br>C. Beanstalk<br>D. Lightsail	A<br>ECS/EKSの実行基盤としてサーバーレスに使う	clf mock-a services
+Q46（サービス）Kubernetes をマネージドで使いたい。何？<br>A. EKS<br>B. ECS<br>C. ECR<br>D. Batch	A<br>ECSはAWS独自、ECRはコンテナイメージ置き場	clf mock-a services
+Q47（サービス）アプリをアップロードするだけでEC2/ELB/ASG環境を自動構築したい。何？<br>A. Elastic Beanstalk<br>B. CloudFormation<br>C. Lightsail<br>D. Systems Manager	A<br>「開発者はコードだけ」＝Beanstalk	clf mock-a services
+Q48（サービス・2つ選択）HTTPを内容に応じて振り分けつつEC2台数を自動増減したい。使うものを2つ<br>A. Application Load Balancer<br>B. Auto Scaling グループ<br>C. Network Load Balancer<br>D. Route 53<br>E. CloudFront	A, B<br>NLBはL4で超低遅延・静的IP用途	clf mock-a services
+Q49（サービス）アクセス頻度が読めないデータのコストを自動最適化するS3クラスは？<br>A. Intelligent-Tiering<br>B. Standard-IA<br>C. Glacier Deep Archive<br>D. One Zone-IA	A	clf mock-a services
+Q50（サービス）年1回しか読まず、取り出しに12時間かかってよい。最安のS3クラスは？<br>A. Glacier Deep Archive<br>B. Glacier Flexible Retrieval<br>C. Standard-IA<br>D. Intelligent-Tiering	A<br>長期アーカイブの最安。取り出しは数時間〜12時間	clf mock-a services
+Q51（サービス）誤削除・誤上書きから復旧できるS3の機能は？<br>A. バージョニング<br>B. ライフサイクル<br>C. 静的サイトホスティング<br>D. Transfer Acceleration	A	clf mock-a services
+Q52（サービス）複数のEC2から同時にマウントできる共有ファイルストレージは？<br>A. EFS<br>B. EBS<br>C. インスタンスストア<br>D. S3 Glacier	A<br>EBSは基本1インスタンス、インスタンスストアは停止で消える揮発性	clf mock-a services
+Q53（サービス）WindowsアプリのためにSMBファイル共有が必要。何？<br>A. FSx for Windows File Server<br>B. EFS<br>C. S3<br>D. EBS	A<br>EFSはLinux(NFS)向け	clf mock-a services
+Q54（サービス）ミリ秒未満の応答が必要なフルマネージドのキーバリューDBは？<br>A. DynamoDB<br>B. RDS<br>C. Redshift<br>D. Neptune	A<br>NoSQL/サーバーレス/自動スケール	clf mock-a services
+Q55（サービス）MySQL・PostgreSQL互換でAWS独自の高性能マネージドDBは？<br>A. Aurora<br>B. DynamoDB<br>C. DocumentDB<br>D. Timestream	A<br>標準MySQLの最大5倍を謳う	clf mock-a services
+Q56（サービス・2つ選択）読み取り負荷の高いRDSを高速化する方法を2つ<br>A. リードレプリカを追加する<br>B. ElastiCacheでキャッシュする<br>C. マルチAZ配置に変更する<br>D. Redshiftへ移行する<br>E. NACLのルールを緩める	A, B<br>マルチAZは可用性目的でありスタンバイは読み取りに使えない	clf mock-a services
+Q57（サービス）ペタバイト級のデータをSQLで集計しBI分析したい。何？<br>A. Redshift<br>B. DynamoDB<br>C. RDS<br>D. ElastiCache	A<br>列指向のデータウェアハウス	clf mock-a services
+Q58（サービス）S3上のCSVにSQLを直接投げたい。何？<br>A. Athena<br>B. Glue<br>C. EMR<br>D. QuickSight	A<br>Glueはサーバーレス ETL/データカタログ、QuickSightはBIダッシュボード	clf mock-a services
+Q59（サービス）ストリーミングデータをほぼリアルタイムに取り込みS3へ配送したい。何？<br>A. Kinesis Data Firehose<br>B. SQS<br>C. Glue<br>D. DataSync	A<br>Data Streamsは自前処理向け、Firehoseは配送マネージド	clf mock-a services
+Q60（サービス）画像から物体や顔を検出したい。何？<br>A. Rekognition<br>B. Textract<br>C. Polly<br>D. Comprehend	A<br>Textract=書類から文字/表を抽出、Polly=文章を音声化、Comprehend=テキストの感情分析	clf mock-a services
+Q61（サービス）アプリ間を疎結合にし、メッセージを一時的にためたい。何？<br>A. SQS<br>B. SNS<br>C. EventBridge<br>D. Step Functions	A<br>SNS=Pub/Subの同時配信、EventBridge=イベントルーティング、Step Functions=ワークフロー管理	clf mock-a services
+Q62（サービス・2つ選択）ネットワーク帯域が限られる環境で大容量データをAWSへ移す手段を2つ<br>A. Snowball Edge<br>B. Snowmobile<br>C. マネジメントコンソールから手動アップロード<br>D. Route 53<br>E. Lambda	A, B<br>物理デバイス輸送。Snowmobileはエクサバイト級のトレーラー	clf mock-a services
+Q63（サービス）オンプレDBを最小の停止時間でRDSへ移行したい。何？<br>A. DMS<br>B. DataSync<br>C. Snowball<br>D. Glue	A<br>継続的レプリケーションで切替直前まで同期。異種DBはSCTでスキーマ変換	clf mock-a services
+Q64（サービス）インフラをテンプレートのコードで宣言的に構築・管理したい。何？<br>A. CloudFormation<br>B. CodeDeploy<br>C. Systems Manager<br>D. OpsWorks	A<br>プログラミング言語で書きたい場合はCDK	clf mock-a services
+Q65（サービス・2つ選択）EC2のCPU使用率を監視し閾値超過でメール通知したい。使うものを2つ<br>A. CloudWatch アラーム<br>B. SNS<br>C. CloudTrail<br>D. Config<br>E. X-Ray	A, B<br>CloudTrailは操作ログ、Configは設定監査	clf mock-a services

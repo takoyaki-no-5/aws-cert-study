@@ -1,5 +1,4 @@
 IAM ユーザー / グループ / ロール / ポリシーの役割は？	ユーザー=人・アプリの永続ID / グループ=ユーザー集合 / ロール=一時権限 / ポリシー=権限の文書	clf security iam
-EC2 に AWS API 権限を付ける正しい方法は？	インスタンスプロファイル（IAM ロール）。アクセスキーを埋め込まない	clf security iam
 ルートユーザーでやるべきでないことは？	日常運用。MFA必須・用途はアカウント設定・サポート等の限定操作のみ	clf security iam
 IAM のベストプラクティス（頻出）は？	最小権限・MFA・ロール優先・ルート封印・定期ローテート	clf security iam
 IAM Identity Center（旧SSO）は何用？	複数アカウント／アプリへのシングルサインオン・中央での権限管理	clf security iam

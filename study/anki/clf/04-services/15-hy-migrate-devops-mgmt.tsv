@@ -14,7 +14,6 @@ CloudShellの利点は？	ブラウザですぐCLI、認証済み	clf services h
 CloudWatch Logsは？	アプリ/OSログの集約	clf services hy
 CloudWatch Metricsは？	CPU等の数値時系列	clf services hy
 アラームの定番アクションは？	SNS通知、Auto Scaling操作など	clf services hy
-Systems Manager Parameter StoreとSecretsの使い分け再確認は？	設定=Parameter寄り / 秘密ローテ=Secrets寄り	clf services hy
 Session Managerの利点は？	SSHポートを開けずにシェル	clf services hy
 Health Dashboardでわかることの例は？	AWS側障害が自分のリソースに関係するか	clf services hy
 X-Rayが欲しくなる症状は？	マイクロサービス間で遅い箇所がわからない	clf services hy

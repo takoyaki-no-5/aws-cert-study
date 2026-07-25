@@ -1,0 +1,65 @@
+Q01（概念）ピーク需要を事前に見積もる必要がなくなった。これはどの利点？<br>A. 規模の経済<br>B. キャパシティの推測が不要<br>C. 固定費を変動費に変える<br>D. データセンター運用への投資が不要	B<br>足りなければ増やせるので事前予測が不要	clf mock-b concepts
+Q02（概念）新サービスを世界6地域に数分で展開できた。どの利点？<br>A. 数分でのグローバル展開<br>B. 規模の経済<br>C. 耐久性<br>D. 弾力性	A	clf mock-b concepts
+Q03（概念）スケールアップとスケールアウトの違いは？<br>A. アップ=台数を増やす、アウト=性能を上げる<br>B. アップ=インスタンスの性能を上げる、アウト=台数を増やす<br>C. 同じ意味<br>D. アップ=リージョン追加、アウト=AZ追加	B<br>垂直（アップ）と水平（アウト）	clf mock-b concepts
+Q04（概念）実験と失敗のコストが下がり、開発速度が上がることを何という？<br>A. 俊敏性（アジリティ）<br>B. 耐障害性<br>C. 規模の経済<br>D. 従量課金	A	clf mock-b concepts
+Q05（概念）「サーバーの調達・設置・保守をやめて本業に集中できる」利点は？<br>A. データセンターの運用と保守への投資が不要<br>B. 規模の経済<br>C. 弾力性<br>D. 高可用性	A	clf mock-b concepts
+Q06（概念・2つ選択）クラウドの利点として正しいものを2つ<br>A. すべてのサービスが無料<br>B. 前払いの設備投資が不要<br>C. AWSがアプリのバグを修正する<br>D. 数分で世界にデプロイできる<br>E. 障害が絶対に起きない	B, D	clf mock-b concepts
+Q07（概念）「最小権限・多層防御・保管中と転送中の暗号化」はどの柱？<br>A. セキュリティ<br>B. 信頼性<br>C. 運用上の優秀性<br>D. コスト最適化	A	clf mock-b concepts
+Q08（概念）「適切なリソースタイプを選び、キャッシュやCDNで応答を改善する」はどの柱？<br>A. パフォーマンス効率<br>B. コスト最適化<br>C. 信頼性<br>D. 持続可能性	A	clf mock-b concepts
+Q09（概念）「使用リソースを最小化し環境負荷を下げる」はどの柱？<br>A. 持続可能性<br>B. コスト最適化<br>C. 運用上の優秀性<br>D. パフォーマンス効率	A<br>2021年に追加された6番目の柱	clf mock-b concepts
+Q10（概念）Well-Architected Tool の用途は？<br>A. 設計を6つの柱の観点でレビューし改善点を示す<br>B. コストを自動で削減する<br>C. インフラを自動構築する<br>D. 脆弱性をスキャンする	A	clf mock-b concepts
+Q11（概念）使われていない古いアプリを移行せず廃止する。7Rのどれ？<br>A. Retire<br>B. Retain<br>C. Rehost<br>D. Relocate	A<br>Retainは「今は移さず残す」	clf mock-b concepts
+Q12（概念）モノリスをマイクロサービスに作り替えクラウドネイティブにする。7Rのどれ？<br>A. Refactor<br>B. Replatform<br>C. Rehost<br>D. Repurchase	A<br>最も工数が大きい	clf mock-b concepts
+Q13（概念）移行にあたり社内のスキル育成や体制変更を扱うCAFのパースペクティブは？<br>A. 人員（People）<br>B. プラットフォーム<br>C. ガバナンス<br>D. オペレーション	A	clf mock-b concepts
+Q14（概念・2つ選択）リージョンを選ぶ際の判断基準を2つ<br>A. 利用者に近くレイテンシーが小さいか<br>B. AZの物理的な色<br>C. データ主権・法規制の要件を満たすか<br>D. 社内のOS標準<br>E. インスタンスのIPアドレス	A, C<br>他に料金とサービスの提供状況	clf mock-b concepts
+Q15（概念）アベイラビリティゾーン（AZ）の説明として正しいのは？<br>A. リージョン内の独立した1つ以上のデータセンター群<br>B. 世界中のキャッシュ拠点<br>C. VPCのサブネット<br>D. 課金の単位	A<br>エッジロケーションはCloudFrontのキャッシュ拠点	clf mock-b concepts
+Q16（概念）工場内でAWSと同じAPIを使い、ミリ秒未満でローカル処理したい。何？<br>A. Outposts<br>B. Local Zones<br>C. Wavelength<br>D. CloudFront	A<br>Outposts=自社施設にAWSラック、Local Zones=大都市近郊の小型拠点、Wavelength=5G基地局内	clf mock-b concepts
+Q17（セキュリティ）Lambda利用時に顧客の責任となるのは？<br>A. 実行環境のOSパッチ<br>B. 関数のコードとIAM権限<br>C. ハードウェアの保守<br>D. ハイパーバイザーの管理	B<br>マネージドなほどAWS側の責任範囲が広がる	clf mock-b security
+Q18（セキュリティ）RDS利用時にAWSが担うのは？<br>A. データベースユーザーの権限設計<br>B. 基盤OSとDBエンジンのパッチ適用<br>C. 保存データを暗号化する判断<br>D. スキーマ設計	B	clf mock-b security
+Q19（セキュリティ）多数のIAMユーザーに同じ権限をまとめて与えたい。何を使う？<br>A. IAMグループ<br>B. IAMロール<br>C. SCP<br>D. バケットポリシー	A<br>ロールは「一時的に引き受ける」ためのもの	clf mock-b security
+Q20（セキュリティ）IAM設計の原則として正しいのは？<br>A. 最小権限の原則<br>B. とりあえず全権限を付与し後で絞る<br>C. 全員でルートを共有する<br>D. アクセスキーをGitに置く	A	clf mock-b security
+Q21（セキュリティ）誰がMFA未設定か、古いアクセスキーがないかを一覧で確認したい。何？<br>A. 認証情報レポート（Credential Report）<br>B. CloudTrail<br>C. Artifact<br>D. Macie	A<br>Access Advisorは「最後にいつ使ったか」	clf mock-b security
+Q22（セキュリティ・2つ選択）アカウントを守る多要素認証（MFA）について正しいものを2つ<br>A. パスワードに加えワンタイムコード等を要求する<br>B. ルートユーザーに設定すべき<br>C. MFAを設定するとIAMポリシーが不要になる<br>D. 有料オプションである<br>E. アクセスキーの代わりになる	A, B	clf mock-b security
+Q23（セキュリティ）外部に意図せず公開されているS3やIAMロールを検出したい。何？<br>A. IAM Access Analyzer<br>B. GuardDuty<br>C. Inspector<br>D. Config	A	clf mock-b security
+Q24（セキュリティ）GuardDuty と Detective の違いは？<br>A. GuardDuty=脅威を検知、Detective=検知後の原因を深掘り調査<br>B. 逆<br>C. どちらも脆弱性スキャン<br>D. どちらも料金分析	A	clf mock-b security
+Q25（セキュリティ）複数のセキュリティサービスの検出結果を1画面に集約したい。何？<br>A. Security Hub<br>B. CloudWatch<br>C. Config<br>D. Trusted Advisor	A	clf mock-b security
+Q26（セキュリティ）組織内の全アカウントのWAFルールを一元管理したい。何？<br>A. Firewall Manager<br>B. WAF単体<br>C. Shield Standard<br>D. NACL	A	clf mock-b security
+Q27（セキュリティ）VPC全体のトラフィックをフィルタするマネージドファイアウォールは？<br>A. Network Firewall<br>B. WAF<br>C. セキュリティグループ<br>D. Shield	A<br>WAFはHTTP/HTTPSアプリ層に特化	clf mock-b security
+Q28（セキュリティ）ALB用のTLS証明書を無料で発行・自動更新したい。何？<br>A. ACM（Certificate Manager）<br>B. KMS<br>C. Secrets Manager<br>D. CloudHSM	A	clf mock-b security
+Q29（セキュリティ・2つ選択）「保存時」と「転送時」の暗号化の例を2つ<br>A. S3のサーバー側暗号化（SSE）<br>B. HTTPS/TLSでの通信<br>C. セキュリティグループの設定<br>D. IAMポリシー<br>E. バケットのバージョニング	A, B	clf mock-b security
+Q30（セキュリティ）SSE-S3 と SSE-KMS の違いは？<br>A. SSE-S3=AWS管理の鍵、SSE-KMS=KMSの鍵で監査ログと権限管理ができる<br>B. 逆<br>C. どちらも顧客が鍵を持ち込む<br>D. SSE-S3は転送時暗号化	A	clf mock-b security
+Q31（セキュリティ）Trusted Advisor の5カテゴリに含まれないのは？<br>A. コスト最適化<br>B. パフォーマンス<br>C. 持続可能性<br>D. サービス制限	C<br>5つ＝コスト最適化/パフォーマンス/セキュリティ/耐障害性/サービス制限	clf mock-b security
+Q32（セキュリティ）「S3が暗号化されていない構成を継続的に検出したい」何？<br>A. Config ルール<br>B. CloudTrail<br>C. GuardDuty<br>D. Inspector	A	clf mock-b security
+Q33（セキュリティ）自社の監査に向けて証跡収集を自動化し報告書を作りたい。何？<br>A. Audit Manager<br>B. Artifact<br>C. Config<br>D. Security Hub	A<br>ArtifactはAWS側のレポートを受け取るだけ	clf mock-b security
+Q34（セキュリティ）別アカウントの担当者に一時的にアクセスさせたい。何？<br>A. IAMロールをクロスアカウントで引き受けさせる<br>B. IAMユーザーを共有する<br>C. アクセスキーをメールで送る<br>D. ルートを貸す	A	clf mock-b security
+Q35（セキュリティ）DDoS攻撃時に専門チームの支援と料金保護を受けたい。何？<br>A. Shield Advanced<br>B. Shield Standard<br>C. WAF<br>D. GuardDuty	A	clf mock-b security
+Q36（請求）新規アプリで負荷が全く読めず、長期契約もしたくない。どれ？<br>A. オンデマンド<br>B. スタンダードRI<br>C. Savings Plans<br>D. Dedicated Hosts	A<br>「コミットを避けたい」「短期」ならコミット系は消える	clf mock-b billing
+Q37（請求）スタンダードRIとコンバーティブルRIの違いは？<br>A. スタンダード=割引が大きいが変更不可・売却可、コンバーティブル=交換可だが割引は小さい<br>B. 逆<br>C. 期間が違うだけ<br>D. 違いはない	A	clf mock-b billing
+Q38（請求・2つ選択）AWS の無料利用枠の種類として正しいものを2つ<br>A. 12ヶ月無料<br>B. 永久無料（Always Free）<br>C. 3年無料<br>D. サポート込み無料<br>E. リージョン限定で全サービス無料	A, B<br>3つ目は期間限定のトライアル	clf mock-b billing
+Q39（請求）専任のテクニカルアカウントマネージャー（TAM）と重要イベント管理が必要。どのプラン？<br>A. Enterprise<br>B. Business<br>C. Developer<br>D. Basic	A<br>On-RampはTAMがプール制で応答30分	clf mock-b billing
+Q40（請求・2つ選択）Trusted Advisor の全チェックが使えるサポートプランを2つ<br>A. Business<br>B. Enterprise<br>C. Developer<br>D. Basic<br>E. 無料枠	A, B<br>Basic/Developerはサービスクォータと基本的なセキュリティチェックのみ	clf mock-b billing
+Q41（請求）月額が200ドルを超えそうな段階で通知を受けたい。何？<br>A. AWS Budgets<br>B. Cost Explorer<br>C. CUR<br>D. Trusted Advisor	A<br>実績超過だけでなく予測超過でも通知できる	clf mock-b billing
+Q42（請求）時間単位・リソース単位の最も詳細な請求データをS3に出したい。何？<br>A. Cost and Usage Report（CUR）<br>B. Cost Explorer<br>C. Budgets<br>D. Pricing Calculator	A	clf mock-b billing
+Q43（請求）データ転送料金について正しいのは？<br>A. インターネットからの受信（イン）は無料、送信（アウト）は課金<br>B. インもアウトも無料<br>C. インは課金、アウトは無料<br>D. AZ間の通信は常に無料	A<br>AZ間・リージョン間は課金。CloudFrontでアウトを削減できる	clf mock-b billing
+Q44（サービス）EC2を起動する際にOSとソフトウェア構成のひな型となるのは？<br>A. AMI（Amazon Machine Image）<br>B. EBSスナップショット<br>C. セキュリティグループ<br>D. プレイスメントグループ	A	clf mock-b services
+Q45（サービス）小規模サイトを固定の月額で簡単に立てたい。何？<br>A. Lightsail<br>B. EC2<br>C. Fargate<br>D. Beanstalk	A	clf mock-b services
+Q46（サービス）自作コンテナイメージを保存するAWSのレジストリは？<br>A. ECR<br>B. ECS<br>C. EKS<br>D. S3	A	clf mock-b services
+Q47（サービス）静的IPと超低レイテンシーが必要なTCP/UDP通信の負荷分散は？<br>A. Network Load Balancer<br>B. Application Load Balancer<br>C. Gateway Load Balancer<br>D. CloudFront	A	clf mock-b services
+Q48（サービス・2つ選択）Webアプリを高可用性にする構成を2つ<br>A. 複数AZにEC2を配置する<br>B. ELBで負荷分散する<br>C. 単一の大きなEC2に集約する<br>D. インスタンスストアにデータを置く<br>E. NACLを全許可にする	A, B	clf mock-b services
+Q49（サービス）再作成可能なデータを1つのAZだけに置いて安く保管したい。S3クラスは？<br>A. One Zone-IA<br>B. Standard<br>C. Glacier Deep Archive<br>D. Standard-IA	A<br>AZ障害でデータを失うリスクを受け入れる代わりに安い	clf mock-b services
+Q50（サービス）30日後にIA、90日後にGlacierへ自動で移したい。S3の機能は？<br>A. ライフサイクルポリシー<br>B. バージョニング<br>C. レプリケーション<br>D. イベント通知	A	clf mock-b services
+Q51（サービス）S3の耐久性として正しいのは？<br>A. 99.999999999%（イレブンナイン）<br>B. 99%<br>C. 100%保証<br>D. 99.9%	A	clf mock-b services
+Q52（サービス）EBSボリュームのバックアップを取りたい。何を使う？<br>A. EBSスナップショット（S3に保存される）<br>B. AMIのみ<br>C. インスタンスストア<br>D. EFS	A<br>複数サービスのバックアップを一元管理するならAWS Backup	clf mock-b services
+Q53（サービス）オンプレのファイルサーバーからS3へシームレスに連携したい。何？<br>A. Storage Gateway<br>B. Snowball<br>C. DataSync<br>D. Transfer Family	A<br>ハイブリッドで「オンプレから見えるストレージ」を提供	clf mock-b services
+Q54（サービス）Redis互換のインメモリキャッシュで応答を高速化したい。何？<br>A. ElastiCache<br>B. DynamoDB<br>C. RDS<br>D. Neptune	A<br>DynamoDBの前段キャッシュはDAX	clf mock-b services
+Q55（サービス・2つ選択）DynamoDB の特徴を2つ<br>A. サーバーレスのNoSQLで数ミリ秒の応答<br>B. 結合を多用する複雑なSQL分析に最適<br>C. 自動でスケールする<br>D. スキーマを厳密に固定する必要がある<br>E. 単一AZのみで動作する	A, C	clf mock-b services
+Q56（サービス）プライベートサブネットのEC2からインターネットへ出たい（外からは入れない）。何？<br>A. NATゲートウェイ<br>B. インターネットゲートウェイ<br>C. VPCピアリング<br>D. Direct Connect	A	clf mock-b services
+Q57（サービス）オンプレとAWSを専用線でつなぎ安定した帯域を得たい。何？<br>A. Direct Connect<br>B. Site-to-Site VPN<br>C. VPCピアリング<br>D. Transit Gateway	A<br>VPNはインターネット経由で安価だが品質は保証されない	clf mock-b services
+Q58（サービス）数十のVPCとオンプレを1か所でハブ的に接続したい。何？<br>A. Transit Gateway<br>B. VPCピアリング<br>C. IGW<br>D. NAT	A<br>ピアリングは1対1で数が増えると管理が破綻する	clf mock-b services
+Q59（サービス）ドメイン名の登録とDNSのルーティング、ヘルスチェックをしたい。何？<br>A. Route 53<br>B. CloudFront<br>C. API Gateway<br>D. Global Accelerator	A	clf mock-b services
+Q60（サービス）REST APIを公開し認証・スロットリングを任せたい。何？<br>A. API Gateway<br>B. ALB<br>C. CloudFront<br>D. AppSync	A	clf mock-b services
+Q61（サービス・2つ選択）S3のデータを分析してダッシュボードで共有したい。使うものを2つ<br>A. Athena<br>B. QuickSight<br>C. Snowball<br>D. Route 53<br>E. Secrets Manager	A, B	clf mock-b services
+Q62（サービス）音声ファイルを文字起こししたい。何？<br>A. Transcribe<br>B. Polly<br>C. Translate<br>D. Lex	A<br>Polly=文章から音声、Translate=翻訳、Lex=チャットボット	clf mock-b services
+Q63（サービス）社内文書を自然文で検索できるようにしたい。何？<br>A. Kendra<br>B. Personalize<br>C. Forecast<br>D. Comprehend	A<br>Personalize=推薦、Forecast=需要予測	clf mock-b services
+Q64（サービス）ソースのビルドからデプロイまでを自動化するパイプラインを作りたい。何？<br>A. CodePipeline<br>B. CodeCommit<br>C. CodeBuild<br>D. CodeDeploy	A<br>CodeBuildはビルド、CodeDeployはデプロイ、CodeCommitはGitリポジトリ	clf mock-b services
+Q65（サービス・2つ選択）EC2にSSHせずパッチ適用やコマンド実行を行い、AWS側の障害情報も確認したい。使うものを2つ<br>A. Systems Manager<br>B. AWS Health Dashboard<br>C. X-Ray<br>D. Service Catalog<br>E. CloudShell	A, B<br>X-Rayは分散トレース、Service Catalogは承認済みテンプレートの提供	clf mock-b services
