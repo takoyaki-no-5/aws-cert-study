@@ -3,7 +3,7 @@
 | ツール | 使い方 |
 |--------|--------|
 | Cursor | 計画・解説・Anki TSV・メモ |
-| Anki | `study/anki/*.tsv` をインポート |
+| Anki | `study/anki/<資格>/` の TSV をインポート |
 | 本 | `books.md` |
 
 ## Anki
