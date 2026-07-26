@@ -1,0 +1,10 @@
+S3 クラス選定の軸は？	アクセス頻度・取り出し時間・可用性要件	saa cost storage
+Standard-IA / Glacier Instant / Deep Archive のイメージは？	IA=低頻度 / Instant=即時アーカイブ / Deep=最安・取り出し遅い	saa cost storage
+ライフサイクルポリシーの用途は？	日数経過で安価クラスへ自動移行・期限切れ削除	saa cost storage
+不完全なマルチパートの掃除は？	ライフサイクルで.abortを削除（放置コスト防止）	saa cost storage
+EBSスナップショットのコスト意識は？	増分だが世代管理。不要削除・アーカイブ検討	saa cost storage
+DynamoDB コストを抑える観点は？	オンデマンドvsプロビジョン・キャパシティ・TTL・設計	saa cost storage
+Aurora Serverless が安いケースは？	アイドルが多い変動負荷	saa cost storage
+データ転送コストの定石は？	同一AZ・エンドポイント・CloudFrontで外向き削減	saa cost storage
+NAT Gateway が高いときの対策は？	不要外向き削減・エンドポイント活用・設計見直し	saa cost storage
+S3へ同じリージョンからEC2で出すコスト感は？	同一リージョン内の出し入れは比較的安い（詳細は料金表）が、AZ間や外向きに注意	saa cost storage

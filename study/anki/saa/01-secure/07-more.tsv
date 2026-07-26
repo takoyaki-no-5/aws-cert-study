@@ -1,0 +1,20 @@
+条件キー aws:SourceIp の典型用途は？	特定IPからのみAPI許可	saa secure iam
+MFA必須をIAMで強制する定石は？	条件キー aws:MultiFactorAuthPresent	saa secure iam
+S3 Object Lock の用途は？	WORM・改ざん防止（コンプライアンス）	saa secure crypto
+S3 Versioning の用途は？	上書き・削除からの復旧	saa secure crypto
+KMS キーの自動ローテーションは？	CMKで有効化可能（年次）。影響範囲を理解して使う	saa secure crypto
+クライアント側暗号とサーバ側の違いは？	クライアント=送る前に暗号化 / サーバ=S3等が保存時に暗号化	saa secure crypto
+VPC Flow Logs の用途は？	ENIのトラフィックメタデータ記録・NW監査	saa secure vpc
+Gateway Endpoint にSGは付く？	付かない（ルートテーブル制御）。InterfaceはSG対象	saa secure vpc
+パブリックにS3を出す代わりの定石は？	CloudFront + OAC（旧OAI）でオリジン非公開	saa secure edge
+Inspector と GuardDuty の違いは？	Inspector=脆弱性スキャン / GuardDuty=脅威検知	saa secure edge
+Security Hub の位置づけは？	検出結果の集約・標準準拠チェックのハブ	saa secure edge
+Certificate Manager（プライベートCA）が出るときば？	内部TLSをAWSで管理したいとき	saa secure crypto
+EC2 IMDSv2 を勧める理由は？	SSRF等による認証情報窃取リスク低減	saa secure iam
+SCP でルートユーザーを制限できる？	管理アカウント以外では一定の制限が可能（設計に注意）	saa secure orgs
+Organizations の一括請求の利点は？	支払い一元化・ボリューム割引の合算	saa secure orgs
+クロスアカウントでCloudWatch等を集約する発想は？	ログ/監視アカウントへ集約（権限はロール）	saa secure orgs
+S3 ACL とバケットポリシー、今の推奨は？	ACL無効化＋ポリシー中心が現行推奨	saa secure crypto
+暗号化されたEBSを他アカウント共有するときば？	スナップショット共有＋KMS鍵の権限も必要	saa secure crypto
+WAF のスコープ例は？	CloudFront / ALB / API Gateway 等	saa secure edge
+「社外に一時的にオブジェクト共有」→？	署名付きURL（または署名付きCookie）	saa secure scenario

@@ -1,0 +1,12 @@
+「世界中の静的配信を速く」→？	S3 + CloudFront	saa perf scenario
+「ゲームやIoTのTCPを全球最適化」→？	Global Accelerator	saa perf scenario
+「EC2間で共有ファイルシステム」→？	EFS（WindowsならFSx）	saa perf scenario
+「超高IOPSのDBディスク」→？	io2等のプロビジョンドIOPS EBS	saa perf scenario
+「セッションを共有したい」→？	ElastiCache（またはDDB）	saa perf scenario
+「クリックストリームをリアルタイム分析」→？	Kinesis Data Streams + 処理	saa perf scenario
+「ログをS3へほぼリアルタイム保存」→？	Firehose → S3	saa perf scenario
+「オンプレNASをAWSへ高速移行」→？	DataSync（大量ならSnowも）	saa perf scenario
+「キーアクセスの超大規模DB」→？	DynamoDB（+必要ならDAX）	saa perf scenario
+「RDSが接続数で死ぬ（Lambda）」→？	RDS Proxy	saa perf scenario
+「読み取り9割のRDB」→？	Read Replica / Aurora + キャッシュ	saa perf scenario
+「HPCで高速共有ストレージ」→？	FSx for Lustre	saa perf scenario

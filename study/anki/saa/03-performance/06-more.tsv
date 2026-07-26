@@ -1,0 +1,20 @@
+S3 Transfer Acceleration は？	エッジ経由で遠距離アップロード高速化	saa perf storage
+EBS スループットと IOPS の違い（ざっくり）は？	IOPS=IO回数 / スループット=秒あたりデータ量	saa perf storage
+インスタンスに複数EBSを付ける狙いば？	ストライピング等で性能（運用複雑化に注意）	saa perf storage
+CloudFront オリジンシールドのイメージは？	オリジンへのリクエスト集約で負荷減	saa perf compute
+Lambda プロビジョニング済み同時実行は？	コールドスタート低減（コスト増）	saa perf compute
+EC2 のバースト性能（T系）注意点は？	クレジット枯渇で性能低下	saa perf compute
+Placement Group spread は？	別ハードに分散して同時障害リスク低減	saa perf compute
+DynamoDB GSIs の用途は？	別キーでのクエリ。コストと整合性に注意	saa perf db
+強い一貫性と結果整合性（DDB）は？	強い=最新保証（コスト/レイテンシ） / 結果整合=通常読取	saa perf db
+ElastiCache Redis と Memcached の差（大枠）は？	Redis=高機能・永続寄り / Memcached=単純高速	saa perf db
+Aurora のストレージ自動拡張の利点は？	容量計画負担が減り性能もスケール	saa perf db
+OpenSearch の典型用途は？	ログ検索・全文検索	saa perf net
+EMR の用途は？	大規模分散処理（Hadoop/Spark）	saa perf net
+Redshift の用途は？	データウェアハウス分析	saa perf net
+Athena の用途は？	S3へSQL（サーバレス）	saa perf net
+「画像をリサイズしてS3へ」定石は？	S3イベント→Lambda（またはバッチ）	saa perf scenario
+「モバイルから世界中アップロードが遅い」→？	Transfer Acceleration または CloudFront設計	saa perf scenario
+「同一ファイルを数千台が読む」→？	EFS/FSx または S3+CDN（要件次第）	saa perf scenario
+「分析用にログを溜めてSQL」→？	S3 + Athena（必要ならGlue）	saa perf scenario
+「低遅延ゲーミングTCP」→？	Global Accelerator	saa perf scenario

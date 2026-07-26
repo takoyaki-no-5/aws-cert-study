@@ -1,0 +1,10 @@
+「インターネットに出さずS3」定石は？	Gateway VPC Endpoint	saa hy
+「鍵ローテ必須のDBパスワード」定石は？	Secrets Manager	saa hy
+「明示的DenyとAllowがぶつかったら」？	Deny優先	saa hy
+「SGで拒否ルールは？」	SGに拒否はない（許可のみ）。拒否はNACL	saa hy
+「ALBを複数AZに置く理由」？	AZ障害耐性	saa hy
+「RDS Multi-AZは読み取りスケール？」	基本いいえ（可用性）。読み取りはReplica	saa hy
+「SQSで処理失敗を隔離」？	DLQ	saa hy
+「イベント駆動でFan-out」？	SNS→複数SQS（またはEventBridge）	saa hy
+「パイロットライトとウォームの差」？	常時稼働の大きさ（ウォームの方が厚い）	saa hy
+「Route53でヘルスチェック切替」？	フェイルオーバーポリシー	saa hy

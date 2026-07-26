@@ -1,0 +1,15 @@
+疎結合にする定番サービスは？	SQS / SNS / EventBridge / Step Functions	saa resilient decouple
+SQS と SNS の違いは？	SQS=キュー（pull・緩衝） / SNS=パブサブ通知（push）	saa resilient decouple
+標準キューと FIFO の違いは？	FIFO=順序・Exactly-once寄り。標準=高スループット・順序ベストエフォート	saa resilient decouple
+可視性タイムアウトとは？	受信後、他コンシューマから見えなくなる時間。処理時間に合わせる	saa resilient decouple
+DLQ の用途は？	処理失敗メッセージの隔離・後で調査	saa resilient decouple
+EventBridge の強みは？	イベントルールで多数ターゲットへルーティング（SaaS連携も）	saa resilient decouple
+Step Functions の用途は？	ワークフローオーケストレーション（リトライ・分岐・可視化）	saa resilient decouple
+ALB と NLB の違いは？	ALB=L7（HTTP） / NLB=L4（超低遅延・静的IP）	saa resilient decouple
+CLB は今どう扱う？	レガシー。新規はALB/NLB	saa resilient decouple
+Auto Scaling の目的は？	需要に合わせた台数増減・可用性維持	saa resilient decouple
+ターゲット追跡スケーリングとは？	CPU等の指標を目標値に保つよう自動調整	saa resilient decouple
+マルチティア構成の定石は？	Web/App/DBを層分離。DBはプライベート	saa resilient decouple
+API Gateway + Lambda が向くのは？	サーバレスAPI・バースト耐性・運用負荷低減	saa resilient decouple
+ECS と EKS の使い分けは？	ECS=AWSネイティブ簡単 / EKS=Kubernetes互換・移植性	saa resilient decouple
+Fargate を選ぶ理由は？	サーバ管理なしでコンテナ実行	saa resilient decouple

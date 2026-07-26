@@ -1,0 +1,14 @@
+保存時暗号と転送時暗号の違いは？	保存時=ディスク上（SSE/KMS） / 転送時=通信中（TLS）	saa secure crypto
+SSE-S3 / SSE-KMS / SSE-C の違いは？	S3管理鍵 / KMS顧客管理寄り（監査・CMK） / 顧客提供鍵	saa secure crypto
+KMS の鍵ポリシーが重要な理由は？	誰が鍵を使えるかの根本制御。IAMだけでは足りない場合あり	saa secure crypto
+Envelope encryption とは？	データ鍵で暗号化し、データ鍵をKMSマスター鍵で包む方式	saa secure crypto
+CloudHSM を選ぶときば？	専用HSM・鍵の完全管理や準拠要件が必要なとき	saa secure crypto
+ACM の主な用途は？	ALB/CloudFront等のTLS証明書発行・更新自動化	saa secure crypto
+S3 Block Public Access の役割は？	アカウント/バケット単位で公開設定を強制ブロック	saa secure crypto
+バケットを非公開にする最低セットは？	Block Public Access ON + 公開ACLなし + 必要ならポリシーで明示許可のみ	saa secure crypto
+Macie は何用？	S3内のPII等の機密データ発見	saa secure crypto
+GuardDuty は何用？	アカウント/ワークロードの脅威検知（異常API等）	saa secure crypto
+Config は何用？	構成記録・変更追跡・準拠ルール評価	saa secure crypto
+CloudTrail は何用？	API呼び出しの監査ログ（誰が何をしたか）	saa secure crypto
+CloudTrail と CloudWatch Logs の違いは？	Trail=API監査 / CW Logs=アプリ・OS等のログ集約	saa secure crypto
+EBS / RDS / S3 の暗号化を有効化する定石は？	作成時に暗号化ON（後から不可な場合あり。スナップショット経由等）	saa secure crypto

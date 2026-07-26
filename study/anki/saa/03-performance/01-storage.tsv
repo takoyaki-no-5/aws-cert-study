@@ -1,0 +1,8 @@
+S3 / EBS / EFS / FSx の使い分けは？	S3=オブジェクト / EBS=EC2ブロック / EFS=複数EC2共有NFS / FSx=Windows・Lustre等	saa perf storage
+EBS gp3 と io2 の使い分けは？	gp3=汎用コスパ / io2=超高IOPS・重要DB	saa perf storage
+インスタンスストアが向くのは？	一時・再作成可データ。永続性はEBS/S3	saa perf storage
+S3 性能を上げる定石は？	並列化・プレフィックス分散・Transfer Acceleration等	saa perf storage
+EFS と FSx for Lustre の違いは？	EFS=汎用共有ファイル / Lustre=HPC高スループット	saa perf storage
+FSx for Windows を選ぶときば？	Windowsファイル共有・AD統合が必要	saa perf storage
+S3 Intelligent-Tiering は？	アクセス頻度に応じ自動階層。パターン不明時	saa perf storage
+大きなオブジェクトを高速転送したい→？	マルチパートアップロード / Transfer Acceleration / DataSync	saa perf storage

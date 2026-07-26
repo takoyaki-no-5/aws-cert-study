@@ -1,0 +1,8 @@
+オンデマンドを選ぶときば？	短期間・変動・中断不可のベース	saa cost compute
+RI と Savings Plans の違いは？	RI=インスタンス寄り拘束 / SP=$/時間コミットで柔軟（特にCompute SP）	saa cost compute
+スポットが向くのは？	中断耐性あるバッチ・ステートレス。ステートフル本番は注意	saa cost compute
+スポット中断への備えは？	チェックポイント・分散・Diversified・ASG混在	saa cost compute
+ライトサイジングとは？	過剰スペックを実測に合わせて縮小	saa cost compute
+Compute Optimizer の用途は？	EC2/EBS等の適正サイズ推奨	saa cost compute
+サーバレスが安くなる条件は？	アイドルが多い・イベント駆動。常時高負荷は要比較	saa cost compute
+Savings Plans の適用範囲イメージは？	Compute SPはEC2/Fargate/Lambda等に広く効く	saa cost compute

@@ -1,0 +1,16 @@
+Multi-AZ の目的は？	AZ障害に耐える高可用（同期/自動フェイルオーバー系）	saa resilient ha
+Multi-Region の目的は？	リージョン災害対策・グローバル展開・低遅延	saa resilient ha
+RPO / RTO とは？	RPO=許容データ損失量 / RTO=復旧までの許容時間	saa resilient ha
+バックアップ＆リストア戦略は？	最安・RTO/RPO大。定期バックアップから復旧	saa resilient ha
+パイロットライトとは？	核心のみ起動、災害時にスケールアウト。コスト低め	saa resilient ha
+ウォームスタンバイとは？	縮小版を常時稼働、災害時に拡大。パイロットより速い	saa resilient ha
+マルチサイト（アクティブ/アクティブ）とは？	複数拠点で同時稼働。RTO/RPO最小・コスト最大	saa resilient ha
+Route 53 フェイルオーバールーティングは？	ヘルスチェック失敗時に予備へ切替	saa resilient ha
+レイテンシルーティングは？	ユーザーから低遅延なリージョンへ	saa resilient ha
+加重ルーティングの用途は？	カナリア・トラフィック分割	saa resilient ha
+RDS Multi-AZ と Read Replica の違いは？	Multi-AZ=可用性（自動フェイルオーバー） / Replica=読み取りスケール（別用途）	saa resilient ha
+Aurora の高可用の特徴は？	共有ストレージ・複数AZレプリカ・高速フェイルオーバー	saa resilient ha
+S3 の耐久性の意味は？	データ喪失に極めて強い（11 9s）。可用性とは別概念	saa resilient ha
+S3 Cross-Region Replication の用途は？	コンプライアンス・DR・レイテンシ	saa resilient ha
+単一障害点（SPOF）を避ける定石は？	複数AZ・冗長化・オートスケール・マネージドサービス	saa resilient ha
+ASG + 複数AZ にする理由は？	AZ障害時も残存AZでキャパを維持	saa resilient ha

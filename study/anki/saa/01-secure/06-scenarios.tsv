@@ -1,0 +1,12 @@
+「アプリがS3に書く。鍵は埋め込みたくない」→？	EC2/ECS/LambdaにIAMロール。必要ならSSE-KMS	saa secure scenario
+「他アカウントのバケットを読みたい」→？	バケットポリシー＋相手側ロール/ユーザー権限。必要ならKMS鍵ポリシーも	saa secure scenario
+「プライベートSubnetのEC2がS3へ、インターネット経由なし」→？	S3 Gateway Endpoint（またはInterface）	saa secure scenario
+「オンプレからAWSへ閉域接続、安定帯域」→？	Direct Connect（必要ならDX+VPN冗長）	saa secure scenario
+「WebをDDoSとSQLiから守りたい」→？	CloudFront/ALB + Shield + WAF	saa secure scenario
+「社内ADでAWSコンソールにログイン」→？	IAM Identity Center またはフェデレーション	saa secure scenario
+「全アカウントでルート操作を禁止したい」→？	SCPで制限（管理アカウントは例外扱いに注意）	saa secure scenario
+「DBパスワードを自動ローテ」→？	Secrets Manager + RDS等ローテーション	saa secure scenario
+「S3に個人情報が混入していないか調べたい」→？	Macie	saa secure scenario
+「不審なAPI呼び出しを検知」→？	GuardDuty（調査はDetective等）	saa secure scenario
+「構成ドリフトや暗号化未設定を検知」→？	Config ルール	saa secure scenario
+「ALB配下をインターネット非公開にしたい」→？	内部ALB + プライベートSubnet、または認証付き公開	saa secure scenario

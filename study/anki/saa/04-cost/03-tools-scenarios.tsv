@@ -1,0 +1,12 @@
+Cost Explorer は？	コスト可視化・分析	saa cost tools
+Budgets は？	予算超過アラート（予測超過も可）	saa cost tools
+コスト配分タグの用途は？	部門・プロジェクト別の集計	saa cost tools
+CUR は？	最詳細の利用明細（S3出力）	saa cost tools
+「安定した常時EC2を安く」→？	Savings Plans または RI	saa cost scenario
+「バッチは安く、落ちても再実行可」→？	スポット	saa cost scenario
+「古いログを安く保管、すぐ読む必要薄」→？	S3 Glacier系 + ライフサイクル	saa cost scenario
+「外向き転送が痛い」→？	CloudFront / 圧縮 / キャッシュ / 不要転送削減	saa cost scenario
+「開発環境を夜間止めたい」→？	スケジュール停止・Instance Scheduler等	saa cost scenario
+「過大なEC2が多い」→？	Compute Optimizer + ライトサイジング	saa cost scenario
+「S3アクセスパターン不明」→？	Intelligent-Tiering	saa cost scenario
+「予測不能なスパイクのAPI」→？	Lambda/Fargate等の従量 + 適切なキャッシュ	saa cost scenario

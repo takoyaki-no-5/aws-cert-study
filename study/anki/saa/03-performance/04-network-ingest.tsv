@@ -1,0 +1,8 @@
+低レイテンシ設計の定石は？	ユーザーに近いリージョン/エッジ・不要ホップ削減	saa perf net
+Kinesis Data Streams の用途は？	リアルタイムストリーム処理（複数コンシューマ可）	saa perf net
+Kinesis Data Firehose の用途は？	ストリームをS3/Redshift等へ配信（マネージド）	saa perf net
+MSK を選ぶときば？	Kafka互換が必要	saa perf net
+DataSync の用途は？	オンプレ⇔AWS等のファイル高速同期	saa perf net
+Transfer Family の用途は？	SFTP/FTPS等でS3/EFSへ転送	saa perf net
+Snow ファミリーを選ぶときば？	ネットワーク転送が非現実的な大容量	saa perf net
+同一AZ配置が効くのは？	超低遅延（ただしAZ障害リスクとトレードオフ）	saa perf net

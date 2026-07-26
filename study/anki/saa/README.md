@@ -1,6 +1,7 @@
 # Anki（SAA）
 
 **目標: 覚え切れば本番イメージ約90点。** 対比・シナリオ中心。低頻度は入れない。
+現状: **25ファイル / 319枚**（AnkiConnect 投入済み）。再投入: `python3 .cursor/hooks/saa-anki-generate.py`
 
 ```
 study/anki/saa/

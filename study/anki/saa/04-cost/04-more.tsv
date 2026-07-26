@@ -1,0 +1,20 @@
+Dedicated Host を選ぶときば？	ライセンス・物理占有要件	saa cost compute
+キャパシティ予約の用途は？	必要時に確実にEC2を確保（割引とは別概念）	saa cost compute
+S3 取り出し料金が出やすいクラスは？	IA / Glacier 系（アクセス頻度と相談）	saa cost storage
+リクエスト料金が効くサービス例は？	S3・Lambda・DynamoDB等。無駄なチャットを減らす	saa cost storage
+Idle リソースの典型は？	未使用EBS・Elastic IP・負荷ゼロのEC2/ALB	saa cost tools
+Trusted Advisor のコストチェックは？	未使用・過剰リソースの指摘（サポートプランで範囲差）	saa cost tools
+Cost Anomaly Detection は？	異常なコスト増の検知	saa cost tools
+Savings Plans のコミット単位は？	時間あたりの利用額（$/hour）	saa cost compute
+スポットをステートフルDBに使う？	原則非推奨（中断リスク）	saa cost compute
+「開発用RDSを安く」→？	停止スケジュール・小さいインスタンス・Aurora Serverless等	saa cost scenario
+「NAT経由のS3転送が痛い」→？	S3 Gateway Endpoint	saa cost scenario
+「CloudWatchコスト増」対策の発想は？	ログ保持短縮・フィルタ・メトリクス絞り込み	saa cost scenario
+「同じデータをAZ間で大量転送」注意は？	AZ間転送課金。設計で同居/エンドポイント検討	saa cost scenario
+S3 ライフサイクルで Intelligent-Tiering へも？	可能。パターンに合わせた移行設計	saa cost storage
+EBS gp2 と gp3 のコスト感は？	gp3の方がIOPS/スループットを独立調整できコスパ良いことが多い	saa cost storage
+「常時ONのALBが複数」→？	統合・不要削除・台数見直し	saa cost scenario
+Reserved Capacity（DDB等）の発想は？	安定利用なら予約で割引	saa cost storage
+「ログを全部Standardに永久保存」は？	高い。ライフサイクルで移行	saa cost scenario
+Compute Savings Plans が RI より柔軟な点は？	インスタンスファミリやリージョンをまたぎやすい	saa cost compute
+「予算超過で通知」→？	AWS Budgets	saa cost tools

@@ -1,0 +1,12 @@
+IAM ユーザー / グループ / ロール / ポリシーの違いは？	ユーザー=永続ID / グループ=ユーザー集合 / ロール=一時権限 / ポリシー=権限文書	saa secure iam
+EC2 に S3 権限を付ける正しい方法は？	インスタンスプロファイル（IAMロール）。アクセスキーを埋め込まない	saa secure iam
+クロスアカウントで権限を渡す定石は？	相手アカウントのロールを AssumeRole（STS）。長期キー共有は非推奨	saa secure iam
+権限境界（Permissions boundary）は何用？	ユーザー/ロールが持てる最大権限の上限。委任時の暴走防止	saa secure iam
+セッションポリシーとは？	AssumeRole 時にさらに絞る一時的ポリシー。元の権限以上は付与できない	saa secure iam
+リソースベースポリシーとアイデンティティベースの違いは？	リソース側（S3等）に付けるか、ユーザー/ロール側に付けるか。両方必要な場合あり	saa secure iam
+IAM Identity Center の用途は？	複数アカウントへのSSO・権限セットの中央管理	saa secure iam
+フェデレーションの典型用途は？	社内IdPや Cognito ユーザーを一時認証で AWS に入れる	saa secure iam
+最小権限の実践ポイントは？	必要アクションのみ・条件キー活用・定期見直し・ロール優先	saa secure iam
+ルートユーザーの正しい扱い方は？	MFA必須・日常使わない・アクセスキー作らない	saa secure iam
+S3 バケットポリシーで拒否するとどうなる？	明示的 Deny は他の許可より優先（明示的拒否が最優先）	saa secure iam
+同一アカウントでロールを使う主な理由は？	人・サービスごとに一時権限を分離し、長期鍵を減らす	saa secure iam

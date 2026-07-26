@@ -1,0 +1,8 @@
+WAF と Shield の違いは？	WAF=L7ルール（SQLi/XSS等） / Shield=DDoS防護	saa secure edge
+Shield Standard と Advanced の違いは？	Standard=無料の基本DDoS / Advanced=高度検知・補償・専門サポート	saa secure edge
+Firewall Manager の用途は？	Organizations全体へWAF/Shield等ルールを中央配布	saa secure edge
+CloudFront + WAF の定石は？	エッジで脅威を止め、オリジンを直接公開しない	saa secure edge
+ALB の前に置く保護は？	WAF（L7）・必要なら Shield Advanced	saa secure edge
+Cognito の用途は？	アプリのユーザー認証・認可（ユーザープール/IDプール）	saa secure edge
+Secrets Manager の強みは？	秘密情報保管＋自動ローテーション連携	saa secure edge
+Parameter Store との使い分けは？	Secrets=秘密のローテ中心 / Parameter=設定値中心（SecureString可）	saa secure edge

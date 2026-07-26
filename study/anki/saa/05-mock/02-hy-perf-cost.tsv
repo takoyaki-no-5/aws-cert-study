@@ -1,0 +1,10 @@
+「静的配信」三点セットは？	S3 + CloudFront（+OAC/OAI）	saa hy
+「共有POSIXファイル」？	EFS	saa hy
+「Windowsファイル共有」？	FSx for Windows	saa hy
+「DynamoDB超低レイテンシ」？	DAX	saa hy
+「RDS接続過多（Lambda）」？	RDS Proxy	saa hy
+「中断可バッチ最安」？	スポット	saa hy
+「1年安定利用の割引」？	SP または RI	saa hy
+「低頻度アクセスのオブジェクト」？	S3 IA / Intelligent-Tiering / Glacier系	saa hy
+「外向き通信を閉域でS3」コスト面も？	VPCエンドポイント（NAT経由より安いことが多い）	saa hy
+「コスト可視化」？	Cost Explorer / 配分タグ / Budgets	saa hy

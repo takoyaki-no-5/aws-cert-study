@@ -1,0 +1,16 @@
+「マネージドKafka」？	MSK	saa hy
+「S3へストリームロード簡単」？	Firehose	saa hy
+「複数コンシューマで生ストリーム」？	Kinesis Data Streams	saa hy
+「オンプレファイル同期」？	DataSync	saa hy
+「SFTPでS3」？	Transfer Family	saa hy
+「PB級持ち込み」？	Snow Family	saa hy
+「サーバレスコンテナ」？	Fargate	saa hy
+「K8sが必要」？	EKS	saa hy
+「単純なコンテナオーケスト」？	ECS	saa hy
+「グローバルAnycastでTCP高速化」？	Global Accelerator	saa hy
+「Blue/Greenや加重シフト（DNS）」？	Route 53 加重	saa hy
+「WAFルールを全アカウント統一」？	Firewall Manager	saa hy
+「S3の機密データ検出」？	Macie	saa hy
+「脅威検知」？	GuardDuty	saa hy
+「構成履歴・準拠」？	Config	saa hy
+「API監査ログ」？	CloudTrail	saa hy

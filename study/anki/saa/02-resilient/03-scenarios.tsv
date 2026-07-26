@@ -1,0 +1,12 @@
+「スパイクで落ちる同期API」→？	SQSで緩衝 + ワーカー。必要ならALB+ASG	saa resilient scenario
+「注文処理を確実に順番どおり」→？	SQS FIFO（またはDynamoDB等の設計）	saa resilient scenario
+「AZ障害でもWebを止めない」→？	複数AZにALB+ASG、DBはMulti-AZ	saa resilient scenario
+「RPOほぼゼロ・高速切替のDR」→？	マルチサイト or ウォームスタンバイ寄り	saa resilient scenario
+「安くDR、復旧は数時間OK」→？	バックアップ＆リストア	saa resilient scenario
+「DB読み取りがボトルネック」→？	Read Replica / Aurora Replica / キャッシュ	saa resilient scenario
+「リージョン障害に備えたい」→？	クロスリージョンレプリカ + Route 53フェイルオーバー	saa resilient scenario
+「マイクロサービス間を疎結合に」→？	SNS+SQS または EventBridge	saa resilient scenario
+「長時間ワークフローを管理」→？	Step Functions	saa resilient scenario
+「静的IPで極低遅延LB」→？	NLB	saa resilient scenario
+「パス/ホストでルーティング」→？	ALB	saa resilient scenario
+「障害時に待機系サイトへDNS切替」→？	Route 53フェイルオーバー	saa resilient scenario

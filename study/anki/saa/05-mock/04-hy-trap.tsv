@@ -1,0 +1,20 @@
+「可用性」と「耐久性」を混ぜない。S3の11 9sは？	耐久性（データ喪失耐性）	saa hy
+「Multi-AZ RDS = 読み取り性能UP」は？	誤り。可用性目的	saa hy
+「NACLはステートフル」は？	誤り。ステートレス	saa hy
+「SGにDenyルール」は？	ない。許可のみ	saa hy
+「SCPだけでアプリ権限が付く」は？	誤り。上限のみ。IAMが必要	saa hy
+「スポットは無停止保証」は？	誤り。中断あり	saa hy
+「EBSは複数インスタンスから同時マウントが基本」は？	原則1台（Multi-Attach対応タイプは例外）	saa hy
+「EFSは1AZ限定」は？	誤り。リージョン内複数AZ（One Zoneタイプ除く）	saa hy
+「CloudFrontはTCP任意プロトコル向け」は？	主にHTTP(S)。任意TCPはGlobal Accelerator寄り	saa hy
+「DynamoDBは複雑なJOIN向き」は？	不向き。キー設計前提	saa hy
+「IAMロールは長期鍵と同じ」は？	違う。一時認証情報	saa hy
+「バケット公開=Block Public Access ONのまま」は？	矛盾。公開するなら設定を理解して外す（非推奨な公開が多い）	saa hy
+「Pilot Lightは常時フル稼働」は？	誤り。核のみ	saa hy
+「同じVPCならSG不要」は？	誤り。層ごとにSGで制御	saa hy
+「Kinesis=Firehoseと同じ」は？	違う。Streamsは処理基盤、Firehoseは配信寄り	saa hy
+「コスト最適化=常にスポット」は？	誤り。要件（中断・安定）次第	saa hy
+「AZを1つにまとめると安い＆堅牢」は？	安く見えるが単一障害点。堅牢ではない	saa hy
+「Route53はDNSのみでヘルスは見ない」は？	誤り。ヘルスチェック連携あり	saa hy
+「LambdaにOSパッチは顧客責任」は？	実行環境はAWS。コードと権限は顧客	saa hy
+「S3はファイルシステムとしてEC2にそのままマウントが定石」は？	非定石。共有FSならEFS/FSx	saa hy

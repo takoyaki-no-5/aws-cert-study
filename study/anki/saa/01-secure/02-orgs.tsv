@@ -1,0 +1,6 @@
+Organizations の主用途は？	マルチアカウント統合・一括請求・SCP	saa secure orgs
+SCP は何をする？	OU/アカウントで使えるAPIの上限ガードレール。権限付与そのものではない	saa secure orgs
+SCP と IAM の両方が必要な理由は？	SCPで許可されても IAM で許可が必要（両方通って初めて実行可）	saa secure orgs
+Control Tower は何用？	ランディングゾーン自動構築・ガードレール・アカウント発行標準化	saa secure orgs
+マルチアカウント分割の定石は？	本番/開発/セキュリティ/ログ/共有サービス等をアカウント分離	saa secure orgs
+組織のルート（管理アカウント）で避けるべきことは？	ワークロード実行。請求・組織管理に限定	saa secure orgs

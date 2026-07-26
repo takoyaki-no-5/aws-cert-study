@@ -1,0 +1,20 @@
+ELB のヘルスチェックが重要な理由は？	異常インスタンスを外し、健全な方へ振る	saa resilient decouple
+接続排出（connection draining）とは？	登録解除時に既存接続を猶予して切る	saa resilient decouple
+SQS ロングポーリングの利点は？	空応答削減・コストと遅延の改善	saa resilient decouple
+SNS フィルターポリシーは？	購読者が欲しいメッセージだけ受信	saa resilient decouple
+EventBridge Scheduler / ルールのイメージは？	時間またはイベントでターゲット起動	saa resilient decouple
+Step Functions 標準と Express の差（大枠）は？	標準=長時間・監査向き / Express=高頻度短時間	saa resilient decouple
+Aurora Global Database の用途は？	クロスリージョン低遅延読み取り・DR	saa resilient ha
+DynamoDB Global Tables の用途は？	マルチリージョンアクティブ書き込み寄り	saa resilient ha
+S3 バージョニング＋MFA Delete の意味は？	誤削除・悪意ある削除への耐性強化	saa resilient ha
+バックアップを別アカウント/リージョンに置く理由は？	アカウント侵害・リージョン障害からの隔離	saa resilient ha
+ASG のクールダウンとは？	スケール後に連続スケールしすぎない待機	saa resilient decouple
+ライフサイクルフックの用途は？	起動/終了時にカスタム処理（登録待ち等）	saa resilient decouple
+NLB のクロスゾーン負荷分散は？	AZをまたいで均等に振る設定（料金注意）	saa resilient decouple
+Route 53 ヘルスチェックの対象例は？	エンドポイント・他計算済みチェック・CloudWatch警報	saa resilient ha
+「ステートレスアプリが耐障害に強い理由」は？	どのインスタンスでも処理でき、置換しやすい	saa resilient ha
+EBS スナップショットの保存先は？	S3（リージョン内）。必要ならコピーでDR	saa resilient ha
+AMI を跨リージョンコピーする用途は？	DR・マルチリージョン展開	saa resilient ha
+RDS の自動バックアップ保持は？	保持期間内のポイントインタイムリカバリ用	saa resilient ha
+「キューが伸びたらスケール」定石は？	SQSキュー長をASG/ECSスケール指標に	saa resilient scenario
+「デプロイ中も止めない」定石は？	ローリング/Blue-Green、ALB切替、疎結合	saa resilient scenario

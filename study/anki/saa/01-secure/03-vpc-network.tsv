@@ -1,0 +1,12 @@
+パブリックサブネットとプライベートの違いは？	パブリック=IGWへのルートあり / プライベート=なし（外向きはNAT等）	saa secure vpc
+SG と NACL の違いは？	SG=ENI単位・ステートフル・許可のみ / NACL=サブネット・ステートレス・許可と拒否	saa secure vpc
+ステートフルとは？	戻り通信を自動許可。SGはステートフル、NACLは往復ルールが必要	saa secure vpc
+NAT Gateway の用途は？	プライベートサブネットからインターネットへ外向きのみ	saa secure vpc
+VPC エンドポイント（Gateway）が向くサービスは？	S3 / DynamoDB。ルートテーブル経由・データ転送料を抑えやすい	saa secure vpc
+Interface エンドポイント（PrivateLink）の用途は？	他AWSサービスや自社サービスへプライベート接続（ENI経由）	saa secure vpc
+PrivateLink を選ぶ典型シナリオは？	他アカウントのサービスをインターネット経由せず安全に利用	saa secure vpc
+VPN と Direct Connect の違いは？	VPN=インターネット上のIPsec（速い導入） / DX=専用線（安定帯域）	saa secure vpc
+Transit Gateway の用途は？	多数VPC/オンプレ接続をハブ&スポークで集約	saa secure vpc
+VPC ピアリングの制約は？	推移的ルーティング不可。多数接続は TGW の方が楽	saa secure vpc
+踏み台（Bastion）の代替としてよく出るのは？	SSM Session Manager（インバウンド22不要）	saa secure vpc
+0.0.0.0/0 を SG のインバウンドに開けるのはいつ？	原則避ける。必要なポートのみ・送信元を絞る	saa secure vpc
