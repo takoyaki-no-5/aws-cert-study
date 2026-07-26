@@ -21,11 +21,12 @@ description: >-
 ## 資格の立ち上げ手順（立ち上げ日曜にやる）
 
 1. `study/<資格>/` は全12資格分を用意済み。無ければ `_templates/` から作成（略称: clf, saa, scs, sap, ans, dva, soa, dop, dea, aif, mla, aip）。
-2. `exam.md` を埋める: 試験時間・問題形式・合格点・学習時間（一般 vs 今回）。見本: `study/saa/exam.md`。
+2. `exam.md` を埋める（または確認）: **全資格同一フォーマット**（`_templates/exam.md`）。時間・問題形式・合格点・学習時間（一般 vs 今回）。
 3. `roadmap.md` を確認・厚くする: **題材のみ**（見本: `study/clf/roadmap.md`）。順番と工数 → ドメイン → トピック → 短いチェック。範囲は削らない。運用は書かない。
-4. `schedule.md`: **運用のみ・短文**。フェーズ・日次をその週に確定。
+4. `schedule.md`: **運用のみ・短文**。フェーズ・日次をその週に確定。合格点の詳細は `exam.md`。
 5. `days/` は当日（または前夜）生成。ゴール・時間割・題材チェックのみ。
 6. `study/anki/<資格>/` に工程フォルダを切る。`study/schedule.md` ハブの「今」を更新。
+7. 資格フォルダ間でファイル構成の差分を増やさない（`study/README.md` 正）。
 
 ## 進め方
 

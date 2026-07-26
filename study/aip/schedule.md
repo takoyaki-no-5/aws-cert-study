@@ -1,6 +1,6 @@
 # スケジュール
 
-詳細: `days/`（当日生成） / 題材: `roadmap.md`
+詳細: `days/`（当日生成） / 題材: `roadmap.md` / 概要: `exam.md`
 
 ## 基本情報
 
@@ -12,7 +12,7 @@
 | 工数 | 約45h |
 | 確保週 | 2週 |
 | 負荷 | 厳しい（週あたり約22.5h） |
-| 合格ライン | 750/1000 |
+| 合格ライン | `exam.md` 参照 |
 | 結果 | 未 |
 | 備考 | Generative AI Developer – Professional |
 
