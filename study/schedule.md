@@ -6,8 +6,8 @@
 
 | 状態 | 試験 | 受験 | 詳細 |
 |------|------|------|------|
-| 済 | CLF | 7/25(土) 合格（仮） | [`clf/`](clf/) |
-| 次 | SAA | 8/8(土) 10:00 | [`saa/`](saa/) · 7/26 立ち上げ · 日次済 |
+| 済 | CLF | 7/25(土) **合格** | [`clf/`](clf/) · [`exam.md`](clf/exam.md) |
+| 次 | SAA | 8/8(土) 10:00 | [`saa/`](saa/) · [`exam.md`](saa/exam.md) · 7/26 立ち上げ · 日次済 |
 | その次 | SCS | 8/22(土) 10:00 | [`scs/`](scs/) · **厳しい** 週25h |
 
 ## 全資格フォルダ
@@ -18,7 +18,7 @@
 | DevOps | DVA → SOA → DOP | [`dva/`](dva/) [`soa/`](soa/) [`dop/`](dop/) |
 | データ→AI | DEA → AIF → MLA → AIP | [`dea/`](dea/) [`aif/`](aif/) [`mla/`](mla/) [`aip/`](aip/) |
 
-各フォルダ: `roadmap.md`（題材） / `schedule.md`（運用） / `days/`（当日）
+各フォルダ: `exam.md`（試験概要・共通） / `roadmap.md`（題材） / `schedule.md`（運用） / `days/`（当日）
 
 ## 常時ルール
 

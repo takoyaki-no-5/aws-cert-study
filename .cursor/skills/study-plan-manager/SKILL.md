@@ -16,15 +16,16 @@ description: >-
 - `study/plan.md` — 全12資格の受験日・**必要工数**・週負荷（楽〜厳しい）。受験日固定・週数で割った結果の負荷差は許容
 - `study/README.md` — 階層の地図
 - `study/schedule.md` — 薄いハブ（今どの試験か + 全資格リンク。日次の実体は書かない）
-- `study/<資格>/roadmap.md` + `schedule.md` + `days/` — 資格ごとの実体（規約は `AGENTS.md`。見本: `clf/`）
+- `study/<資格>/exam.md` + `roadmap.md` + `schedule.md` + `days/` — 資格ごとの実体（規約は `AGENTS.md`。見本: `saa/`）
 
 ## 資格の立ち上げ手順（立ち上げ日曜にやる）
 
 1. `study/<資格>/` は全12資格分を用意済み。無ければ `_templates/` から作成（略称: clf, saa, scs, sap, ans, dva, soa, dop, dea, aif, mla, aip）。
-2. `roadmap.md` を確認・厚くする: **題材のみ**（見本: `study/clf/roadmap.md`）。順番と工数 → ドメイン → トピック → 短いチェック。範囲は削らない。運用は書かない。
-3. `schedule.md`: **運用のみ・短文**。フェーズ・日次をその週に確定。
-4. `days/` は当日（または前夜）生成。ゴール・時間割・題材チェックのみ。
-5. `study/anki/<資格>/` に工程フォルダを切る。`study/schedule.md` ハブの「今」を更新。
+2. `exam.md` を埋める: 試験時間・問題形式・合格点・学習時間（一般 vs 今回）。見本: `study/saa/exam.md`。
+3. `roadmap.md` を確認・厚くする: **題材のみ**（見本: `study/clf/roadmap.md`）。順番と工数 → ドメイン → トピック → 短いチェック。範囲は削らない。運用は書かない。
+4. `schedule.md`: **運用のみ・短文**。フェーズ・日次をその週に確定。
+5. `days/` は当日（または前夜）生成。ゴール・時間割・題材チェックのみ。
+6. `study/anki/<資格>/` に工程フォルダを切る。`study/schedule.md` ハブの「今」を更新。
 
 ## 進め方
 
