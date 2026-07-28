@@ -8,6 +8,17 @@ description: >-
 
 # Anki カード生成・投入
 
+## 用語質問時（自動）
+
+「〇〇って何」系（詳細: `.cursor/rules/anki-term-qa.mdc`）:
+
+1. 先に回答
+2. `study/anki/**/*.tsv` を探索（必要なら AnkiConnect 検索）
+3. 同様の論点が無ければ **1枚だけ追加**（工程フォルダ or `06-review/asked.tsv`）
+4. AnkiConnect 可なら `anki-add.py`、だめなら TSV のみ
+
+**安全**: `anki-add.py` は `allowDuplicate: False` の **追加のみ**。他カード削除・上書き・学習記録消去はしない。
+
 ## 優先順位
 
 1. **AnkiConnect で直接追加**（Anki Desktop が起動中でアドオン導入済みのとき）

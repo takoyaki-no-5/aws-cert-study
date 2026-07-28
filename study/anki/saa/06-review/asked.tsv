@@ -1,0 +1,7 @@
+テープデバイス／Tape Gateway とは？	磁気テープ型のバックアップ装置。Tape Gatewayでオンプレの仮想テープ→S3/Glacier系へ	saa asked source:cursor
+バックプレッシャーとは？	下流が処理しきれないとき上流の送り込みを抑えること。スロットル（弾く）・バックオフ（待って再試行）とは別	saa asked source:cursor
+ロールバックとは？	失敗した変更・デプロイを前の正常状態に戻すこと	saa asked source:cursor
+指数バックオフとは？	失敗後の再試行で待ち時間をだんだん長くすること（ジッター併用が多い）	saa asked source:cursor
+NFS とは？	Network File System。複数サーバが同じファイルをネットワーク共有する方式。AWSではEFSがマネージドNFS	saa asked source:cursor
+ガバナンス／ガードレール／SCPの関係は？	ガバナンス=方針と守らせる仕組み全体 / ガードレール=その柵 / SCP=Organizationsの予防的上限	saa asked source:cursor
+最小権限での「ロール優先」とは？	長期アクセスキーよりIAMロール（一時資格情報）で権限を渡すこと	saa asked source:cursor
