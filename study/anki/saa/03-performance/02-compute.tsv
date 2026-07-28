@@ -6,3 +6,4 @@ CloudFront の主効果は？	エッジキャッシュでレイテンシ低下�
 Global Accelerator と CloudFront の違いは？	GA=TCP/UDPのAnya経路最適化 / CF=HTTPキャッシュCDN	saa perf compute
 Enhanced Networking / EFA が出るときば？	高ネットワーク性能・HPC通信が必要	saa perf compute
 オートスケールで性能を保つ定石は？	先行スケール・適切なメトリクス・暖機（必要なら）	saa perf compute
+ベアメタルインスタンスとは？	物理サーバをほぼ丸ごと使うEC2（.metal）。仮想化を排しハード直結・自前HV等が必要なとき	saa perf compute source:cursor
