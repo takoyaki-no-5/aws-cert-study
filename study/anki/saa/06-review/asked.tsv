@@ -6,3 +6,4 @@ NFS とは？	Network File System。複数サーバが同じファイルをネ�
 ガバナンス／ガードレール／SCPの関係は？	ガバナンス=方針と守らせる仕組み全体 / ガードレール=その柵 / SCP=Organizationsの予防的上限	saa asked source:cursor
 最小権限での「ロール優先」とは？	長期アクセスキーよりIAMロール（一時資格情報）で権限を渡すこと	saa asked source:cursor
 SCP と権限境界の違いは？	どちらも上限（足さない）。SCP=アカウント/OU全体 / 権限境界=そのユーザー・ロール単位	saa asked source:cursor
+ENI（Elastic Network Interface）とは？	VPC内の仮想NIC。IP・SG・MACを持ち、EC2等に付く。SGはENI単位で効く	saa asked source:cursor
