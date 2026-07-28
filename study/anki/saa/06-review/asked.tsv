@@ -8,3 +8,4 @@ NFS とは？	Network File System。複数サーバが同じファイルをネ�
 SCP と権限境界の違いは？	どちらも上限（足さない）。SCP=アカウント/OU全体 / 権限境界=そのユーザー・ロール単位	saa asked source:cursor
 ENI（Elastic Network Interface）とは？	VPC内の仮想NIC。IP・SG・MACを持ち、EC2等に付く。SGはENI単位で効く	saa asked source:cursor
 プライベート接続（試験での意味）とは？	インターネットを通さない接続。VPCエンドポイント/PrivateLink、VPN、DXなどが該当	saa asked source:cursor
+Bastion（踏み台）とは？	プライベートEC2へ入るための玄関用サーバ。代替の定番はSSM Session Manager（22番不要）	saa asked source:cursor
