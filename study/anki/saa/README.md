@@ -10,7 +10,7 @@ study/anki/saa/
   03-performance/ → AWS::SAA::03-性能
   04-cost/        → AWS::SAA::04-コスト
   05-mock/        → AWS::SAA::05-模試
-  06-review/      → 弱点・用語質問で追加したカード（asked.tsv）
+  06-review/      → 弱点。用語質問で工程不明のときだけ asked.tsv（追加前に anki 全範囲を探索）
 ```
 
 ## 周回順

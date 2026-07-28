@@ -10,14 +10,16 @@ description: >-
 
 ## 用語質問時（自動）
 
-「〇〇って何」系（詳細: `.cursor/rules/anki-term-qa.mdc`）:
+「〇〇って何 / 教えて」系（詳細: `.cursor/rules/anki-term-qa.mdc`）:
 
 1. 先に回答
-2. `study/anki/**/*.tsv` を探索（必要なら AnkiConnect 検索）
-3. 同様の論点が無ければ **1枚だけ追加**（工程フォルダ or `06-review/asked.tsv`）
+2. **`study/anki/` 全範囲**（全資格・全工程・asked.tsv 含む）を探索
+3. **どこにも同様の論点が無ければ** 1枚だけ追加（工程ファイル優先。無理なら `06-review/asked.tsv`）
 4. AnkiConnect 可なら `anki-add.py`、だめなら TSV のみ
 
-**安全**: `anki-add.py` は `allowDuplicate: False` の **追加のみ**。他カード削除・上書き・学習記録消去はしない。
+`asked.tsv` は置き場の一つ。追加前の捜索を省略しない。
+
+**安全**: `addNote` + 重複スキップのみ。他カード削除・学習記録消去はしない。
 
 ## 優先順位
 
