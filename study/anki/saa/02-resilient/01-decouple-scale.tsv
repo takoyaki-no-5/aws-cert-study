@@ -2,7 +2,7 @@
 密結合と疎結合の違いは？	密=コンポーネントが強く依存（片方落ちると連鎖）。疎=キュー等で間を置き独立に動ける（SAA定石）	saa resilient decouple
 SQS と SNS の違いは？	SQS=キュー（pull・緩衝） / SNS=パブサブ通知（push）	saa resilient decouple
 SNSの「購読者」は人そのもの？	試験では受け取り先（エンドポイント）。メールアドレス / SQS / Lambda / HTTP 等。人がSNSコンソールを触る必要はない	saa resilient decouple
-標準キューと FIFO の違いは？	FIFO=順序・Exactly-once寄り。標準=高スループット・順序ベストエフォート	saa resilient decouple
+標準キューと FIFO の違いは？	FIFO=順番を守る・同じメッセージはほぼ1回だけ。標準=たくさん流せるが順番は保証なし・同じものが複数回来うる	saa resilient decouple
 可視性タイムアウトとは？	受信後、他コンシューマから見えなくなる時間。処理時間に合わせる	saa resilient decouple
 SQS の in-flight（インフライト）とは？	受け取ったがまだ削除してない処理中メッセージ。この間は他から見えにくい（可視性タイムアウト）	saa resilient decouple
 DLQ の用途は？	処理失敗メッセージの隔離・後で調査	saa resilient decouple
