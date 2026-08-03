@@ -19,7 +19,7 @@
 ## ツール
 
 - Cursor / Anki / 本（`books.md`）
-- Discord（今日の予定通知）
+- Discord（今日の予定通知。表示名 **たこやき**・公開OK）
 
 ## 制約
 
