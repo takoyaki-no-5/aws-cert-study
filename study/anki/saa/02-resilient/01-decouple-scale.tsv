@@ -1,4 +1,5 @@
 疎結合にする定番サービスは？	SQS / SNS / EventBridge / Step Functions	saa resilient decouple
+密結合と疎結合の違いは？	密=コンポーネントが強く依存（片方落ちると連鎖）。疎=キュー等で間を置き独立に動ける（SAA定石）	saa resilient decouple
 SQS と SNS の違いは？	SQS=キュー（pull・緩衝） / SNS=パブサブ通知（push）	saa resilient decouple
 標準キューと FIFO の違いは？	FIFO=順序・Exactly-once寄り。標準=高スループット・順序ベストエフォート	saa resilient decouple
 可視性タイムアウトとは？	受信後、他コンシューマから見えなくなる時間。処理時間に合わせる	saa resilient decouple
