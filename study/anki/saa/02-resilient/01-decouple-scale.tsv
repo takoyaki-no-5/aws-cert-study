@@ -7,6 +7,7 @@ SNSの「購読者」は人そのもの？	試験では受け取り先（エン�
 SQS の in-flight（インフライト）とは？	受け取ったがまだ削除してない処理中メッセージ。この間は他から見えにくい（可視性タイムアウト）	saa resilient decouple
 DLQ の用途は？	処理失敗メッセージの隔離・後で調査	saa resilient decouple
 EventBridge の強みは？	イベントルールで多数ターゲットへルーティング（SaaS連携も）	saa resilient decouple
+オーケストレーションとは？	複数の処理の順番・分岐・リトライをまとめて指揮すること。SAAでは主に Step Functions	saa resilient decouple
 Step Functions の用途は？	ワークフローオーケストレーション（リトライ・分岐・可視化）	saa resilient decouple
 ALB と NLB の違いは？	ALB=L7（HTTP） / NLB=L4（超低遅延・静的IP）	saa resilient decouple
 CLB は今どう扱う？	レガシー。新規はALB/NLB	saa resilient decouple
