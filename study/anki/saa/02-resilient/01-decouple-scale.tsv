@@ -11,5 +11,6 @@ Auto Scaling の目的は？	需要に合わせた台数増減・可用性維持
 ターゲット追跡スケーリングとは？	CPU等の指標を目標値に保つよう自動調整	saa resilient decouple
 マルチティア構成の定石は？	Web/App/DBを層分離。DBはプライベート	saa resilient decouple
 API Gateway + Lambda が向くのは？	サーバレスAPI・バースト耐性・運用負荷低減	saa resilient decouple
+REST（レスト）とは？英語の休憩 rest と同じ？	HTTPで資源を操作するAPIの呼び方（GET/POST等）。休憩の rest とは別物。SAAでは API Gateway 等とセットで出る	saa resilient decouple
 ECS と EKS の使い分けは？	ECS=AWSネイティブ簡単 / EKS=Kubernetes互換・移植性	saa resilient decouple
 Fargate を選ぶ理由は？	サーバ管理なしでコンテナ実行	saa resilient decouple
