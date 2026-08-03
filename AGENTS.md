@@ -60,6 +60,7 @@ IaC や本番変更の作業場ではない（ハンズオン用メモは可）�
 - **Cursor** — 計画・解説・スケジュール・カード生成
 - **Anki** — TSV を `study/anki/` に生成してインポート（スキル: `anki-tsv`）。用語質問は回答後に **`study/anki/` 全範囲を探索**し、無ければ工程ファイル優先で追加（`anki-term-qa.mdc`）。追加は重複スキップの新規のみ
 - **本** — 主教材。章単位でスケジュールし、要点を notes / Anki へ
+- **Discord** — 今日の予定通知（スキル: `daily-plan-discord`、送信: `.cursor/hooks/discord-notify.py`、Secret: `discord_daily_bot`）。平日枠は **2時間40分/日**
 
 ## 作業環境（複数ある）
 
@@ -80,6 +81,7 @@ IaC や本番変更の作業場ではない（ハンズオン用メモは可）�
 - 「lint/test」相当は `bash .cursor/hooks/validate-hooks.sh`（`session-start.js` が有効な JSON を出すか検証）。ビルド工程は無い。
 - session コンテキスト自動化の確認: `node .cursor/hooks/session-start.js </dev/null`（`.private/` があればその中身も注入する。無くても動く）。
 - **Anki 系スクリプト**（`anki-add.py` / `anki-manage.py` / `anki-dedupe.py` / `clf-anki-*.py`）は Anki Desktop + AnkiConnect（`localhost:8765`）が前提。**クラウド VM には Anki が無いため接続エラーになるのが正常**。TSV の生成・パースはオフラインで動く（例: `anki-add.py` の `parse_tsv` を import して `study/anki/**/*.tsv` を読める）。
+- **Discord 通知**（`discord-notify.py`）は Cloud Secret `discord_daily_bot`（Webhook URL）が注入されていればクラウドでも送れる。URL をログやコミットに出さない。
 - `finish-push.sh` / `auth-web.sh` / `manual-auth.sh` / `install-gh.sh` はユーザーのローカル WSL 用（`finish-push.sh` は Windows 絶対パス直書き）。クラウドでは使わない。git 操作は通常の `git` コマンドで行う。
 - **`.private/` はクラウドでは基本残らない**（gitignore 済みで git/PR で運ばれず、新セッションはスナップショットから起動する別 VM）。環境の自己判別はフックの自動判定（上表）に依存し、`.private/environment.md` はあくまで任意の上書きラベル。
 - **PR を使わず `main` に直接 push する（ユーザー方針）**。新セッションが `cursor/...` ブランチ起点で始まっても、まず `git checkout main` してから commit → `git push origin main`（ローカルの `finish-push.sh` と同じ運用）。PR は作らない。
