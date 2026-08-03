@@ -60,7 +60,7 @@ IaC や本番変更の作業場ではない（ハンズオン用メモは可）�
 - **Cursor** — 計画・解説・スケジュール・カード生成
 - **Anki** — TSV を `study/anki/` に生成してインポート（スキル: `anki-tsv`）。用語質問は回答後に **`study/anki/` 全範囲を探索**し、無ければ工程ファイル優先で追加（`anki-term-qa.mdc`）。追加は重複スキップの新規のみ
 - **本** — 主教材。章単位でスケジュールし、要点を notes / Anki へ
-- **Discord** — 今日の予定通知（スキル: `daily-plan-discord`、送信: `.cursor/hooks/discord-notify.py`、Secret: `discord_daily_bot`）。平日枠は **帰宅後 2時間40分 + 電車 Anki 30分**
+- **Discord** — 今日の予定・進捗通知（スキル: `daily-plan-discord`、送信: `.cursor/hooks/discord-notify.py`、Secret: `discord_daily_bot`）。**ユーザーが伝えたタイミングのみ**。平日枠は **帰宅後 2時間40分 + 電車 Anki 30分**
 
 ## 作業環境（複数ある）
 
