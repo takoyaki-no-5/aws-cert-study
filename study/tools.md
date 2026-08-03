@@ -17,7 +17,8 @@
 - スキル: `.cursor/skills/daily-plan-discord/SKILL.md`
 - 送信: `python3 .cursor/hooks/discord-notify.py "..."`
 - Secret 名: `discord_daily_bot`（Webhook URL。リポジトリには置かない）
-- 予定（📅）も進捗（📊）も **ユーザーが伝えたときだけ** 送る
+- 予定も進捗も **ユーザーが伝えたときだけ** 送る
+- 文面は **友達向け**（分野外でもわかる・フランク）。**帰宅後枠だけ**（電車 Anki は書かない）
 
 ## 本
 
