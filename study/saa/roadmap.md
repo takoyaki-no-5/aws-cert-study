@@ -44,43 +44,43 @@
 
 ### アクセス設計 — 90分 — 第7章
 
-- [ ] IAM ユーザー / グループ / ロール / ポリシー
-- [ ] 最小権限 / 権限境界 / セッションポリシー
-- [ ] STS / クロスアカウント
-- [ ] IAM Identity Center / フェデレーション
-- [ ] Organizations / SCP / Control Tower
-- [ ] リソースポリシー（S3 / SQS / SNS / KMS）
+- [x] IAM ユーザー / グループ / ロール / ポリシー
+- [x] 最小権限 / 権限境界 / セッションポリシー
+- [x] STS / クロスアカウント
+- [x] IAM Identity Center / フェデレーション
+- [x] Organizations / SCP / Control Tower
+- [x] リソースポリシー（S3 / SQS / SNS / KMS）
 
 ### ワークロード保護 — 90分 — 第2章(VPC) + 第8章
 
-- [ ] VPC / サブネット / ルート（第2章）
-- [ ] SG / NACL（第2章）
-- [ ] NAT / IGW / エンドポイント / PrivateLink（第2章）
-- [ ] WAF / Shield / Firewall Manager（第8章）
-- [ ] Cognito / Secrets Manager / VPN / DX（第8章・第2章）
+- [x] VPC / サブネット / ルート（第2章）
+- [x] SG / NACL（第2章）
+- [x] NAT / IGW / エンドポイント / PrivateLink（第2章）
+- [x] WAF / Shield / Firewall Manager（第8章）
+- [x] Cognito / Secrets Manager / VPN / DX（第8章・第2章）
 
 ### データ保護 — 90分 — 第8章 + 第4章(S3)
 
-- [ ] 保存時暗号 / KMS（第8章）
-- [ ] 転送時 / ACM / TLS（第8章）
-- [ ] S3 公開遮断 / バケットポリシー（第4章）
-- [ ] バックアップ・レプリケーション・ライフサイクル（第4章）
-- [ ] Macie / GuardDuty（第8章）
+- [x] 保存時暗号 / KMS（第8章）
+- [x] 転送時 / ACM / TLS（第8章）
+- [x] S3 公開遮断 / バケットポリシー（第4章）
+- [x] バックアップ・レプリケーション・ライフサイクル（第4章）
+- [x] Macie / GuardDuty（第8章）
 
 ### シナリオ — 90分 — 第13章（セキュア）
 
-- [ ] 第13章のセキュア設計の節 + 章末・練習問題
-- [ ] マルチアカウント / 秘密情報 / 暗号化経路
+- [x] 第13章のセキュア設計の節 + 章末・練習問題
+- [x] マルチアカウント / 秘密情報 / 暗号化経路
 
 ## 2. レジリエントアーキテクチャ（26%） — 5.5h
 
 ### 疎結合・スケール — 100分 — 第3章 + 第9章
 
-- [ ] マルチティア（第13章導入でも可）
-- [ ] ALB / NLB / Auto Scaling（第3章）
-- [ ] SQS / SNS / EventBridge / Step Functions（第9章）
-- [ ] API Gateway / Lambda / Fargate（第3章・第9章）
-- [ ] ECS / EKS（第3章）
+- [x] マルチティア（第13章導入でも可）
+- [x] ALB / NLB / Auto Scaling（第3章）
+- [x] SQS / SNS / EventBridge / Step Functions（第9章）
+- [x] API Gateway / Lambda / Fargate（第3章・第9章）
+- [x] ECS / EKS（第3章）
 
 ### 高可用・障害耐性 — 100分 — 第2・5・6章
 
