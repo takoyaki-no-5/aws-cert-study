@@ -85,7 +85,7 @@
 ### 高可用・障害耐性 — 100分 — 第2・5・6章
 
 - [x] Multi-AZ / Multi-Region（第2章）
-- [ ] Route 53 ルーティング（第6章）
+- [x] Route 53 ルーティング（第6章）
 - [ ] DR 4戦略 / RPO・RTO（第13章の弾力性と併読）
 - [x] RDS Multi-AZ / Read Replica（第5章）
 - [ ] S3 耐久性・レプリケーション（第4章）
@@ -106,7 +106,7 @@
 
 - [ ] EC2 タイプ / Placement
 - [ ] Lambda / Batch / EMR / Fargate
-- [ ] CloudFront / Global Accelerator（第6章）
+- [x] CloudFront / Global Accelerator（第6章）
 
 ### データベース — 55分 — 第5章
 
