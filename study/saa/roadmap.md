@@ -87,7 +87,7 @@
 - [ ] Multi-AZ / Multi-Region（第2章）
 - [ ] Route 53 ルーティング（第6章）
 - [ ] DR 4戦略 / RPO・RTO（第13章の弾力性と併読）
-- [ ] RDS Multi-AZ / Read Replica（第5章）
+- [x] RDS Multi-AZ / Read Replica（第5章）
 - [ ] S3 耐久性・レプリケーション（第4章）
 
 ### シナリオ — 100分 — 第13章（弾力性）
