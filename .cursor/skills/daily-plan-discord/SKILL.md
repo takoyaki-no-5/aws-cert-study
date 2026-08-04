@@ -130,6 +130,7 @@ day / 予定を反映 → オン時のみ必要なら予定 Discord を**再送*
 ## やらない
 
 - Webhook URL をコミット・貼る
+- `study/discord.off` があるのに Discord 送信する
 - Discord に技術用語・枠外（電車 Anki 等）・不足リスト・**進捗**を載せる
 - 時間不明の追加を黙って押し込む / ズレを黙って玉突き
 - 進捗報告のたびに Discord する
