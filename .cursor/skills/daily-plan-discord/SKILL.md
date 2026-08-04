@@ -13,6 +13,12 @@ description: >-
 1. **予定**: 今日の予定を出す →（必要なら調整）→ **Discord 送信**（ユーザーが伝えたタイミング。定期送信しない）
 2. **進捗**: どこまでやったかを受け取る → **day/log 更新のみ**（**Discord には送らない**）
 
+## 送信スイッチ
+
+- **`study/discord.off` がある間は Discord に送らない**（チャットに予定を出すだけ）
+- オフ中は `discord-notify.py` を呼ばない
+- オンに戻すのはユーザーが「Discord オンにして」等と言ったときだけ（そのとき `discord.off` を削除し `tools.md` / `profile.md` / 本スキル表記を戻す）
+
 ## 前提
 
 - 1日の学習枠（`study/profile.md` を正）:
@@ -20,7 +26,7 @@ description: >-
   - **電車 Anki 30分** … 帰宅後の**外**（別枠。**Discord には書かない**）
   - 当日だけ短縮（例: 2時間）ならユーザー指定を優先し day に明記
 - Webhook: Cloud Secret / env **`discord_daily_bot`**
-- 送信: `python3 .cursor/hooks/discord-notify.py`（URL をログに出さない）
+- 送信: `python3 .cursor/hooks/discord-notify.py`（URL をログに出さない。`discord.off` 時は拒否）
 - チャット向け（本人用）は day / 技術用語OK。**Discord 向けは友達向け・別フォーマット**
 
 ## Discord 文面ルール（予定のみ）
@@ -45,7 +51,7 @@ description: >-
 2. 今日の day が無ければ、未消化・roadmap・残り日数から **帰宅後160分＋電車30** に収まる案を作る（まだ確定・送信しない）。足りない分は schedule の「不足」へ
 3. **ズレ検知** → 当てはまったら先に質問（勝手に詰め込まない）
 4. **チャット**には本人向けに具体ブロックを短く提示
-5. OK なら Discord は下の**友達向け**で送信。調整があれば「調整」へ
+5. OK かつ **`study/discord.off` が無い**ときだけ Discord を下の**友達向け**で送信。オフ中は送らない。調整があれば「調整」へ
 
 ### 予定メッセージ（Discord）
 
@@ -87,6 +93,10 @@ M/D・〇時間〇分
 
 ## 送信（予定のみ）
 
+`study/discord.off` がある → **送らない**（チャットに残すだけ）。
+
+無いとき:
+
 ```bash
 python3 .cursor/hooks/discord-notify.py "$(cat <<'EOF'
 たこやきの今日の勉強（SAA資格）
@@ -99,7 +109,7 @@ EOF
 
 ## 調整（「これもやる」「これはやらない」）
 
-day / 予定を反映 → 必要なら予定 Discord を**再送**（先頭に「訂正:」）。進捗のたびに送らない。
+day / 予定を反映 → オン時のみ必要なら予定 Discord を**再送**（先頭に「訂正:」）。進捗のたびに送らない。
 
 | 指示 | 動き |
 |------|------|

@@ -22,6 +22,20 @@ import urllib.request
 SECRET_ENV = "discord_daily_bot"
 MAX_CONTENT = 1900  # Discord limit 2000; leave headroom
 DEFAULT_USERNAME = "aws-cert-study"
+# repo root = parents[2] from .cursor/hooks/thisfile
+OFF_FLAG = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
+    "study",
+    "discord.off",
+)
+
+
+def assert_not_off() -> None:
+    if os.path.exists(OFF_FLAG):
+        raise SystemExit(
+            "Discord notify is OFF (study/discord.off). "
+            "Remove the flag only when the user asks to turn it back on."
+        )
 
 
 def load_webhook() -> str:
@@ -39,6 +53,7 @@ def load_webhook() -> str:
 
 
 def post(content: str, *, username: str = DEFAULT_USERNAME) -> int:
+    assert_not_off()
     content = content.strip()
     if not content:
         raise SystemExit("empty message")

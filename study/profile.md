@@ -19,7 +19,7 @@
 ## ツール
 
 - Cursor / Anki / 本（`books.md`）
-- Discord（今日の予定通知。表示名 **たこやき**・公開OK）
+- Discord（今日の予定通知。表示名 **たこやき**・公開OK）— **現在 OFF**（ユーザーがオンと言うまで送らない。目印: `study/discord.off`）
 
 ## 制約
 

@@ -24,7 +24,7 @@
 
 - 平日枠: **帰宅後 2時間40分（160分）+ 電車 Anki 30分**（`profile.md`。電車は別枠）
 - 本学習 = **テキスト全部 → 最後に Anki**（合間に挟まない）
-- 今日の予定の提示・Discord 通知: スキル `daily-plan-discord`（**予定のみ**。進捗は送らない）
+- 今日の予定の提示: スキル `daily-plan-discord`（**Discord は現在 OFF**・`study/discord.off`。チャットのみ。進捗は送らない）
 - 工数は必要量（`plan.md`）。週負荷は楽〜厳しいが混在してよい。受験日は動かさない
 - 翌々月曜 21:00 = 次試験の予約 → 会場は `.private/`
 - 終わったら `log/YYYY-MM-DD.md` + 資格 `schedule.md` を済に

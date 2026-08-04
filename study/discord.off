@@ -1,0 +1,3 @@
+# Discord 予定通知オフ
+# このファイルがある間は discord-notify.py もスキルも送らない。
+# オンに戻す: ユーザーが「Discord オンにして」等と言ったらこのファイルを削除し、tools/profile/skill の表記を戻す。
