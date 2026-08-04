@@ -6,6 +6,7 @@ RPO / RTO とは？	RPO=許容データ損失量 / RTO=復旧までの許容時�
 ウォームスタンバイとは？	縮小版を常時稼働、災害時に拡大。パイロットより速い	saa resilient ha
 マルチサイト（アクティブ/アクティブ）とは？	複数拠点で同時稼働。RTO/RPO最小・コスト最大	saa resilient ha
 Route 53 フェイルオーバールーティングは？	ヘルスチェック失敗時に予備へ切替	saa resilient ha
+Zone Apex（ルートドメイン）を ALB/CloudFront 等に向けるには？	Route 53 の Alias（CNAMEはApexに使えない）	saa resilient ha
 レイテンシルーティングは？	ユーザーから低遅延なリージョンへ	saa resilient ha
 加重ルーティングの用途は？	カナリア・トラフィック分割	saa resilient ha
 RDS Multi-AZ と Read Replica の違いは？	Multi-AZ=可用性（自動フェイルオーバー） / Replica=読み取りスケール（別用途）	saa resilient ha
