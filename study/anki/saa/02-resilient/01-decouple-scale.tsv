@@ -9,6 +9,7 @@ DLQ の用途は？	処理失敗メッセージの隔離・後で調査	saa resi
 EventBridge の強みは？	イベントルールで多数ターゲットへルーティング（SaaS連携も）	saa resilient decouple
 オーケストレーションとは？	複数の処理の順番・分岐・リトライをまとめて指揮すること。SAAでは主に Step Functions	saa resilient decouple
 Step Functions の用途は？	ワークフローオーケストレーション（リトライ・分岐・可視化）	saa resilient decouple
+LB（ロードバランサー）とは？	アクセスを複数サーバに振り分ける装置。1台に集中させず負荷分散・障害時は生きてる方へ	saa resilient decouple
 ALB と NLB の違いは？	ALB=L7（HTTP） / NLB=L4（超低遅延・静的IP）	saa resilient decouple
 CLB は今どう扱う？	レガシー。新規はALB/NLB	saa resilient decouple
 Auto Scaling の目的は？	需要に合わせた台数増減・可用性維持	saa resilient decouple
