@@ -10,3 +10,4 @@
 「静的IPで極低遅延LB」→？	NLB	saa resilient scenario
 「パス/ホストでルーティング」→？	ALB	saa resilient scenario
 「障害時に待機系サイトへDNS切替」→？	Route 53フェイルオーバー	saa resilient scenario
+「監視で異常検知→自動対処したい（緩衝）」→？	Alarm/Event→SNSやEventBridge→必要ならSQSで溜めてからLambda等。SQSは監視ではなく対処ジョブのキュー	saa resilient scenario
