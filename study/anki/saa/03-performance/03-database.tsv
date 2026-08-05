@@ -1,6 +1,7 @@
 RDS / Aurora / DynamoDB の使い分けは？	RDS=マネージドRDB / Aurora=高可用高パフォーマンス互換 / DDB=超スケールKVS	saa perf db
 DynamoDB が向くアクセスは？	キーが明確・大規模・低レイテンシ。結合多用は不向き	saa perf db
 DAX は何用？	DynamoDB用インメモリキャッシュ（マイクロ秒級）	saa perf db
+インメモリとは？	データをディスクではなくメモリ（RAM）上に置くこと。超高速だが電源断・再起動で消えやすい。ElastiCacheが代表	saa perf db
 ElastiCache の用途は？	RDB等の前段キャッシュ・セッション（Redis/Memcached）	saa perf db
 読み取りスケールの定石は？	Read Replica / Aurora Replica / キャッシュ	saa perf db
 書き込みがボトルネックなRDB→？	シャーディング検討、またはDynamoDB等への適材適所	saa perf db
