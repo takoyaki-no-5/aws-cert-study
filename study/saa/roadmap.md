@@ -116,9 +116,9 @@
 
 ### ネットワーク・取り込み — 55分 — 第6章 + 第10章
 
-- [ ] 低レイテンシ設計
-- [ ] Kinesis / Firehose / MSK（第10章）
-- [ ] DataSync / Transfer Family（第10章）
+- [x] 低レイテンシ設計
+- [x] Kinesis / Firehose / MSK（第10章）
+- [x] DataSync / Transfer Family（第10章）
 
 ### シナリオ — 60分 — 第13章（高性能）
 
