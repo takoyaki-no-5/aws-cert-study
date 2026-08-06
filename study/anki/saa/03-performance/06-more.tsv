@@ -18,3 +18,4 @@ Athena の用途は？	S3へSQL（サーバレス）	saa perf net
 「同一ファイルを数千台が読む」→？	EFS/FSx または S3+CDN（要件次第）	saa perf scenario
 「分析用にログを溜めてSQL」→？	S3 + Athena（必要ならGlue）	saa perf scenario
 「低遅延ゲーミングTCP」→？	Global Accelerator	saa perf scenario
+分散処理と Hadoop とは？	大きなデータを複数マシンに分けて並列処理すること＝分散処理。Hadoopはその枠組みの代表（MapReduce等）。AWSでは EMR 上で Hadoop/Spark。対比: Athena=S3へSQL（サーバレス）/ 単一EC2=非分散	saa perf net source:cursor
