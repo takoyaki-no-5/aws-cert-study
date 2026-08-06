@@ -134,25 +134,25 @@
 
 ### コンピュートコスト — 55分 — 第3章 + 第11章
 
-- [ ] オンデマンド / RI / Savings Plans / スポット
-- [ ] ライトサイジング / Compute Optimizer
-- [ ] サーバレス適合
+- [x] オンデマンド / RI / Savings Plans / スポット
+- [x] ライトサイジング / Compute Optimizer
+- [x] サーバレス適合
 
 ### DB・ネットワークコスト — 50分 — 第5・6・11章
 
-- [ ] Aurora Serverless / DynamoDB キャパシティ
-- [ ] データ転送 / VPC エンドポイント
-- [ ] CloudFront による転送削減
+- [x] Aurora Serverless / DynamoDB キャパシティ
+- [x] データ転送 / VPC エンドポイント
+- [x] CloudFront による転送削減
 
 ### 運用・可視化 — 40分 — 第11章
 
-- [ ] Cost Explorer / Budgets / 配分タグ
-- [ ] Savings Plans 選定
+- [x] Cost Explorer / Budgets / 配分タグ
+- [x] Savings Plans 選定
 
 ### シナリオ — 50分 — 第13章（コスト）
 
 - [x] 第13章のコスト最適化の節 + 練習問題
-- [ ] コスト対性能のトレードオフ
+- [x] コスト対性能のトレードオフ
 
 ## 5. 模試 + 直し — 4.0h — 第14章
 
