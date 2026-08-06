@@ -9,3 +9,4 @@ Enhanced Networking / EFA が出るときば？	高ネットワーク性能・HP
 ベアメタルインスタンスとは？	物理サーバをほぼ丸ごと使うEC2（.metal）。仮想化を排しハード直結・自前HV等が必要なとき	saa perf compute source:cursor
 Placement Group（partition）は？	パーティション単位で分散配置。同時障害リスクを下げつつclusterより台数を載せやすい	saa perf compute source:cursor
 EC2 の R系と T系の違いは？	R系=メモリ最適化（大容量RAM・DB/キャッシュ等） / T系=バースト汎用（CPUクレジット。枯渇で性能低下・常時高CPU向きでない）	saa perf compute source:cursor
+EC2 の M系とは？大きさ？	M系=汎用（CPUとメモリのバランス）。大きさは別軸（large / xlarge 等）。デカい＝サイズ、M/C/R/T＝向き（C=CPU / R=メモリ / T=バースト）	saa perf compute source:cursor
