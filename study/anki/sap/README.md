@@ -29,4 +29,5 @@ study/anki/sap/
 | `01-service-list/17-media.tsv` | 2 | メディアサービス |
 | `01-service-list/18-migration-transfer.tsv` | 8 | 移行と転送 |
 | `01-service-list/19-networking.tsv` | 9 | ネットワークとコンテンツ配信 |
-| `01-service-list/20-security.tsv` | 7 | セキュリティ（Directory Serviceまで。続きあり） |
+| `01-service-list/20-security.tsv` | 21 | セキュリティ、アイデンティティ、コンプライアンス |
+| `01-service-list/21-storage.tsv` | 5 | ストレージ（続きあり） |

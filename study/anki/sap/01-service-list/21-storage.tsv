@@ -1,0 +1,5 @@
+AWS Backup	クラウド内外のデータのバックアップと復元を一元管理するサービス	sap services storage
+Amazon Elastic Block Store (Amazon EBS)	ブロックストレージを提供するサービス	sap services storage
+AWS Elastic Disaster Recovery	災害復旧を目的としたAWSリソースの迅速な復旧サービス	sap services storage
+Amazon Elastic File System (Amazon EFS)	スケーラブルなファイルストレージサービス	sap services storage
+Amazon FSx (すべてのタイプに対応)	さまざまなファイルストレージを提供するサービス	sap services storage
