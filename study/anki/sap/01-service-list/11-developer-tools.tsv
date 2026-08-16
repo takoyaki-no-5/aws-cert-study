@@ -4,3 +4,6 @@ AWS CodeBuild	ソースコードのビルド・テストを行うフルマネー
 AWS CodeCommit	Gitベースのリモートリポジトリを提供するサービス	sap services devops
 AWS CodeDeploy	EC2やLambdaへのアプリケーションデプロイを自動化するサービス	sap services devops
 Amazon CodeGuru	機械学習を用いてコードレビューやアプリケーション性能分析を支援するサービス	sap services devops
+AWS CodePipeline	CI/CD ワークフローを自動化するパイプライン構築サービス	sap services devops
+AWS CodeStar	開発プロジェクトを迅速に開始できる統合開発管理サービス	sap services devops
+AWS X-Ray	分散アプリケーションのパフォーマンスを可視化・トレースするサービス	sap services devops

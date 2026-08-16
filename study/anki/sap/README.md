@@ -20,4 +20,7 @@ study/anki/sap/
 | `01-service-list/08-compute.tsv` | 11 | コンピューティング |
 | `01-service-list/09-containers.tsv` | 5 | コンテナ |
 | `01-service-list/10-database.tsv` | 10 | データベース |
-| `01-service-list/11-developer-tools.tsv` | 6 | デベロッパーツール（続きあり） |
+| `01-service-list/11-developer-tools.tsv` | 9 | デベロッパーツール |
+| `01-service-list/12-end-user-computing.tsv` | 2 | エンドユーザーコンピューティング |
+| `01-service-list/13-frontend-web-mobile.tsv` | 4 | フロントエンドの Web とモバイル |
+| `01-service-list/14-iot.tsv` | 9 | IoT |

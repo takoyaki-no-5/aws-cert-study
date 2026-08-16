@@ -1,0 +1,9 @@
+AWS IoT Analytics	IoT デバイスからのデータを分析し、可視化・洞察を提供するサービス	sap services iot
+AWS IoT Core	IoT デバイスの接続・管理・セキュリティを提供する基盤サービス	sap services iot
+AWS IoT Device Defender	IoT デバイスのセキュリティ監視・脅威検出を行うサービス	sap services iot
+AWS IoT Device Management	IoT デバイスの登録・管理・監視を行うサービス	sap services iot
+AWS IoT Events	IoT デバイスの状態変化を検出し、アクションをトリガーするサービス	sap services iot
+AWS IoT Greengrass	エッジデバイスでローカルにデータ処理を行う IoT 用エッジコンピューティングサービス	sap services iot
+AWS IoT SiteWise	産業機器からのデータを収集・管理・分析するサービス	sap services iot
+AWS IoT Things Graph	IoT デバイス間のワークフローを視覚的に作成・管理するサービス	sap services iot
+AWS IoT 1-Click	シンプルな IoT デバイス操作をワンクリックで実行できるサービス	sap services iot

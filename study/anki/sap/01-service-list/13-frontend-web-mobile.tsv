@@ -1,0 +1,4 @@
+AWS Amplify	フルマネージドなモバイル・Web アプリの開発・デプロイ機能を提供するサービス	sap services frontend
+Amazon API Gateway	RESTful API や WebSocket API を簡単に作成・管理できるサービス	sap services frontend
+AWS Device Farm	モバイルアプリをリアルデバイスでテストするサービス	sap services frontend
+Amazon Pinpoint	パーソナライズされたマルチチャネルのメッセージングサービス	sap services frontend
