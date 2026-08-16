@@ -3,3 +3,6 @@ AWS Application Migration Service	サーバやアプリケーションをAWSへ�
 AWS Database Migration Service (AWS DMS)	データベース移行を簡単に行うフルマネージドサービス	sap services migration
 AWS DataSync	オンプレミスとAWS間で大量データを効率的に同期・転送するサービス	sap services migration
 AWS Migration Hub	移行進捗を一元管理し複数の移行ツールを統合するサービス	sap services migration
+AWS Schema Conversion Tool (AWS SCT)	異なるエンジン間でデータベーススキーマを変換するツール	sap services migration
+AWS Snow Family	大容量データを物理的に転送するデバイスを提供するサービス	sap services migration
+AWS Transfer Family	SFTP、FTP、FTPS、AS2でAWSへ安全にデータ転送するサービス	sap services migration

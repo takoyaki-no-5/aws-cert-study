@@ -1,0 +1,9 @@
+Amazon CloudFront	CDNを提供するサービス	sap services networking
+AWS Direct Connect	オンプレミスとAWSを専用線で接続するサービス	sap services networking
+Elastic Load Balancing (ELB)	複数ターゲットにトラフィックを分散し高可用性を提供するロードバランサーサービス	sap services networking
+AWS Global Accelerator	グローバル規模でアプリケーション性能を最適化するサービス	sap services networking
+AWS PrivateLink	VPCからプライベートIPで外部サービスにアクセスするサービス	sap services networking
+Amazon Route 53	高可用性DNS機能を提供するサービス	sap services networking
+AWS Transit Gateway	複数VPCとオンプレミスネットワークを接続し一元管理するサービス	sap services networking
+Amazon VPC	VPC内でリソースを分離・管理するサービス	sap services networking
+AWS VPN (Site-to-Site VPN)	AWSとオンプレミスを安全に接続するVPNサービス	sap services networking

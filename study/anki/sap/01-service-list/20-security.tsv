@@ -1,0 +1,7 @@
+AWS Artifact	コンプライアンスレポートや証明書を提供するサービス	sap services security
+AWS Audit Manager	AWS環境の監査・コンプライアンス管理を支援するサービス	sap services security
+AWS Certificate Manager (ACM)	SSL/TLS証明書を管理・提供するサービス	sap services security
+AWS CloudHSM	HSMを提供するマネージドサービス	sap services security
+Amazon Cognito	ユーザー認証・管理を提供するサービス	sap services security
+Amazon Detective	セキュリティインシデントを分析するサービス	sap services security
+AWS Directory Service	マネージドMicrosoft ADや認証基盤を提供するディレクトリサービス	sap services security
