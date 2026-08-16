@@ -1,0 +1,7 @@
+Amazon AppFlow	SaaSとAWS間で、安全にデータ転送や同期機能を提供するサービス	sap services integration
+AWS AppSync	GraphQL APIを構築・管理できるサービス	sap services integration
+Amazon EventBridge	アプリ間のイベント接続機能や、スケジュール実行機能を提供するサービス	sap services integration
+Amazon MQ	フルマネージドなApache ActiveMQ/RabbitMQを提供するサービス	sap services integration
+Amazon SNS	フルマネージドなパブサブメッセージング機能を提供するサービス	sap services integration
+Amazon SQS	非同期通信のためのメッセージキューを提供するサービス	sap services integration
+AWS Step Functions	処理フローを視覚的に構築できるサーバレスな状態管理サービス	sap services integration

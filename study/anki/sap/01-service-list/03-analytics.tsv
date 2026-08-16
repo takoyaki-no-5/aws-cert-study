@@ -1,0 +1,12 @@
+Amazon Athena	S3上のデータをSQLで分析できるサーバレスなクエリサービス	sap services analytics
+AWS Data Exchange	サードパーティデータを安全に検索・利用・共有できるサービス	sap services analytics
+AWS Data Pipeline	データの移動・変換を自動化するETLワークフローサービス	sap services analytics
+Amazon EMR	ビッグデータ処理のためのHadoop/Sparkクラスタサービス	sap services analytics
+AWS Glue	データカタログとETL処理を提供するサーバレスなデータ統合サービス	sap services analytics
+Amazon Managed Service for Apache Flink	ストリーミングデータをSQLでリアルタイムに分析するサービス	sap services analytics
+Kinesis Data Firehose	ストリーミングデータを自動的に保存・分析サービスに配信するサービス	sap services analytics
+Amazon Kinesis Data Streams	ストリーミングデータをリアルタイムで収集・処理するサービス	sap services analytics
+AWS Lake Formation	データレイクを迅速かつ安全に構築・管理するサービス	sap services analytics
+Amazon Managed Streaming for Apache Kafka (Amazon MSK)	ストリーミングデータを処理するフルマネージドなApache Kafkaサービス	sap services analytics
+Amazon OpenSearch Service	フルマネージドな全文検索・分析エンジンを提供するサービス	sap services analytics
+Amazon QuickSight	スケーラブルで高速なBIダッシュボードを提供する可視化サービス	sap services analytics
