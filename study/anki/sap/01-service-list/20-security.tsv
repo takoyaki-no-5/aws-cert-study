@@ -5,3 +5,17 @@ AWS CloudHSM	HSMを提供するマネージドサービス	sap services security
 Amazon Cognito	ユーザー認証・管理を提供するサービス	sap services security
 Amazon Detective	セキュリティインシデントを分析するサービス	sap services security
 AWS Directory Service	マネージドMicrosoft ADや認証基盤を提供するディレクトリサービス	sap services security
+AWS Firewall Manager	複数のVPCやアカウントでファイアウォール設定を一元管理するサービス	sap services security
+Amazon GuardDuty	AWS環境の脅威検出を行うセキュリティ監視サービス	sap services security
+AWS IAM Identity Center (AWS Single Sign-On)	シングルサインオン (SSO) を提供し、アクセス管理を簡素化するサービス	sap services security
+AWS Identity and Access Management (AWS IAM)	ユーザ、グループ、ロールのアクセス管理を行うサービス	sap services security
+Amazon Inspector	セキュリティリスクの評価を自動化するサービス	sap services security
+AWS Key Management Service (AWS KMS)	暗号鍵を管理し、安全にデータを暗号化するためのサービス	sap services security
+Amazon Macie	機械学習を使って機密データを検出・保護するサービス	sap services security
+AWS Network Firewall	AWS VPCでネットワークトラフィックを制御・監視するファイアウォールを提供するサービス	sap services security
+AWS Resource Access Manager (AWS RAM)	リソース共有とアクセス管理を簡素化するサービス	sap services security
+AWS Secrets Manager	アプリケーションの機密情報 (シークレット) を安全に管理するサービス	sap services security
+AWS Security Hub	複数のセキュリティサービスからのデータを集約し、統合的に管理するサービス	sap services security
+AWS Security Token Service (AWS STS)	一時的な認証情報を発行するサービス	sap services security
+AWS Shield	DDoS攻撃からAWSリソースを保護するためのサービス	sap services security
+AWS WAF	Webアプリケーションファイアウォールを提供し、攻撃から保護するサービス	sap services security
