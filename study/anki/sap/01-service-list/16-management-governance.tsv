@@ -8,3 +8,13 @@ AWS Config	AWSリソースの設定変更を追跡し、コンプライアンス
 AWS Control Tower	複数のAWSアカウントを管理するためのランディングゾーンを提供するサービス	sap services management
 AWS Health Dashboard	AWSサービスの状態やインシデントを可視化するダッシュボードサービス	sap services management
 AWS License Manager	ソフトウェアライセンスを管理・追跡するためのサービス	sap services management
+Amazon Managed Grafana	データ可視化機能を持つGrafanaを提供するサービス	sap services management
+Amazon Managed Service for Prometheus	監視データの収集・分析を支援するPrometheusを提供するサービス	sap services management
+AWS マネジメントコンソール	AWSサービスを設定するためのWebベースの管理インターフェイス	sap services management
+AWS Organizations	複数のAWSアカウントを一元管理するサービス	sap services management
+AWS Proton	コンテナおよびサーバレスアプリケーションの開発・管理を支援するサービス	sap services management
+AWS Service Catalog	AWSリソースを管理・デプロイするためのカタログを提供するサービス	sap services management
+Service Quotas	AWSサービスのリソース上限を監視・管理するサービス	sap services management
+AWS Systems Manager	AWSおよびハイブリッドクラウド環境のノード管理機能を提供するサービス	sap services management
+AWS Trusted Advisor	ベストプラクティスに基づきリソース最適化やコスト削減を提案するツール	sap services management
+AWS Well-Architected Tool	アーキテクチャの健全性を評価し改善点を特定するAWSベストプラクティスツール	sap services management

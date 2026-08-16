@@ -25,4 +25,6 @@ study/anki/sap/
 | `01-service-list/13-frontend-web-mobile.tsv` | 4 | フロントエンドの Web とモバイル |
 | `01-service-list/14-iot.tsv` | 9 | IoT |
 | `01-service-list/15-machine-learning.tsv` | 12 | 機械学習 |
-| `01-service-list/16-management-governance.tsv` | 10 | マネジメントとガバナンス（続きあり） |
+| `01-service-list/16-management-governance.tsv` | 20 | マネジメントとガバナンス |
+| `01-service-list/17-media.tsv` | 2 | メディアサービス |
+| `01-service-list/18-migration-transfer.tsv` | 5 | 移行と転送（続きあり） |

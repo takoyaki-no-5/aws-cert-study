@@ -1,0 +1,5 @@
+AWS Application Discovery Service	オンプレミスアプリケーションの依存関係を発見・可視化するサービス	sap services migration
+AWS Application Migration Service	サーバやアプリケーションをAWSへ移行するフルマネージドサービス	sap services migration
+AWS Database Migration Service (AWS DMS)	データベース移行を簡単に行うフルマネージドサービス	sap services migration
+AWS DataSync	オンプレミスとAWS間で大量データを効率的に同期・転送するサービス	sap services migration
+AWS Migration Hub	移行進捗を一元管理し複数の移行ツールを統合するサービス	sap services migration
