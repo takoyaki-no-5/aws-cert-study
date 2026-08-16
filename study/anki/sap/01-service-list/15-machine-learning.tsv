@@ -1,0 +1,12 @@
+Amazon Comprehend	自然言語処理(NLP)を使用してテキストデータを分析するサービス	sap services ml
+Amazon Forecast	時系列データを基に需要予測を行うマネージドな機械学習サービス	sap services ml
+Amazon Fraud Detector	機械学習を用いて不正行為を検出するサービス	sap services ml
+Amazon Kendra	高度な検索機能を提供するエンタープライズ向けのAI検索サービス	sap services ml
+Amazon Lex	音声およびテキストチャットボットを簡単に作成するAIサービス	sap services ml
+Amazon Personalize	ユーザー向けのパーソナライズ推奨エンジンを提供する機械学習サービス	sap services ml
+Amazon Polly	テキストをリアルな音声に変換するTTS(Text-to-Speech)サービス	sap services ml
+Amazon Rekognition	画像や動画の分析を行い、顔認識や物体検出をするAIサービス	sap services ml
+Amazon SageMaker	機械学習モデルを構築・学習・デプロイするためのサービス	sap services ml
+Amazon Textract	スキャンした文書からテキストやデータを抽出するAIサービス	sap services ml
+Amazon Transcribe	音声をテキストに変換する音声認識サービス	sap services ml
+Amazon Translate	高精度な多言語翻訳を提供する機械学習サービス	sap services ml

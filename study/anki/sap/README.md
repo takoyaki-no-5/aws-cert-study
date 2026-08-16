@@ -24,3 +24,5 @@ study/anki/sap/
 | `01-service-list/12-end-user-computing.tsv` | 2 | エンドユーザーコンピューティング |
 | `01-service-list/13-frontend-web-mobile.tsv` | 4 | フロントエンドの Web とモバイル |
 | `01-service-list/14-iot.tsv` | 9 | IoT |
+| `01-service-list/15-machine-learning.tsv` | 12 | 機械学習 |
+| `01-service-list/16-management-governance.tsv` | 10 | マネジメントとガバナンス（続きあり） |

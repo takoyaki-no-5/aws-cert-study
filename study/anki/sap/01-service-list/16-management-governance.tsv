@@ -1,0 +1,10 @@
+AWS CLI	AWSリソースをコマンドラインから管理するためのインターフェイスツール	sap services management
+AWS CloudFormation	インフラの構成をコードで管理し、自動化するためのサービス	sap services management
+AWS CloudTrail	AWSへのAPIコールを記録・監視するサービス	sap services management
+Amazon CloudWatch	AWSリソースやアプリケーションの監視・ログ収集を行うサービス	sap services management
+Amazon CloudWatch Logs	ログデータの収集・保管・分析を行うCloudWatchの機能	sap services management
+AWS Compute Optimizer	EC2インスタンスのコスト削減提案を行うリソース最適化ツール	sap services management
+AWS Config	AWSリソースの設定変更を追跡し、コンプライアンスを維持するサービス	sap services management
+AWS Control Tower	複数のAWSアカウントを管理するためのランディングゾーンを提供するサービス	sap services management
+AWS Health Dashboard	AWSサービスの状態やインシデントを可視化するダッシュボードサービス	sap services management
+AWS License Manager	ソフトウェアライセンスを管理・追跡するためのサービス	sap services management
