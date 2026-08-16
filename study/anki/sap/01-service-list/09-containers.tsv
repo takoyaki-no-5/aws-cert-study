@@ -1,2 +1,5 @@
 Amazon ECR	コンテナイメージを保存・管理できるフルマネージドなレジストリサービス	sap services containers
 Amazon ECS	AWS独自のコンテナオーケストレーション機能を提供するサービス	sap services containers
+Amazon ECS Anywhere	ECSを使ってオンプレミス環境のコンテナを管理できるサービス	sap services containers
+Amazon EKS Anywhere	EKS互換のKubernetes環境をオンプレミスで構築・管理できるサービス	sap services containers
+Amazon EKS Distro	EKSと同じKubernetes環境を提供するオープンソースディストリビューション	sap services containers

@@ -1,0 +1,10 @@
+Amazon Aurora	MySQLとPostgreSQL互換の高性能・高可用性RDBMSサービス	sap services database
+Amazon Aurora Serverless	需要に応じて自動スケールするAurora	sap services database
+Amazon DocumentDB (MongoDB compatible)	MongoDB互換のドキュメント指向データベースサービス	sap services database
+Amazon DynamoDB	高速なキーバリュー型のフルマネージドデータベースサービス	sap services database
+Amazon ElastiCache	Redis、Memcached、Valkeyに対応したインメモリデータベースサービス	sap services database
+Amazon Keyspaces (for Apache Cassandra)	Cassandra互換のスケーラブルなマネージドNoSQLデータベースサービス	sap services database
+Amazon Neptune	グラフデータベースサービス	sap services database
+Amazon RDS	複数のデータベースエンジンを提供するリレーショナルデータベースサービス	sap services database
+Amazon Redshift	高速でスケーラブルなフルマネージドなDWHサービス	sap services database
+Amazon Timestream	時系列データベースサービス	sap services database

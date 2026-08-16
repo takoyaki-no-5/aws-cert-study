@@ -18,4 +18,6 @@ study/anki/sap/
 | `01-service-list/06-business-applications.tsv` | 2 | ビジネスアプリケーション |
 | `01-service-list/07-cloud-financial-management.tsv` | 4 | クラウド財務管理 |
 | `01-service-list/08-compute.tsv` | 11 | コンピューティング |
-| `01-service-list/09-containers.tsv` | 2 | コンテナ（続きあり） |
+| `01-service-list/09-containers.tsv` | 5 | コンテナ |
+| `01-service-list/10-database.tsv` | 10 | データベース |
+| `01-service-list/11-developer-tools.tsv` | 6 | デベロッパーツール（続きあり） |

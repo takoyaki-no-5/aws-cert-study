@@ -1,0 +1,6 @@
+AWS Cloud9	ブラウザから利用できるフル機能のクラウドIDE	sap services devops
+AWS CodeArtifact	ソフトウェアパッケージを安全に管理・共有できるリポジトリを提供するサービス	sap services devops
+AWS CodeBuild	ソースコードのビルド・テストを行うフルマネージドなCIサービス	sap services devops
+AWS CodeCommit	Gitベースのリモートリポジトリを提供するサービス	sap services devops
+AWS CodeDeploy	EC2やLambdaへのアプリケーションデプロイを自動化するサービス	sap services devops
+Amazon CodeGuru	機械学習を用いてコードレビューやアプリケーション性能分析を支援するサービス	sap services devops
