@@ -1,0 +1,11 @@
+AWS App Runner	コンテナアプリを自動でビルド・デプロイするフルマネージドサービス	sap services compute
+AWS Auto Scaling	複数のリソースを対象に動的スケーリングを自動化するサービス	sap services compute
+AWS Batch	バッチ処理を効率的に実行するマネージドなコンピューティングサービス	sap services compute
+Amazon EC2	仮想サーバを柔軟に起動・管理できるサービス	sap services compute
+Amazon EC2 Auto Scaling	EC2インスタンス数を需要に応じて自動的に増減させる機能	sap services compute
+AWS Elastic Beanstalk	アプリを簡単にデプロイ・管理できるPaaS機能を提供するサービス	sap services compute
+AWS Fargate	サーバレスでコンテナを実行できるDocker Hostを提供するサービス	sap services compute
+AWS Lambda	イベント駆動で関数を実行するサーバレスコンピューティングサービス	sap services compute
+Amazon Lightsail	仮想サーバやDBなどを簡単に扱える初心者向けのクラウドサービス	sap services compute
+AWS Outposts	AWSインフラをオンプレミスに拡張するハイブリッドクラウドサービス	sap services compute
+AWS Wavelength	5Gネットワーク上で超低遅延アプリを実現するためのサービス	sap services compute

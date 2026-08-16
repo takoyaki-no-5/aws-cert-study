@@ -15,3 +15,7 @@ study/anki/sap/
 | `01-service-list/03-analytics.tsv` | 12 | 分析 |
 | `01-service-list/04-application-integration.tsv` | 7 | アプリケーション統合 |
 | `01-service-list/05-blockchain.tsv` | 1 | ブロックチェーン |
+| `01-service-list/06-business-applications.tsv` | 2 | ビジネスアプリケーション |
+| `01-service-list/07-cloud-financial-management.tsv` | 4 | クラウド財務管理 |
+| `01-service-list/08-compute.tsv` | 11 | コンピューティング |
+| `01-service-list/09-containers.tsv` | 2 | コンテナ（続きあり） |

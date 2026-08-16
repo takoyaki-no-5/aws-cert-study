@@ -1,0 +1,4 @@
+AWS Budgets	コストや使用量に対する予算を設定し、しきい値超過時に通知するサービス	sap services cost
+AWS Cost and Usage Report	詳細なコストと使用状況のレポートをS3に出力する機能	sap services cost
+AWS Cost Explorer	コスト・使用状況を可視化・分析できるインタラクティブなツール	sap services cost
+Savings Plans	EC2やFargate等に適用できる使用量に応じて柔軟に割引を提供する料金プラン	sap services cost
