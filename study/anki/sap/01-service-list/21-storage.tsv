@@ -3,3 +3,6 @@ Amazon Elastic Block Store (Amazon EBS)	ブロックストレージを提供す�
 AWS Elastic Disaster Recovery	災害復旧を目的としたAWSリソースの迅速な復旧サービス	sap services storage
 Amazon Elastic File System (Amazon EFS)	スケーラブルなファイルストレージサービス	sap services storage
 Amazon FSx (すべてのタイプに対応)	さまざまなファイルストレージを提供するサービス	sap services storage
+Amazon S3	高い耐久性とスケーラビリティを提供するオブジェクトストレージサービス	sap services storage
+Amazon S3 Glacier	長期保存に最適なアーカイブストレージサービス	sap services storage
+AWS Storage Gateway	オンプレミス環境とAWSクラウドのストレージを統合するゲートウェイサービス	sap services storage
