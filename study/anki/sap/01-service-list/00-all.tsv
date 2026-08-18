@@ -1,0 +1,156 @@
+Amazon Athena	S3上のデータをSQLで分析できるサーバレスなクエリサービス	sap services analytics
+AWS Data Exchange	サードパーティデータを安全に検索・利用・共有できるサービス	sap services analytics
+AWS Data Pipeline	データの移動・変換を自動化するETLワークフローサービス	sap services analytics
+Amazon EMR	ビッグデータ処理のためのHadoop/Sparkクラスタサービス	sap services analytics
+AWS Glue	データカタログとETL処理を提供するサーバレスなデータ統合サービス	sap services analytics
+Amazon Managed Service for Apache Flink	ストリーミングデータをSQLでリアルタイムに分析するサービス	sap services analytics
+Kinesis Data Firehose	ストリーミングデータを自動的に保存・分析サービスに配信するサービス	sap services analytics
+Amazon Kinesis Data Streams	ストリーミングデータをリアルタイムで収集・処理するサービス	sap services analytics
+AWS Lake Formation	データレイクを迅速かつ安全に構築・管理するサービス	sap services analytics
+Amazon Managed Streaming for Apache Kafka (Amazon MSK)	ストリーミングデータを処理するフルマネージドなApache Kafkaサービス	sap services analytics
+Amazon OpenSearch Service	フルマネージドな全文検索・分析エンジンを提供するサービス	sap services analytics
+Amazon QuickSight	スケーラブルで高速なBIダッシュボードを提供する可視化サービス	sap services analytics
+Amazon AppFlow	SaaSとAWS間で、安全にデータ転送や同期機能を提供するサービス	sap services integration
+AWS AppSync	GraphQL APIを構築・管理できるサービス	sap services integration
+Amazon EventBridge	アプリ間のイベント接続機能や、スケジュール実行機能を提供するサービス	sap services integration
+Amazon MQ	フルマネージドなApache ActiveMQ/RabbitMQを提供するサービス	sap services integration
+Amazon SNS	フルマネージドなパブサブメッセージング機能を提供するサービス	sap services integration
+Amazon SQS	非同期通信のためのメッセージキューを提供するサービス	sap services integration
+AWS Step Functions	処理フローを視覚的に構築できるサーバレスな状態管理サービス	sap services integration
+Amazon Managed Blockchain	ブロックチェーンネットワークの構築・管理機能を提供するサービス	sap services blockchain
+Alexa for Business	Alexaを会議室や業務用途に活用するための音声操作サービス	sap services business
+Amazon Simple Email Service (Amazon SES)	高スケーラビリティなEメール送信・受信サービス	sap services business
+AWS Budgets	コストや使用量に対する予算を設定し、しきい値超過時に通知するサービス	sap services cost
+AWS Cost and Usage Report	詳細なコストと使用状況のレポートをS3に出力する機能	sap services cost
+AWS Cost Explorer	コスト・使用状況を可視化・分析できるインタラクティブなツール	sap services cost
+Savings Plans	EC2やFargate等に適用できる使用量に応じて柔軟に割引を提供する料金プラン	sap services cost
+AWS App Runner	コンテナアプリを自動でビルド・デプロイするフルマネージドサービス	sap services compute
+AWS Auto Scaling	複数のリソースを対象に動的スケーリングを自動化するサービス	sap services compute
+AWS Batch	バッチ処理を効率的に実行するマネージドなコンピューティングサービス	sap services compute
+Amazon EC2	仮想サーバを柔軟に起動・管理できるサービス	sap services compute
+Amazon EC2 Auto Scaling	EC2インスタンス数を需要に応じて自動的に増減させる機能	sap services compute
+AWS Elastic Beanstalk	アプリを簡単にデプロイ・管理できるPaaS機能を提供するサービス	sap services compute
+AWS Fargate	サーバレスでコンテナを実行できるDocker Hostを提供するサービス	sap services compute
+AWS Lambda	イベント駆動で関数を実行するサーバレスコンピューティングサービス	sap services compute
+Amazon Lightsail	仮想サーバやDBなどを簡単に扱える初心者向けのクラウドサービス	sap services compute
+AWS Outposts	AWSインフラをオンプレミスに拡張するハイブリッドクラウドサービス	sap services compute
+AWS Wavelength	5Gネットワーク上で超低遅延アプリを実現するためのサービス	sap services compute
+Amazon ECR	コンテナイメージを保存・管理できるフルマネージドなレジストリサービス	sap services containers
+Amazon ECS	AWS独自のコンテナオーケストレーション機能を提供するサービス	sap services containers
+Amazon ECS Anywhere	ECSを使ってオンプレミス環境のコンテナを管理できるサービス	sap services containers
+Amazon EKS Anywhere	EKS互換のKubernetes環境をオンプレミスで構築・管理できるサービス	sap services containers
+Amazon EKS Distro	EKSと同じKubernetes環境を提供するオープンソースディストリビューション	sap services containers
+Amazon Aurora	MySQLとPostgreSQL互換の高性能・高可用性RDBMSサービス	sap services database
+Amazon Aurora Serverless	需要に応じて自動スケールするAurora	sap services database
+Amazon DocumentDB (MongoDB compatible)	MongoDB互換のドキュメント指向データベースサービス	sap services database
+Amazon DynamoDB	高速なキーバリュー型のフルマネージドデータベースサービス	sap services database
+Amazon ElastiCache	Redis、Memcached、Valkeyに対応したインメモリデータベースサービス	sap services database
+Amazon Keyspaces (for Apache Cassandra)	Cassandra互換のスケーラブルなマネージドNoSQLデータベースサービス	sap services database
+Amazon Neptune	グラフデータベースサービス	sap services database
+Amazon RDS	複数のデータベースエンジンを提供するリレーショナルデータベースサービス	sap services database
+Amazon Redshift	高速でスケーラブルなフルマネージドなDWHサービス	sap services database
+Amazon Timestream	時系列データベースサービス	sap services database
+AWS Cloud9	ブラウザから利用できるフル機能のクラウドIDE	sap services devops
+AWS CodeArtifact	ソフトウェアパッケージを安全に管理・共有できるリポジトリを提供するサービス	sap services devops
+AWS CodeBuild	ソースコードのビルド・テストを行うフルマネージドなCIサービス	sap services devops
+AWS CodeCommit	Gitベースのリモートリポジトリを提供するサービス	sap services devops
+AWS CodeDeploy	EC2やLambdaへのアプリケーションデプロイを自動化するサービス	sap services devops
+Amazon CodeGuru	機械学習を用いてコードレビューやアプリケーション性能分析を支援するサービス	sap services devops
+AWS CodePipeline	CI/CD ワークフローを自動化するパイプライン構築サービス	sap services devops
+AWS CodeStar	開発プロジェクトを迅速に開始できる統合開発管理サービス	sap services devops
+AWS X-Ray	分散アプリケーションのパフォーマンスを可視化・トレースするサービス	sap services devops
+Amazon AppStream 2.0	アプリケーションをブラウザ経由で配信するサービス	sap services end-user
+Amazon WorkSpaces	仮想デスクトップ環境 (VDI) を提供するサービス	sap services end-user
+AWS Amplify	フルマネージドなモバイル・Web アプリの開発・デプロイ機能を提供するサービス	sap services frontend
+Amazon API Gateway	RESTful API や WebSocket API を簡単に作成・管理できるサービス	sap services frontend
+AWS Device Farm	モバイルアプリをリアルデバイスでテストするサービス	sap services frontend
+Amazon Pinpoint	パーソナライズされたマルチチャネルのメッセージングサービス	sap services frontend
+AWS IoT Analytics	IoT デバイスからのデータを分析し、可視化・洞察を提供するサービス	sap services iot
+AWS IoT Core	IoT デバイスの接続・管理・セキュリティを提供する基盤サービス	sap services iot
+AWS IoT Device Defender	IoT デバイスのセキュリティ監視・脅威検出を行うサービス	sap services iot
+AWS IoT Device Management	IoT デバイスの登録・管理・監視を行うサービス	sap services iot
+AWS IoT Events	IoT デバイスの状態変化を検出し、アクションをトリガーするサービス	sap services iot
+AWS IoT Greengrass	エッジデバイスでローカルにデータ処理を行う IoT 用エッジコンピューティングサービス	sap services iot
+AWS IoT SiteWise	産業機器からのデータを収集・管理・分析するサービス	sap services iot
+AWS IoT Things Graph	IoT デバイス間のワークフローを視覚的に作成・管理するサービス	sap services iot
+AWS IoT 1-Click	シンプルな IoT デバイス操作をワンクリックで実行できるサービス	sap services iot
+Amazon Comprehend	自然言語処理(NLP)を使用してテキストデータを分析するサービス	sap services ml
+Amazon Forecast	時系列データを基に需要予測を行うマネージドな機械学習サービス	sap services ml
+Amazon Fraud Detector	機械学習を用いて不正行為を検出するサービス	sap services ml
+Amazon Kendra	高度な検索機能を提供するエンタープライズ向けのAI検索サービス	sap services ml
+Amazon Lex	音声およびテキストチャットボットを簡単に作成するAIサービス	sap services ml
+Amazon Personalize	ユーザー向けのパーソナライズ推奨エンジンを提供する機械学習サービス	sap services ml
+Amazon Polly	テキストをリアルな音声に変換するTTS(Text-to-Speech)サービス	sap services ml
+Amazon Rekognition	画像や動画の分析を行い、顔認識や物体検出をするAIサービス	sap services ml
+Amazon SageMaker	機械学習モデルを構築・学習・デプロイするためのサービス	sap services ml
+Amazon Textract	スキャンした文書からテキストやデータを抽出するAIサービス	sap services ml
+Amazon Transcribe	音声をテキストに変換する音声認識サービス	sap services ml
+Amazon Translate	高精度な多言語翻訳を提供する機械学習サービス	sap services ml
+AWS CLI	AWSリソースをコマンドラインから管理するためのインターフェイスツール	sap services management
+AWS CloudFormation	インフラの構成をコードで管理し、自動化するためのサービス	sap services management
+AWS CloudTrail	AWSへのAPIコールを記録・監視するサービス	sap services management
+Amazon CloudWatch	AWSリソースやアプリケーションの監視・ログ収集を行うサービス	sap services management
+Amazon CloudWatch Logs	ログデータの収集・保管・分析を行うCloudWatchの機能	sap services management
+AWS Compute Optimizer	EC2インスタンスのコスト削減提案を行うリソース最適化ツール	sap services management
+AWS Config	AWSリソースの設定変更を追跡し、コンプライアンスを維持するサービス	sap services management
+AWS Control Tower	複数のAWSアカウントを管理するためのランディングゾーンを提供するサービス	sap services management
+AWS Health Dashboard	AWSサービスの状態やインシデントを可視化するダッシュボードサービス	sap services management
+AWS License Manager	ソフトウェアライセンスを管理・追跡するためのサービス	sap services management
+Amazon Managed Grafana	データ可視化機能を持つGrafanaを提供するサービス	sap services management
+Amazon Managed Service for Prometheus	監視データの収集・分析を支援するPrometheusを提供するサービス	sap services management
+AWS マネジメントコンソール	AWSサービスを設定するためのWebベースの管理インターフェイス	sap services management
+AWS Organizations	複数のAWSアカウントを一元管理するサービス	sap services management
+AWS Proton	コンテナおよびサーバレスアプリケーションの開発・管理を支援するサービス	sap services management
+AWS Service Catalog	AWSリソースを管理・デプロイするためのカタログを提供するサービス	sap services management
+Service Quotas	AWSサービスのリソース上限を監視・管理するサービス	sap services management
+AWS Systems Manager	AWSおよびハイブリッドクラウド環境のノード管理機能を提供するサービス	sap services management
+AWS Trusted Advisor	ベストプラクティスに基づきリソース最適化やコスト削減を提案するツール	sap services management
+AWS Well-Architected Tool	アーキテクチャの健全性を評価し改善点を特定するAWSベストプラクティスツール	sap services management
+Amazon Elastic Transcoder	動画ファイル形式を自動変換するメディアトランスコーディングサービス	sap services media
+Amazon Kinesis Video Streams	動画ストリーミングデータの収集・保存・分析を行うサービス	sap services media
+AWS Application Discovery Service	オンプレミスアプリケーションの依存関係を発見・可視化するサービス	sap services migration
+AWS Application Migration Service	サーバやアプリケーションをAWSへ移行するフルマネージドサービス	sap services migration
+AWS Database Migration Service (AWS DMS)	データベース移行を簡単に行うフルマネージドサービス	sap services migration
+AWS DataSync	オンプレミスとAWS間で大量データを効率的に同期・転送するサービス	sap services migration
+AWS Migration Hub	移行進捗を一元管理し複数の移行ツールを統合するサービス	sap services migration
+AWS Schema Conversion Tool (AWS SCT)	異なるエンジン間でデータベーススキーマを変換するツール	sap services migration
+AWS Snow Family	大容量データを物理的に転送するデバイスを提供するサービス	sap services migration
+AWS Transfer Family	SFTP、FTP、FTPS、AS2でAWSへ安全にデータ転送するサービス	sap services migration
+Amazon CloudFront	CDNを提供するサービス	sap services networking
+AWS Direct Connect	オンプレミスとAWSを専用線で接続するサービス	sap services networking
+Elastic Load Balancing (ELB)	複数ターゲットにトラフィックを分散し高可用性を提供するロードバランサーサービス	sap services networking
+AWS Global Accelerator	グローバル規模でアプリケーション性能を最適化するサービス	sap services networking
+AWS PrivateLink	VPCからプライベートIPで外部サービスにアクセスするサービス	sap services networking
+Amazon Route 53	高可用性DNS機能を提供するサービス	sap services networking
+AWS Transit Gateway	複数VPCとオンプレミスネットワークを接続し一元管理するサービス	sap services networking
+Amazon VPC	VPC内でリソースを分離・管理するサービス	sap services networking
+AWS VPN (Site-to-Site VPN)	AWSとオンプレミスを安全に接続するVPNサービス	sap services networking
+AWS Artifact	コンプライアンスレポートや証明書を提供するサービス	sap services security
+AWS Audit Manager	AWS環境の監査・コンプライアンス管理を支援するサービス	sap services security
+AWS Certificate Manager (ACM)	SSL/TLS証明書を管理・提供するサービス	sap services security
+AWS CloudHSM	HSMを提供するマネージドサービス	sap services security
+Amazon Cognito	ユーザー認証・管理を提供するサービス	sap services security
+Amazon Detective	セキュリティインシデントを分析するサービス	sap services security
+AWS Directory Service	マネージドMicrosoft ADや認証基盤を提供するディレクトリサービス	sap services security
+AWS Firewall Manager	複数のVPCやアカウントでファイアウォール設定を一元管理するサービス	sap services security
+Amazon GuardDuty	AWS環境の脅威検出を行うセキュリティ監視サービス	sap services security
+AWS IAM Identity Center (AWS Single Sign-On)	シングルサインオン (SSO) を提供し、アクセス管理を簡素化するサービス	sap services security
+AWS Identity and Access Management (AWS IAM)	ユーザ、グループ、ロールのアクセス管理を行うサービス	sap services security
+Amazon Inspector	セキュリティリスクの評価を自動化するサービス	sap services security
+AWS Key Management Service (AWS KMS)	暗号鍵を管理し、安全にデータを暗号化するためのサービス	sap services security
+Amazon Macie	機械学習を使って機密データを検出・保護するサービス	sap services security
+AWS Network Firewall	AWS VPCでネットワークトラフィックを制御・監視するファイアウォールを提供するサービス	sap services security
+AWS Resource Access Manager (AWS RAM)	リソース共有とアクセス管理を簡素化するサービス	sap services security
+AWS Secrets Manager	アプリケーションの機密情報 (シークレット) を安全に管理するサービス	sap services security
+AWS Security Hub	複数のセキュリティサービスからのデータを集約し、統合的に管理するサービス	sap services security
+AWS Security Token Service (AWS STS)	一時的な認証情報を発行するサービス	sap services security
+AWS Shield	DDoS攻撃からAWSリソースを保護するためのサービス	sap services security
+AWS WAF	Webアプリケーションファイアウォールを提供し、攻撃から保護するサービス	sap services security
+AWS Backup	クラウド内外のデータのバックアップと復元を一元管理するサービス	sap services storage
+Amazon Elastic Block Store (Amazon EBS)	ブロックストレージを提供するサービス	sap services storage
+AWS Elastic Disaster Recovery	災害復旧を目的としたAWSリソースの迅速な復旧サービス	sap services storage
+Amazon Elastic File System (Amazon EFS)	スケーラブルなファイルストレージサービス	sap services storage
+Amazon FSx (すべてのタイプに対応)	さまざまなファイルストレージを提供するサービス	sap services storage
+Amazon S3	高い耐久性とスケーラビリティを提供するオブジェクトストレージサービス	sap services storage
+Amazon S3 Glacier	長期保存に最適なアーカイブストレージサービス	sap services storage
+AWS Storage Gateway	オンプレミス環境とAWSクラウドのストレージを統合するゲートウェイサービス	sap services storage
