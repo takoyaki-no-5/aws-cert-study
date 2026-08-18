@@ -12,6 +12,7 @@ study/anki/sap/
 
 | ファイル | 枚数 | 内容 |
 |----------|------|------|
+| `01-service-list/00-all.tsv` | 156 | Import 用まとめ（03〜21 の結合） |
 | `01-service-list/03-analytics.tsv` | 12 | 分析 |
 | `01-service-list/04-application-integration.tsv` | 7 | アプリケーション統合 |
 | `01-service-list/05-blockchain.tsv` | 1 | ブロックチェーン |
