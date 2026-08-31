@@ -8,3 +8,4 @@ Service Catalogを入れると他のAWSは使えなくなる？	ならない。�
 Service Quotas は？	アカウント/リージョンあたりのリソース個数の上限（EC2台数、VPC数等）。閲覧・アラーム・緩和申請。IAM/SCP=権限の上限（個数ではない） / スロットル=APIの速さの上限	sap asked quotas source:cursor
 台数上限の監視・緩和はBudgetsで足りる？	足りない。Budgets=自分で決めた金/使用量の予算と通知。Quotas=AWSが決めた個数の天井（閲覧・緩和申請）。金の通知はBudgets、個数の天井はQuotas	sap asked quotas source:cursor
 AWS Systems Manager（SSM）は？	運用のリモコン。EC2/オンプレにエージェントを入れ、パッチ・コマンド・セッションをAWS側から実行（SSHの22不要が定石）。Parameter Storeはこの中の設定棚。Bastion=玄関サーバ / Secrets Manager=秘密の自動ローテ専用 / CloudWatch=見るだけ（SSMは操作）	sap asked ssm source:cursor
+SSM はローカルから CLI で接続するの？ CLIとの違いは？	違う。CLI=手元の道具でAWS APIを叩く（S3作る・EC2止める。OSの中には入らない）。SSM=サービスのリモコンでEC2の中を操作（パッチ・シェル）。起点はコンソールでもCLIでも可。接続先はEC2ではなくAWS（Agentが外向き）。CloudShell=ブラウザのCLI	sap asked ssm source:cursor
