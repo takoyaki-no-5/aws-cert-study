@@ -1,0 +1,1 @@
+AIサービスとSageMakerの試験での切り分けは？	AIサービス=学習済みモデルをAPI（Rekognition等。ML知識ほぼ不要） / SageMaker=自分で構築・学習・デプロイ / Bedrock=基盤モデルをAPI（生成AI）。コンソールの「Machine Learning」は混ぜて置くのでカテゴリ名では切らない	sap asked ml source:cursor
