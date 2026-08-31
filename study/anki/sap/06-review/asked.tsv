@@ -4,3 +4,4 @@ Prometheus（Amazon Managed Service for Prometheus）は？	コンテナ等の�
 AWS Proton は？	プラットフォームチームが環境・サービステンプレを用意し、開発者はそこからコンテナ/サーバレスをデプロイ。Service Catalog=承認済みAWS製品のカタログ / Beanstalk=コード上げるだけPaaS / CloudFormation=IaCそのもの（Protonの下）	sap asked proton source:cursor
 Service Catalog は？	社内のAWS通販。ITが承認済み製品（中身はだいたいCloudFormation）を並べ、利用者はポータルから起動するだけ。勝手なEC2/RDSを防ぐ。Proton=アプリ配信の工場（コンテナ/サーバレスの型） / CloudFormation=説明書そのもの	sap asked servicecatalog source:cursor
 マイクロサービスとは？	1つの大きなアプリ（モノリス）を注文・決済など小さな独立サービスに分け、個別にデプロイ・スケールするもの。間はAPIやSQS/SNSで疎結合。モノリス=一塊で全部デプロイ / Proton=そのコンテナを型で出す箱	sap asked microservice source:cursor
+Service Catalogを入れると他のAWSは使えなくなる？	ならない。店を置いただけ。直作りを止めるのはIAM（利用者はCatalog起動だけ、実作成は起動ロール）。SCPはアカウント全体の上限	sap asked servicecatalog source:cursor
