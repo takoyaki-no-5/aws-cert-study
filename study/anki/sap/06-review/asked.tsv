@@ -6,3 +6,4 @@ Service Catalog は？	社内のAWS通販。ITが承認済み製品（中身は�
 マイクロサービスとは？	1つの大きなアプリ（モノリス）を注文・決済など小さな独立サービスに分け、個別にデプロイ・スケールするもの。間はAPIやSQS/SNSで疎結合。モノリス=一塊で全部デプロイ / Proton=そのコンテナを型で出す箱	sap asked microservice source:cursor
 Service Catalogを入れると他のAWSは使えなくなる？	ならない。店を置いただけ。直作りを止めるのはIAM（利用者はCatalog起動だけ、実作成は起動ロール）。SCPはアカウント全体の上限	sap asked servicecatalog source:cursor
 Service Quotas は？	アカウント/リージョンあたりのリソース個数の上限（EC2台数、VPC数等）。閲覧・アラーム・緩和申請。IAM/SCP=権限の上限（個数ではない） / スロットル=APIの速さの上限	sap asked quotas source:cursor
+台数上限の監視・緩和はBudgetsで足りる？	足りない。Budgets=自分で決めた金/使用量の予算と通知。Quotas=AWSが決めた個数の天井（閲覧・緩和申請）。金の通知はBudgets、個数の天井はQuotas	sap asked quotas source:cursor
