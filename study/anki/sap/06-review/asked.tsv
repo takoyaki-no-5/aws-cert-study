@@ -1,1 +1,2 @@
 AIサービスとSageMakerの試験での切り分けは？	AIサービス=学習済みモデルをAPI（Rekognition等。ML知識ほぼ不要） / SageMaker=自分で構築・学習・デプロイ / Bedrock=基盤モデルをAPI（生成AI）。コンソールの「Machine Learning」は混ぜて置くのでカテゴリ名では切らない	sap asked ml source:cursor
+Grafana（Amazon Managed Grafana）は？	運用メトリクスの可視化ダッシュボード。データは持たない（ソースはPrometheus/CloudWatch等）。CloudWatchダッシュボード=AWSネイティブ簡易可視化 / QuickSight=BI / Prometheus=時系列の収集・保管	sap asked grafana source:cursor
