@@ -32,4 +32,4 @@ study/anki/sap/
 | `01-service-list/19-networking.tsv` | 9 | ネットワークとコンテンツ配信 |
 | `01-service-list/20-security.tsv` | 21 | セキュリティ、アイデンティティ、コンプライアンス |
 | `01-service-list/21-storage.tsv` | 8 | ストレージ |
-| `06-review/asked.tsv` | 7 | 用語質問 |
+| `06-review/asked.tsv` | 8 | 用語質問 |
