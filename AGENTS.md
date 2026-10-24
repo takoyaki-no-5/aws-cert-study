@@ -17,7 +17,5 @@ AWSに関する質問へ回答するためのリポジトリ。
 ## Cursor Cloud specific instructions
 
 - このリポジトリはアプリやサーバではない。`package.json`、`requirements.txt`、ビルド工程はない。
-- クラウド VM は **Linux**。ローカルは Windows ホストで `cmd /c node` 起動だが、クラウドでは `node .cursor/hooks/xxx.js` / `python3 .cursor/hooks/xxx.py` を直接実行する。
-- 「lint/test」相当は `bash .cursor/hooks/validate-hooks.sh`（`session-start.js` が有効な JSON を出すか検証）。ビルド工程は無い。
-- sessionコンテキストの確認は`node .cursor/hooks/session-start.js </dev/null`を使う。
-- **PR を使わず `main` に直接 push する（ユーザー方針）**。新セッションが `cursor/...` ブランチ起点で始まっても、まず `git checkout main` してから commit → `git push origin main`（ローカルの `finish-push.sh` と同じ運用）。PR は作らない。
+- 検証は設定ファイルの構文確認と`git diff --check`で十分。
+- PRを使わず`main`へ直接commit・pushする。
