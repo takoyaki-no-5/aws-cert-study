@@ -1,31 +1,27 @@
-# .cursor の構成（このワークスペース用）
+# .cursor の構成
 
-AWS **資格学習**用。計画・日次スケジュール・Q&A が主目的。
+AWSに関する質問へ日本語で回答するための設定。
 
-## 言語方針
+## 基本方針
 
-`.cursor` の中身は**日本語で書いてよい**。今のモデルは日本語の指示を英語とほぼ同等の精度で扱える。
-技術用語・コマンド・パスは英語のまま。スキルの `description` はトリガー語を日英併記すると発見されやすい。
+- 結論を先に、理由を簡潔に説明する。
+- 選択問題は正解と各選択肢の判断理由を示す。
+- 学習計画、進捗、Anki、Discord、ファイルを自動更新しない。
+- リポジトリを変更するのは、ユーザーが明示的に依頼した場合だけ。
 
-## ファイルの役割
+## 主なファイル
 
 | ファイル | 役割 |
 |------|------|
-| `rules/cert-study.mdc` | 学習モードの基本動作（日本語・study/ 更新・プライバシー） |
-| `rules/prefer-wsl.mdc` | シェルは WSL (Ubuntu-24.04) 優先 |
-| `rules/liberal-approvals.mdc` | コマンド承認は寛容に。確認で止めない |
-| `rules/aws-safety.mdc` | 学習用の軽い安全ルール（シークレット禁止など） |
-| `rules/direct-push-main.mdc` | PR 禁止・`main` 直 push（クラウドの PR 指示より優先） |
-| `rules/maintain-cursor-context.mdc` | `.cursor` を自発的に育てる方針 + 言語方針 |
-| `skills/daily-study-session` | 「今日は」「始める」の日次セッション |
-| `skills/study-plan-manager` | 計画・スケジュール改定 |
-| `skills/anki-tsv` | Anki 用 TSV カード生成 |
-| `hooks/session-start.js` | セッション開始時に学習モードと `.private/` を注入（セッションごとに1回だけ実行） |
-| `permissions.json` | コマンドの自動承認リスト（`terminalAllowlist`）。寛容承認はここで実現 |
-| `../AGENTS.md` / `../study/` | プロジェクト案内と学習データ |
-| `../.private/` | 個人情報（gitignore 済・セッション開始時に自動注入） |
+| `rules/cert-study.mdc` | AWS質問回答モード |
+| `rules/anki-term-qa.mdc` | 用語質問でAnkiを自動更新しない |
+| `rules/maintain-cursor-context.mdc` | 設定を自動変更しない |
+| `rules/prefer-wsl.mdc` | シェルはWSLを優先 |
+| `rules/direct-push-main.mdc` | PRを使わず`main`へ直接push |
+| `hooks/session-start.js` | 質問回答モードをセッションへ注入 |
+| `permissions.json` | コマンドの自動承認設定 |
 
-長く使えるパターンが見えたら随時追加する。大きな1ファイルより小さく焦点を絞ったファイルを優先。
+既存の学習データや補助スクリプトは過去データとして残すが、通常の質問では読み書きしない。
 
 ## コマンド承認の仕組み
 
