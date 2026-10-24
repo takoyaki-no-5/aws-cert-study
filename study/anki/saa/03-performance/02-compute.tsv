@@ -10,3 +10,4 @@ Enhanced Networking / EFA が出るときば？	高ネットワーク性能・HP
 Placement Group（partition）は？	パーティション単位で分散配置。同時障害リスクを下げつつclusterより台数を載せやすい	saa perf compute source:cursor
 EC2 の R系と T系の違いは？	R系=メモリ最適化（大容量RAM・DB/キャッシュ等） / T系=バースト汎用（CPUクレジット。枯渇で性能低下・常時高CPU向きでない）	saa perf compute source:cursor
 EC2 の M系とは？大きさ？	M系=汎用（CPUとメモリのバランス）。大きさは別軸（large / xlarge 等）。デカい＝サイズ、M/C/R/T＝向き（C=CPU / R=メモリ / T=バースト）	saa perf compute source:cursor
+ECSのタスク配置で binpack / spread の違いは？	binpack=少数インスタンスへ詰めてコスト効率重視 / spread=AZ・インスタンス間へ分散して可用性重視	saa perf compute source:cursor
